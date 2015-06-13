@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<campaign>
+  <fileDetails>
+    <version>1.0</version>
+    <dateCreated>29-May-2015 16:55:44</dateCreated>
+    <author>eu-tau1verification</author>
+    <comment />
+    <schemaVersion>1</schemaVersion>
+  </fileDetails>
+  <name>Eng Serv W1 ePTC</name>
+  <testSequence id="0" type="LTE">
+    <name>S4_LTE_Singlebox_700</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Running</status>
+      <startTime>2015-05-29_16.56.56</startTime>
+      <executionDuration>23.15.22</executionDuration>
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="6" type="3G">
+    <name>3G_S4_Singlebox_Overnight</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-05-29_16.57.05</startTime>
+      <executionDuration>09.57.24</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\E\PCT_RESULTS_DRIVER_E\Eng Serv W1 ePTC\3G_S4_Singlebox_Overnight\2015-05-29_16.57.22\42C_20150520_ThreeGFdd_3G_S4_Singlebox_Overnight_2015-05-29_16.57.22.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>258</totalNumOfTests>
+        <numOfTestsRun>258</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>238</totalNumOfPasses>
+        <totalNumOfFailures>18</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="7" type="3G">
+    <name>3G_S4_Singlebox_Overnight</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-05-29_16.57.08</startTime>
+      <executionDuration>09.32.59</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\E\PCT_RESULTS_DRIVER_E\Eng Serv W1 ePTC\3G_S4_Singlebox_Overnight\2015-05-29_16.57.03\42C_20150520_ThreeGFdd_3G_S4_Singlebox_Overnight_2015-05-29_16.57.03.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>258</totalNumOfTests>
+        <numOfTestsRun>258</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>243</totalNumOfPasses>
+        <totalNumOfFailures>14</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="8" type="3G">
+    <name>3G_S4_Singlebox_Overnight</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-05-30_02.30.09</startTime>
+      <executionDuration>09.25.17</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\E\PCT_RESULTS_DRIVER_E\Eng Serv W1 ePTC\3G_S4_Singlebox_Overnight\2015-05-30_02.30.04\42C_20150520_ThreeGFdd_3G_S4_Singlebox_Overnight_2015-05-30_02.30.04.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>258</totalNumOfTests>
+        <numOfTestsRun>258</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>236</totalNumOfPasses>
+        <totalNumOfFailures>22</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="9" type="LTE">
+    <name>S4_LTE_IRAT_1_BOX</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>NotStarted</status>
+      <startTime />
+      <executionDuration />
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="10" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-05-30_02.54.30</startTime>
+      <executionDuration>10.32.53</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\E\PCT_RESULTS_DRIVER_E\Eng Serv W1 ePTC\S4_3G_SingleBox_100\2015-05-30_02.54.47\42C_20150520_ThreeGFdd_S4_3G_SingleBox_100_2015-05-30_02.54.47.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>100</totalNumOfTests>
+        <numOfTestsRun>100</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>0</totalNumOfPasses>
+        <totalNumOfFailures>98</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="11" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Running</status>
+      <startTime>2015-05-30_13.27.25</startTime>
+      <executionDuration>02.44.53</executionDuration>
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="12" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-05-30_11.55.26</startTime>
+      <executionDuration>03.46.16</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\E\PCT_RESULTS_DRIVER_E\Eng Serv W1 ePTC\S4_3G_SingleBox_100\2015-05-30_11.55.21\42C_20150520_ThreeGFdd_S4_3G_SingleBox_100_2015-05-30_11.55.21.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>100</totalNumOfTests>
+        <numOfTestsRun>100</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>90</totalNumOfPasses>
+        <totalNumOfFailures>8</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="13" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Running</status>
+      <startTime>2015-05-30_15.41.43</startTime>
+      <executionDuration>00.30.35</executionDuration>
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <resultSummary>
+    <currentTestSequence />
+    <totalNumOfTestSequences />
+    <numOfTestSequencesRun />
+    <estimatedTotalRunTime />
+    <catalogVersion>MX785220A_CAG42C_PVG69_D_CIPHER</catalogVersion>
+    <operatorName>blabla</operatorName>
+  </resultSummary>
+</campaign>
+

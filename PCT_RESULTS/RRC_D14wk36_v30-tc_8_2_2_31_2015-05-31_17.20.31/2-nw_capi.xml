@@ -1,0 +1,1681 @@
+<?xml version="1.0"?>
+<!DOCTYPE seqexml>
+<seqexml version="1.0">
+<primitive name='CSS INI REQ' time="00:00:00.000" sap='NW_CPHY_SAP' direction='downlink'>
+<parameter name="Utran Protocol Specification">R9 2011-03</parameter>
+<parameter name="NAS Protocol Specification">R6 2006-06</parameter>
+<element name="Physical Layer Parameters">
+<parameter name="Timing">Output</parameter>
+<parameter name="Clock">Output</parameter>
+<parameter name="ISDN Board">ISDN</parameter>
+</element>
+<element name="Layer 2 Parameters">
+<parameter name="TM bit mode">enabled</parameter>
+</element>
+</primitive><primitive name='CSS INI CNF' time="00:00:00.001" sap='NW_CPHY_SAP' direction='uplink'>
+<parameter name="CAPI Version">2.10E1_CIPHER</parameter>
+<parameter name="Release">D14wk36_v30_A_CIPHER</parameter>
+<element name="MD8480 pool">
+<element name="BTS Group 1">
+<parameter name="Interface Version">24.1</parameter>
+<parameter name="BTS Type">MD8480C</parameter>
+<parameter name="Software">Firmware : V790p1_241a_Cipher</parameter>
+<parameter name="FPGA">FPGA     : V7.90_Cipher</parameter>
+<element name="Hardware Slots">
+<parameter name="0">Slot #1  : Timing Generator</parameter>
+<parameter name="1">Slot #2  : BTS (with HSDPA/HSUPA)</parameter>
+<parameter name="2">Slot #3  : BTS (with HSDPA/HSUPA)</parameter>
+<parameter name="3">Slot #4  : -----</parameter>
+<parameter name="4">Slot #5  : -----</parameter>
+<parameter name="5">Slot #6  : BTS (with HSDPA/HSUPA)</parameter>
+<parameter name="6">Slot #7  : BTS (with HSDPA/HSUPA)</parameter>
+<parameter name="7">Slot #8  : TDMA2 (with EGPRS(R99))V7.90_Cipher</parameter>
+<parameter name="8">Slot #9  : -----</parameter>
+<parameter name="9">Slot #10 : L2</parameter>
+<parameter name="10">Slot #11 : -----</parameter>
+<parameter name="11">Slot #12 : ISDN V7.90</parameter>
+<parameter name="12">Slot #13 : -----</parameter>
+<parameter name="13">Slot #14 : -----</parameter>
+<parameter name="14">Slot #15 : Voice Coder</parameter>
+<parameter name="15">Slot #16 : CPU</parameter>
+</element>
+<element name="Options">
+<parameter name="0">Support Service with HSDPA/HSUPA(Expiration date:2015- 3)</parameter>
+<parameter name="1">Tx Diversity</parameter>
+<parameter name="2">Compressed Mode</parameter>
+<parameter name="3">Ciphering</parameter>
+<parameter name="4">Router Connection</parameter>
+<parameter name="5">GSM CSD</parameter>
+<parameter name="6">GSM/GPRS Frequency Hopping</parameter>
+<parameter name="7">GSM/GPRS Ciphering</parameter>
+<parameter name="8">W-CDMA CSD</parameter>
+<parameter name="9">HSDPA TxDiversity</parameter>
+<parameter name="10">HSDPA Ciphering</parameter>
+<parameter name="11">DTM(R99)</parameter>
+<parameter name="12">Message Encoder/Decoder</parameter>
+<parameter name="13">Multimedia Interface Software</parameter>
+<parameter name="14">AMR-WB(Multimedia Interface Software)</parameter>
+<parameter name="15">HSPA Evolution (Release7)</parameter>
+</element>
+<element name="Physical Layer Parameters">
+<parameter name="Timing">Output</parameter>
+<parameter name="Clock">Output</parameter>
+<parameter name="ISDN Board">ISDN</parameter>
+</element>
+</element>
+</element></primitive><primitive name='CPHY BTS Configuration REQ' time="00:00:11.790" CFN="157" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1'>
+<element name="Configuration Parameters">
+<parameter name="Power Mode">Normal Power Mode</parameter>
+<parameter name="RF Connector">Main</parameter>
+<parameter name="Baseband Adder">Off</parameter>
+<parameter name="LVDS">Off</parameter>
+<parameter name="Timing">0</parameter>
+<parameter name="Delta Frequency">0</parameter>
+<parameter name="Delta Phase">0</parameter>
+<element name="Downlink Parameters">
+<parameter name="Frequency">2140000000</parameter>
+</element>
+<element name="Uplink Parameters">
+<parameter name="Frequency">1950000000</parameter>
+</element>
+<element name="Tx Parameters">
+<parameter name="Baseband Connector">Analogue</parameter>
+<parameter name="Baseband Delay">Not Used</parameter>
+<element name="CCH Parameters">
+<parameter name="Coder">Tx Coder1 #1</parameter>
+<parameter name="Baseband">Tx Baseband1</parameter>
+<parameter name="RF">Tx RF #1</parameter>
+</element>
+<element name="DCH Parameters">
+<parameter name="Coder">Tx Coder1 #2</parameter>
+<parameter name="Baseband">Tx Baseband1</parameter>
+<parameter name="RF">Tx RF #1</parameter>
+</element>
+</element>
+<element name="Rx Parameters">
+<parameter name="Baseband Connector">RF</parameter>
+<parameter name="RxMode">Simultaneous PRACH/UL_DPCH</parameter>
+<element name="CCH Parameters">
+<parameter name="Coder">Rx Decoder1 #1</parameter>
+<parameter name="Baseband">Rx Baseband1</parameter>
+<parameter name="RF">Rx RF #1</parameter>
+</element>
+<element name="DCH Parameters">
+<parameter name="Coder">Rx Decoder1 #2</parameter>
+<parameter name="Baseband">Rx Baseband1</parameter>
+<parameter name="RF">Rx RF #1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY BTS Configuration CNF' time="00:00:11.820" CFN="160" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1'>
+</primitive><primitive name='CPHY BTS Attenuation REQ' time="00:00:11.970" CFN="175" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1'>
+<element name="Configuration Parameters">
+<parameter name="Tx Attenuation In dB">18.4</parameter>
+<parameter name="Rx Reference Power In dBm">-31.6</parameter>
+</element>
+</primitive><primitive name='CPHY BTS Attenuation CNF' time="00:00:11.970" CFN="175" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1'>
+</primitive><primitive name='CPHY BTS Configuration REQ' time="00:00:12.000" CFN="178" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:2'>
+<element name="Configuration Parameters">
+<parameter name="Power Mode">Normal Power Mode</parameter>
+<parameter name="RF Connector">Main</parameter>
+<parameter name="Baseband Adder">On</parameter>
+<parameter name="LVDS">Off</parameter>
+<parameter name="Timing">1024</parameter>
+<parameter name="Delta Frequency">0</parameter>
+<parameter name="Delta Phase">0</parameter>
+<element name="Downlink Parameters">
+<parameter name="Frequency">2140000000</parameter>
+</element>
+<element name="Uplink Parameters">
+<parameter name="Frequency">1950000000</parameter>
+</element>
+<element name="Tx Parameters">
+<parameter name="Baseband Connector">Analogue</parameter>
+<parameter name="Baseband Delay">Not Used</parameter>
+<element name="CCH Parameters">
+<parameter name="Coder">Tx Coder2 #1</parameter>
+<parameter name="Baseband">Tx Baseband2</parameter>
+<parameter name="RF">Tx RF #2</parameter>
+</element>
+<element name="DCH Parameters">
+<parameter name="Coder">Tx Coder1 #2</parameter>
+<parameter name="Baseband">Tx Baseband2</parameter>
+<parameter name="RF">Tx RF #2</parameter>
+</element>
+</element>
+<element name="Rx Parameters">
+<parameter name="Baseband Connector">RF</parameter>
+<parameter name="RxMode">Simultaneous PRACH/UL_DPCH</parameter>
+<element name="CCH Parameters">
+<parameter name="Coder">Rx Decoder1 #1</parameter>
+<parameter name="Baseband">Rx Baseband2</parameter>
+<parameter name="RF">Rx RF #2</parameter>
+</element>
+<element name="DCH Parameters">
+<parameter name="Coder">Rx Decoder1 #2</parameter>
+<parameter name="Baseband">Rx Baseband2</parameter>
+<parameter name="RF">Rx RF #2</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY BTS Configuration CNF' time="00:00:12.030" CFN="181" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:2'>
+</primitive><primitive name='CPHY BTS Attenuation REQ' time="00:00:12.050" CFN="183" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:2'>
+<element name="Configuration Parameters">
+<parameter name="Tx Attenuation In dB">18.4</parameter>
+<parameter name="Rx Reference Power In dBm">-31.6</parameter>
+</element>
+</primitive><primitive name='CPHY BTS Attenuation CNF' time="00:00:12.050" CFN="183" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:2'>
+</primitive><primitive name='CPHY BTS Frequency REQ' time="00:00:12.070" CFN="185" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1'>
+<element name="Configuration Parameters">
+<parameter name="Down Link Frequency">2140000000</parameter>
+<parameter name="Up Link Frequency">1950000000</parameter>
+</element>
+</primitive><primitive name='CPHY BTS Frequency CNF' time="00:00:12.070" CFN="185" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1'>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.080" CFN="186" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='P_CPICH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">15k</parameter>
+<parameter name="Channelization Code">0</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-20</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="NumOfDpdch">0</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.090" CFN="187" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='P_SCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-25</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="NumOfDpdch">0</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.100" CFN="188" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='S_SCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-25</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="NumOfDpdch">0</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.110" CFN="189" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="SFN Offset">6</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">15k</parameter>
+<parameter name="Channelization Code">1</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-22</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="NumOfDpdch">1</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.110" CFN="189" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='P_CPICH' channel_number='0'>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.120" CFN="190" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='P_SCH' channel_number='0'>
+</primitive><primitive name='CPHY Transport Channel Configuration REQ' time="00:00:12.130" CFN="191" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="DTX Position">Flexible</parameter>
+<parameter name="Second Interleave">On</parameter>
+<parameter name="Puncture Limit">0</parameter>
+<parameter name="CCTrCH Length">270</parameter>
+<parameter name="Number Of Transport Channels">1</parameter>
+<element name="Transport Channels">
+<element name="Item Number 0">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">BCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">20</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">1</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">0</parameter>
+<parameter name="Transport Block Size In Bits">0</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">246</parameter>
+</element>
+</element>
+</element>
+<parameter name="RM Maximum Length">540</parameter>
+</element>
+</element>
+<element name="Transport Format Combination Set">
+<parameter name="Number Of Transport Format Combinations">2</parameter>
+<element name="Transport Format Combinations 0">
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 1">
+<parameter name="Transport Format">1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.130" CFN="191" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='S_SCH' channel_number='0'>
+</primitive><primitive name='CMAC Configuration REQ' time="00:00:12.140" CFN="192" sap='NW_CMAC_SAP' direction='downlink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Number Of Transport Channels">1</parameter>
+<element name="Transport Channels">
+<element name="Item Number 0">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">BCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">20</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">1</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">0</parameter>
+<parameter name="Transport Block Size In Bits">0</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">246</parameter>
+</element>
+</element>
+</element>
+<parameter name="Number Of Logical Channels">1</parameter>
+<element name="Logical Channels">
+<element name="Item Number 0">
+<element name="Logical Channel">
+<parameter name="Name">BCCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="Priority">1</parameter>
+<parameter name="CT Length">0</parameter>
+<parameter name="CT Value">0</parameter>
+<parameter name="TCTF Length">0</parameter>
+<parameter name="TCTF Value">0</parameter>
+<parameter name="UE ID Type">Not used</parameter>
+<parameter name="UE ID">0</parameter>
+</element>
+</element>
+</element>
+</element>
+<parameter name="Active Flag">1</parameter>
+<element name="Transport Format Combination Set">
+<parameter name="Number Of Transport Format Combinations">2</parameter>
+<element name="Transport Format Combinations 0">
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 1">
+<parameter name="Transport Format">1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.140" CFN="192" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.150" CFN="193" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='S_CCPCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">60k</parameter>
+<parameter name="Channelization Code">1</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-22</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="Slot Format">8</parameter>
+<parameter name="NumOfDpdch">1</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CMAC Configuration CNF' time="00:00:12.150" CFN="193" sap='NW_CMAC_SAP' direction='uplink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+</primitive><primitive name='CPHY Transport Channel Configuration CNF' time="00:00:12.160" CFN="194" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='P_CCPCH' channel_number='0'>
+</primitive><primitive name='CPHY Transport Channel Configuration REQ' time="00:00:12.170" CFN="195" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='S_CCPCH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="DTX Position">Flexible</parameter>
+<parameter name="Second Interleave">On</parameter>
+<parameter name="Puncture Limit">100</parameter>
+<parameter name="CCTrCH Length">1080</parameter>
+<parameter name="Number Of Transport Channels">3</parameter>
+<element name="Transport Channels">
+<element name="Item Number 0">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">PCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">10</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">230</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">0</parameter>
+<parameter name="Transport Block Size In Bits">240</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">240</parameter>
+</element>
+</element>
+</element>
+<parameter name="RM Maximum Length">457</parameter>
+</element>
+<element name="Item Number 1">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">FACH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">10</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">220</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">3</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">0</parameter>
+<parameter name="Transport Block Size In Bits">168</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">168</parameter>
+</element>
+<element name="Transport Format 2">
+<parameter name="Number Of Transport Blocks">2</parameter>
+<parameter name="Transport Block Size In Bits">168</parameter>
+</element>
+</element>
+</element>
+<parameter name="RM Maximum Length">623</parameter>
+</element>
+<element name="Item Number 2">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">FACH</parameter>
+<parameter name="Identity">1</parameter>
+</element>
+<parameter name="TTI (ms)">10</parameter>
+<parameter name="EP Type">Turbo Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">130</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">0</parameter>
+<parameter name="Transport Block Size In Bits">360</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">360</parameter>
+</element>
+</element>
+</element>
+<parameter name="RM Maximum Length">558</parameter>
+</element>
+</element>
+<element name="Transport Format Combination Set">
+<parameter name="Number Of Transport Format Combinations">8</parameter>
+<element name="Transport Format Combinations 0">
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 1">
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 2">
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 3">
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 4">
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">2</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 5">
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">2</parameter>
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 6">
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">1</parameter>
+</element>
+<element name="Transport Format Combinations 7">
+<parameter name="Transport Format">0</parameter>
+<parameter name="Transport Format">1</parameter>
+<parameter name="Transport Format">1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.180" CFN="196" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='S_CCPCH' channel_number='0'>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.190" CFN="197" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='PICH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">0</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">15k</parameter>
+<parameter name="Channelization Code">2</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-25</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="NumOfDpdch">0</parameter>
+<parameter name="Np">18</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.200" CFN="198" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='AICH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">7680</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">15k</parameter>
+<parameter name="Channelization Code">3</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Power in dBm">-25</parameter>
+<parameter name="Tx Diversity">Off</parameter>
+<parameter name="AICH Transmission Timing">3 Access Slots</parameter>
+<parameter name="AICH Polarity">Positive</parameter>
+<parameter name="E-AICH Configured">No</parameter>
+<parameter name="Maximum E-DCH Channels">0</parameter>
+<parameter name="E-DCH Resource Index">0</parameter>
+<parameter name="E-AICH Power">0</parameter>
+<parameter name="NumOfDpdch">0</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Transport Channel Configuration CNF' time="00:00:12.200" CFN="198" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='S_CCPCH' channel_number='0'>
+</primitive><primitive name='CPHY Radio Link Setup REQ' time="00:00:12.220" CFN="200" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Channel Offset">10240</parameter>
+<parameter name="Scrambling Code">1600</parameter>
+<parameter name="Symbol Rate">60k</parameter>
+<parameter name="Channelization Code">128</parameter>
+<parameter name="Adjust Time">0</parameter>
+<parameter name="Slot Format">2</parameter>
+<parameter name="AICH Transmission Timing">3 Access Slots</parameter>
+<parameter name="Receivable PRACH Preambles in Enhanced Cell-FACH Uplink">0000000000000000</parameter>
+<parameter name="pRACH_MeasurementInd">stopMeas</parameter>
+<parameter name="Radio Link Setup Flag">All</parameter>
+<element name="Compressed Mode Gap Information">
+<parameter name="TGPSI">0</parameter>
+<parameter name="Method">None</parameter>
+<parameter name="Frame Type">(0)</parameter>
+<parameter name="Delta SIR1 (dB)">0</parameter>
+<parameter name="Delta SIRafter1 (dB)">0</parameter>
+<parameter name="Delta SIR2 (dB)">0</parameter>
+<parameter name="Delta SIRafter2 (dB)">0</parameter>
+<parameter name="TGCFN">0</parameter>
+<parameter name="TGPRC">0</parameter>
+<parameter name="TGSN">0</parameter>
+<parameter name="TGL1">0</parameter>
+<parameter name="TGL2">0</parameter>
+<parameter name="TGD">0</parameter>
+<parameter name="TGPL1">0</parameter>
+<parameter name="TGPL2">0</parameter>
+<parameter name="TGPS Reconfig CFN">0</parameter>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.220" CFN="200" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='PICH' channel_number='0'>
+</primitive><primitive name='CPHY Transport Channel Configuration REQ' time="00:00:12.230" CFN="201" sap='NW_CPHY_SAP' direction='downlink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="DTX Position">Flexible</parameter>
+<parameter name="Second Interleave">On</parameter>
+<parameter name="Puncture Limit">100</parameter>
+<parameter name="CCTrCH Length">600</parameter>
+<parameter name="Number Of Transport Channels">1</parameter>
+<element name="Transport Channels">
+<element name="Item Number 0">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">RACH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">20</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">150</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">168</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">360</parameter>
+</element>
+</element>
+</element>
+<parameter name="RM Maximum Length">600</parameter>
+</element>
+</element>
+<element name="Transport Format Combination Set">
+<parameter name="Number Of Transport Format Combinations">2</parameter>
+<element name="Transport Format Combinations 0">
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 1">
+<parameter name="Transport Format">1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.230" CFN="201" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='AICH' channel_number='0'>
+</primitive><primitive name='CMAC Configuration REQ' time="00:00:12.250" CFN="203" sap='NW_CMAC_SAP' direction='downlink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+<element name="Configuration Parameters">
+<parameter name="Number Of Transport Channels">1</parameter>
+<element name="Transport Channels">
+<element name="Item Number 0">
+<element name="Transport Channel Parameters">
+<element name="Transport Channel">
+<parameter name="Name">RACH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="TTI (ms)">20</parameter>
+<parameter name="EP Type">1/2 Rate Convolutional Coding</parameter>
+<parameter name="CRC Size">16</parameter>
+<parameter name="RM Attribute">150</parameter>
+<parameter name="First Interleave">On</parameter>
+<parameter name="Number Of Transport Formats">2</parameter>
+<element name="Transport Format Set">
+<element name="Transport Format 0">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">168</parameter>
+</element>
+<element name="Transport Format 1">
+<parameter name="Number Of Transport Blocks">1</parameter>
+<parameter name="Transport Block Size In Bits">360</parameter>
+</element>
+</element>
+</element>
+<parameter name="Number Of Logical Channels">6</parameter>
+<element name="Logical Channels">
+<element name="Item Number 0">
+<element name="Logical Channel">
+<parameter name="Name">CCCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">0</parameter>
+<parameter name="CT Value">0</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">0</parameter>
+<parameter name="UE ID Type">Not used</parameter>
+<parameter name="UE ID">0</parameter>
+</element>
+<element name="Item Number 1">
+<element name="Logical Channel">
+<parameter name="Name">DCCH</parameter>
+<parameter name="Identity">1</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">4</parameter>
+<parameter name="CT Value">0</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">1</parameter>
+<parameter name="UE ID Type">C RNTI</parameter>
+<parameter name="UE ID">1</parameter>
+</element>
+<element name="Item Number 2">
+<element name="Logical Channel">
+<parameter name="Name">DCCH</parameter>
+<parameter name="Identity">2</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">4</parameter>
+<parameter name="CT Value">1</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">1</parameter>
+<parameter name="UE ID Type">C RNTI</parameter>
+<parameter name="UE ID">1</parameter>
+</element>
+<element name="Item Number 3">
+<element name="Logical Channel">
+<parameter name="Name">DCCH</parameter>
+<parameter name="Identity">3</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">4</parameter>
+<parameter name="CT Value">2</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">1</parameter>
+<parameter name="UE ID Type">C RNTI</parameter>
+<parameter name="UE ID">1</parameter>
+</element>
+<element name="Item Number 4">
+<element name="Logical Channel">
+<parameter name="Name">DCCH</parameter>
+<parameter name="Identity">4</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">4</parameter>
+<parameter name="CT Value">3</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">1</parameter>
+<parameter name="UE ID Type">C RNTI</parameter>
+<parameter name="UE ID">1</parameter>
+</element>
+<element name="Item Number 5">
+<element name="Logical Channel">
+<parameter name="Name">U_DTCH</parameter>
+<parameter name="Identity">0</parameter>
+</element>
+<parameter name="Priority">0</parameter>
+<parameter name="CT Length">4</parameter>
+<parameter name="CT Value">6</parameter>
+<parameter name="TCTF Length">2</parameter>
+<parameter name="TCTF Value">1</parameter>
+<parameter name="UE ID Type">C RNTI</parameter>
+<parameter name="UE ID">1</parameter>
+</element>
+</element>
+</element>
+</element>
+<parameter name="Active Flag">1</parameter>
+<element name="Transport Format Combination Set">
+<parameter name="Number Of Transport Format Combinations">2</parameter>
+<element name="Transport Format Combinations 0">
+<parameter name="Transport Format">0</parameter>
+</element>
+<element name="Transport Format Combinations 1">
+<parameter name="Transport Format">1</parameter>
+</element>
+</element>
+</element>
+</primitive><primitive name='CPHY Radio Link Setup CNF' time="00:00:12.250" CFN="203" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+</primitive><primitive name='CRLC TM Channel Establish REQ' time="00:00:12.260" CFN="204" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">BCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="tmMode" type="A_RlcTmModeConfigParams"><INTEGER name="puSizeInBits">246</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">notConfigured</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<BOOLEAN name="segmentationIndication">false</BOOLEAN>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CMAC Configuration CNF' time="00:00:12.260" CFN="204" sap='NW_CMAC_SAP' direction='uplink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+</primitive><primitive name='CRLC TM Channel Establish CNF' time="00:00:12.260" CFN="204" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">BCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC TM Channel Establish REQ' time="00:00:12.270" CFN="205" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='PCCH' channel_number='0' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">PCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="tmMode" type="A_RlcTmModeConfigParams"><INTEGER name="puSizeInBits">240</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">notConfigured</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<BOOLEAN name="segmentationIndication">false</BOOLEAN>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CPHY Transport Channel Configuration CNF' time="00:00:12.270" CFN="205" sap='NW_CPHY_SAP' direction='uplink' bts_unit='1:1' channel_name='PRACH' channel_number='0'>
+</primitive><primitive name='CRLC TM Channel Establish CNF' time="00:00:12.270" CFN="205" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='PCCH' channel_number='0'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">PCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC UM Channel Establish REQ' time="00:00:12.280" CFN="206" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='CCCH' channel_number='1' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">CCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="umMode" type="A_RlcUmModeConfigParams"><INTEGER name="puSizeInBits">152</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">timerBasedNoExplicit</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<ENUMERATED name="dlUmRlcLiSize" type="DlUmRlcLiSize">size7</ENUMERATED>
+<INTEGER name="rxWindowSize" nonValue="Omit"></INTEGER>
+<BOOLEAN name="dlAlternativeEbit">false</BOOLEAN>
+<BOOLEAN name="ulAlternativeEbit">false</BOOLEAN>
+<SEQUENCE name="flexiblePduParams" type="A_RlcUmFlexiblePduParams"><ENUMERATED name="downlinkStatus" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="uplinkStatus" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<NULL name="enableVariableSizePdu" nonValue="Omit"></NULL>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC UM Channel Establish CNF' time="00:00:12.280" CFN="206" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='CCCH' channel_number='1'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">CCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC TM Channel Establish REQ' time="00:00:12.490" CFN="227" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='CCCH' channel_number='0' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">CCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="tmMode" type="A_RlcTmModeConfigParams"><INTEGER name="puSizeInBits">166</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">notConfigured</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<BOOLEAN name="segmentationIndication">false</BOOLEAN>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC TM Channel Establish CNF' time="00:00:12.490" CFN="227" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='CCCH' channel_number='0'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">CCCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC UM Channel Establish REQ' time="00:00:12.500" CFN="228" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='DCCH' channel_number='1' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="umMode" type="A_RlcUmModeConfigParams"><INTEGER name="puSizeInBits">136</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">timerBasedNoExplicit</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<ENUMERATED name="dlUmRlcLiSize" type="DlUmRlcLiSize">size7</ENUMERATED>
+<INTEGER name="rxWindowSize" nonValue="Omit"></INTEGER>
+<BOOLEAN name="dlAlternativeEbit">false</BOOLEAN>
+<BOOLEAN name="ulAlternativeEbit">false</BOOLEAN>
+<SEQUENCE name="flexiblePduParams" type="A_RlcUmFlexiblePduParams"><ENUMERATED name="downlinkStatus" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="uplinkStatus" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<NULL name="enableVariableSizePdu" nonValue="Omit"></NULL>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC UM Channel Establish CNF' time="00:00:12.500" CFN="228" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='DCCH' channel_number='1'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish REQ' time="00:00:12.510" CFN="229" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='DCCH' channel_number='2' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">2</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="amMode" type="A_RlcAmModeConfigParams"><INTEGER name="puSizeInBits">128</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardAm">notConfigured</ENUMERATED>
+<SEQUENCE name="protocolParams" type="A_RlcAmProtocolParameters"><BOOLEAN name="inSequnceDelivery" nonValue="Omit"></BOOLEAN>
+<INTEGER name="txWindowSize">32</INTEGER>
+<INTEGER name="rxWindowSize">32</INTEGER>
+<INTEGER name="pollWindow">99</INTEGER>
+<INTEGER name="pollPu">0</INTEGER>
+<INTEGER name="pollSdu">1</INTEGER>
+<INTEGER name="maxDat">15</INTEGER>
+<INTEGER name="maxRst">1</INTEGER>
+<INTEGER name="maxMrw">0</INTEGER>
+</SEQUENCE>
+<SEQUENCE name="timerParams" type="A_RlcAmTimerParameters"><INTEGER name="timerPoll">200</INTEGER>
+<INTEGER name="timerPollProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerEpc" nonValue="Omit"></INTEGER>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<INTEGER name="timerPollPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerRst">500</INTEGER>
+<INTEGER name="timerMrw" nonValue="Omit"></INTEGER>
+</SEQUENCE>
+<SEQUENCE name="pollingTriggers" type="PollingTriggers"><BOOLEAN name="lastPduInBuffer">true</BOOLEAN>
+<BOOLEAN name="lastPduInRetransmissionBuffer">true</BOOLEAN>
+<BOOLEAN name="pollTimer">true</BOOLEAN>
+<BOOLEAN name="every_PollPdu_Pdu">false</BOOLEAN>
+<BOOLEAN name="every_PollSdu_Sdu">true</BOOLEAN>
+<BOOLEAN name="windowBased">true</BOOLEAN>
+<BOOLEAN name="timerBased">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="statusTriggers" type="StatusTriggers"><BOOLEAN name="detectionOfMissingPdus">true</BOOLEAN>
+<BOOLEAN name="timerBasedStatusTransfer">false</BOOLEAN>
+<BOOLEAN name="theEpcMechanism">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="downlinkFlexiblePduParams" type="A_RlcAmDownlinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="uplinkFlexiblePduParams" type="A_RlcAmUplinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="specialHeValue" type="A_RlcAmSpecialHeValue"><ENUMERATED name="uplink" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="downlink" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<ENUMERATED name="statusPduFormat" type="A_RlcStatusPduFormat">list</ENUMERATED>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish CNF' time="00:00:12.510" CFN="229" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='DCCH' channel_number='2'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">2</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish REQ' time="00:00:12.520" CFN="230" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='DCCH' channel_number='3' Owner='NAS'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">3</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Nas</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="amMode" type="A_RlcAmModeConfigParams"><INTEGER name="puSizeInBits">128</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardAm">notConfigured</ENUMERATED>
+<SEQUENCE name="protocolParams" type="A_RlcAmProtocolParameters"><BOOLEAN name="inSequnceDelivery" nonValue="Omit"></BOOLEAN>
+<INTEGER name="txWindowSize">32</INTEGER>
+<INTEGER name="rxWindowSize">32</INTEGER>
+<INTEGER name="pollWindow">99</INTEGER>
+<INTEGER name="pollPu">0</INTEGER>
+<INTEGER name="pollSdu">1</INTEGER>
+<INTEGER name="maxDat">15</INTEGER>
+<INTEGER name="maxRst">1</INTEGER>
+<INTEGER name="maxMrw">0</INTEGER>
+</SEQUENCE>
+<SEQUENCE name="timerParams" type="A_RlcAmTimerParameters"><INTEGER name="timerPoll">200</INTEGER>
+<INTEGER name="timerPollProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerEpc" nonValue="Omit"></INTEGER>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<INTEGER name="timerPollPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerRst">500</INTEGER>
+<INTEGER name="timerMrw" nonValue="Omit"></INTEGER>
+</SEQUENCE>
+<SEQUENCE name="pollingTriggers" type="PollingTriggers"><BOOLEAN name="lastPduInBuffer">true</BOOLEAN>
+<BOOLEAN name="lastPduInRetransmissionBuffer">true</BOOLEAN>
+<BOOLEAN name="pollTimer">true</BOOLEAN>
+<BOOLEAN name="every_PollPdu_Pdu">false</BOOLEAN>
+<BOOLEAN name="every_PollSdu_Sdu">true</BOOLEAN>
+<BOOLEAN name="windowBased">true</BOOLEAN>
+<BOOLEAN name="timerBased">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="statusTriggers" type="StatusTriggers"><BOOLEAN name="detectionOfMissingPdus">true</BOOLEAN>
+<BOOLEAN name="timerBasedStatusTransfer">false</BOOLEAN>
+<BOOLEAN name="theEpcMechanism">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="downlinkFlexiblePduParams" type="A_RlcAmDownlinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="uplinkFlexiblePduParams" type="A_RlcAmUplinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="specialHeValue" type="A_RlcAmSpecialHeValue"><ENUMERATED name="uplink" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="downlink" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<ENUMERATED name="statusPduFormat" type="A_RlcStatusPduFormat">list</ENUMERATED>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish CNF' time="00:00:12.520" CFN="230" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='DCCH' channel_number='3'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">3</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish REQ' time="00:00:12.530" CFN="231" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='DCCH' channel_number='4' Owner='NAS'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">4</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Nas</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="amMode" type="A_RlcAmModeConfigParams"><INTEGER name="puSizeInBits">128</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardAm">notConfigured</ENUMERATED>
+<SEQUENCE name="protocolParams" type="A_RlcAmProtocolParameters"><BOOLEAN name="inSequnceDelivery" nonValue="Omit"></BOOLEAN>
+<INTEGER name="txWindowSize">32</INTEGER>
+<INTEGER name="rxWindowSize">32</INTEGER>
+<INTEGER name="pollWindow">99</INTEGER>
+<INTEGER name="pollPu">0</INTEGER>
+<INTEGER name="pollSdu">1</INTEGER>
+<INTEGER name="maxDat">15</INTEGER>
+<INTEGER name="maxRst">1</INTEGER>
+<INTEGER name="maxMrw">0</INTEGER>
+</SEQUENCE>
+<SEQUENCE name="timerParams" type="A_RlcAmTimerParameters"><INTEGER name="timerPoll">200</INTEGER>
+<INTEGER name="timerPollProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerEpc" nonValue="Omit"></INTEGER>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<INTEGER name="timerPollPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerRst">500</INTEGER>
+<INTEGER name="timerMrw" nonValue="Omit"></INTEGER>
+</SEQUENCE>
+<SEQUENCE name="pollingTriggers" type="PollingTriggers"><BOOLEAN name="lastPduInBuffer">true</BOOLEAN>
+<BOOLEAN name="lastPduInRetransmissionBuffer">true</BOOLEAN>
+<BOOLEAN name="pollTimer">true</BOOLEAN>
+<BOOLEAN name="every_PollPdu_Pdu">false</BOOLEAN>
+<BOOLEAN name="every_PollSdu_Sdu">true</BOOLEAN>
+<BOOLEAN name="windowBased">true</BOOLEAN>
+<BOOLEAN name="timerBased">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="statusTriggers" type="StatusTriggers"><BOOLEAN name="detectionOfMissingPdus">true</BOOLEAN>
+<BOOLEAN name="timerBasedStatusTransfer">false</BOOLEAN>
+<BOOLEAN name="theEpcMechanism">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="downlinkFlexiblePduParams" type="A_RlcAmDownlinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="uplinkFlexiblePduParams" type="A_RlcAmUplinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="specialHeValue" type="A_RlcAmSpecialHeValue"><ENUMERATED name="uplink" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="downlink" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<ENUMERATED name="statusPduFormat" type="A_RlcStatusPduFormat">list</ENUMERATED>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish CNF' time="00:00:12.530" CFN="231" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='DCCH' channel_number='4'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DCCH</IA5_STRING>
+<INTEGER name="channelNumber">4</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC TM Channel Establish REQ' time="00:00:12.540" CFN="232" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='1' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">BCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="tmMode" type="A_RlcTmModeConfigParams"><INTEGER name="puSizeInBits">166</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardUmTm">notConfigured</ENUMERATED>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<BOOLEAN name="segmentationIndication">false</BOOLEAN>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC TM Channel Establish CNF' time="00:00:12.540" CFN="232" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='BCCH' channel_number='1'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">BCCH</IA5_STRING>
+<INTEGER name="channelNumber">1</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish REQ' time="00:00:12.560" CFN="234" sap='NW_CRLC_SAP' direction='downlink' bts_unit='1:1' channel_name='D_DTCH' channel_number='0' Owner='MMI'>
+<SEQUENCE type="A_CRLC_Config_REQ"><SEQUENCE name="routingInfo" type="A_RlcRoutingInfo"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DTCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+<INTEGER name="radioBearerId" nonValue="Omit"></INTEGER>
+<ENUMERATED name="cnDomainId" type="CN_DomainIdentity">cs_domain_CN_DomainIdentity</ENUMERATED>
+<ENUMERATED name="owner" type="RlcOwner">RlcOwner_Rrc</ENUMERATED>
+</SEQUENCE>
+<SEQUENCE name="rlcConfigInfo" type="A_RlcConfigInfo"><BOOLEAN name="isReconfiguration">false</BOOLEAN>
+<ENUMERATED name="rlcDirection" type="RadioBearerDirection">RadioBearerDirectionUpAndDownLink</ENUMERATED>
+<NULL name="asymmetricReestablishment" nonValue="Omit"></NULL>
+<INTEGER name="ulPuSizeInBits" nonValue="Omit"></INTEGER>
+<CHOICE name="rlcModeParams" type="A_RlcModeConfigParams"><SEQUENCE name="amMode" type="A_RlcAmModeConfigParams"><INTEGER name="puSizeInBits">320</INTEGER>
+<ENUMERATED name="transmissionRlcDiscard" type="TransmissionRlcDiscardAm">notConfigured</ENUMERATED>
+<SEQUENCE name="protocolParams" type="A_RlcAmProtocolParameters"><BOOLEAN name="inSequnceDelivery" nonValue="Omit"></BOOLEAN>
+<INTEGER name="txWindowSize">128</INTEGER>
+<INTEGER name="rxWindowSize">128</INTEGER>
+<INTEGER name="pollWindow">99</INTEGER>
+<INTEGER name="pollPu">0</INTEGER>
+<INTEGER name="pollSdu">1</INTEGER>
+<INTEGER name="maxDat">15</INTEGER>
+<INTEGER name="maxRst">4</INTEGER>
+<INTEGER name="maxMrw">0</INTEGER>
+</SEQUENCE>
+<SEQUENCE name="timerParams" type="A_RlcAmTimerParameters"><INTEGER name="timerPoll">200</INTEGER>
+<INTEGER name="timerPollProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerEpc" nonValue="Omit"></INTEGER>
+<INTEGER name="timerDiscard" nonValue="Omit"></INTEGER>
+<INTEGER name="timerPollPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusProhibit" nonValue="Omit"></INTEGER>
+<INTEGER name="timerStatusPeriodic" nonValue="Omit"></INTEGER>
+<INTEGER name="timerRst">500</INTEGER>
+<INTEGER name="timerMrw" nonValue="Omit"></INTEGER>
+</SEQUENCE>
+<SEQUENCE name="pollingTriggers" type="PollingTriggers"><BOOLEAN name="lastPduInBuffer">true</BOOLEAN>
+<BOOLEAN name="lastPduInRetransmissionBuffer">true</BOOLEAN>
+<BOOLEAN name="pollTimer">true</BOOLEAN>
+<BOOLEAN name="every_PollPdu_Pdu">false</BOOLEAN>
+<BOOLEAN name="every_PollSdu_Sdu">true</BOOLEAN>
+<BOOLEAN name="windowBased">true</BOOLEAN>
+<BOOLEAN name="timerBased">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="statusTriggers" type="StatusTriggers"><BOOLEAN name="detectionOfMissingPdus">true</BOOLEAN>
+<BOOLEAN name="timerBasedStatusTransfer">false</BOOLEAN>
+<BOOLEAN name="theEpcMechanism">false</BOOLEAN>
+</SEQUENCE>
+<SEQUENCE name="downlinkFlexiblePduParams" type="A_RlcAmDownlinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="uplinkFlexiblePduParams" type="A_RlcAmUplinkFlexiblePduParams" nonValue="Omit"></SEQUENCE>
+<SEQUENCE name="specialHeValue" type="A_RlcAmSpecialHeValue"><ENUMERATED name="uplink" type="A_EnableDisable">disable</ENUMERATED>
+<ENUMERATED name="downlink" type="A_EnableDisable">disable</ENUMERATED>
+</SEQUENCE>
+<ENUMERATED name="statusPduFormat" type="A_RlcStatusPduFormat">list</ENUMERATED>
+<SEQUENCE name="rlcCipheringInfo" type="A_RlcCipheringInfo" nonValue="Omit"></SEQUENCE>
+</SEQUENCE>
+</CHOICE>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='CRLC AM Channel Establish CNF' time="00:00:12.560" CFN="234" sap='NW_CRLC_SAP' direction='uplink' bts_unit='1:1' channel_name='D_DTCH' channel_number='0'>
+<SEQUENCE type="A_CRLC_Config_CNF"><SEQUENCE name="routingInfo" type="A_routingInfo2"><INTEGER name="btsUnitId">1</INTEGER>
+<IA5_STRING name="channelName" type="IA5String">DTCH</IA5_STRING>
+<INTEGER name="channelNumber">0</INTEGER>
+</SEQUENCE>
+</SEQUENCE>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:12.580" CFN="236" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:12.600" CFN="238" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">54</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0000000000000000000000000000000000000000000000000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00000000000000000000000000000000000000000000000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:12.810" CFN="3" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">176</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E216DC4000588280211E014001002C74042600002
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:12.820" CFN="4" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">22</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E216DC4000588280211E014001002C7404260000200000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E216DC4000588280211E014001002C74042600002000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:13.010" CFN="23" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">176</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E216DC4000588280211E014001002C74042600002
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:13.020" CFN="24" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">22</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E216DC4000588280211E014001002C7404260000200000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E216DC4000588280211E014001002C74042600002000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:13.210" CFN="43" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">160</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E271002808D7D00000002CC60090411FFFFFC
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:13.220" CFN="44" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">20</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E271002808D7D00000002CC60090411FFFFFC000200000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E271002808D7D00000002CC60090411FFFFFC0002000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:13.410" CFN="63" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">144</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E2710028091380000000598C0120823B8
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:13.420" CFN="64" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">52</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E2710028091380000000598C0120823B8FFFC000200000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E2710028091380000000598C0120823B8FFFC0002000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:13.610" CFN="83" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:13.620" CFN="84" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">46</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00002710028091380000000598C0120823B8FFFC000200000000000000000000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00002710028091380000000598C0120823B8FFFC0002000000000000000000
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:13.810" CFN="103" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">248</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">00025215443E00FF43FFFDD210F0290C0AA558000CC5B57E2BA0FE83FA0FE8
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:13.820" CFN="104" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">38</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00025215443E00FF43FFFDD210F0290C0AA558000CC5B57E2BA0FE83FA0FE800
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00025215443E00FF43FFFDD210F0290C0AA558000CC5B57E2BA0FE83FA0FE8
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:14.010" CFN="123" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">248</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0004500FF40000D63443F4E50610CA030381016080E0088642990A00301114
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:14.020" CFN="124" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">42</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0004500FF40000D63443F4E50610CA030381016080E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0004500FF40000D63443F4E50610CA030381016080E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:14.210" CFN="143" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">168</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">00065181CAD68007886016DB62004308940B680400
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:14.220" CFN="144" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">44</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00065181CAD68007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00065181CAD68007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:14.410" CFN="163" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">48</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E060F0291
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:14.420" CFN="164" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">6</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E060F02918007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E060F02918007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:14.610" CFN="183" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:14.620" CFN="184" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">10</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0000060F02918007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0000060F02918007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:14.810" CFN="203" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:14.820" CFN="204" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">12</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0000060F02918007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0000060F02918007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:15.010" CFN="223" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:15.020" CFN="224" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">14</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0000060F02918007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0000060F02918007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:15.210" CFN="243" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">56</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E0710028080
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:15.220" CFN="244" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">4</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E071002808007886016DB62004308940B680400E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E071002808007886016DB62004308940B680400E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:15.410" CFN="7" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">160</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E271002808D7D00000002CC60090411FFFFFC
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:15.420" CFN="8" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">20</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E271002808D7D00000002CC60090411FFFFFC00E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E271002808D7D00000002CC60090411FFFFFC00E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:15.610" CFN="27" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">72</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E27100280E81600
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:15.620" CFN="28" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">36</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E27100280E81600000002CC60090411FFFFFC00E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E27100280E81600000002CC60090411FFFFFC00E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:15.810" CFN="47" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">144</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E2710028091380000000598C0120823B8
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:15.820" CFN="48" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">52</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E2710028091380000000598C0120823B8FFFC00E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E2710028091380000000598C0120823B8FFFC00E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:16.010" CFN="67" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:16.020" CFN="68" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">62</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00002710028091380000000598C0120823B8FFFC00E0088642990A0030111400
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00002710028091380000000598C0120823B8FFFC00E0088642990A00301114
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:16.210" CFN="87" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">248</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0002B120D912008C842125A88264530590A70B850888C95405414A86128850
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:16.220" CFN="88" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">58</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0002B120D912008C842125A88264530590A70B850888C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0002B120D912008C842125A88264530590A70B850888C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:16.410" CFN="107" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">176</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0006B08F10C2526A8612A2C654AA13E88814B08A1578
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:16.420" CFN="108" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">60</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">0006B08F10C2526A8612A2C654AA13E88814B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">0006B08F10C2526A8612A2C654AA13E88814B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:16.610" CFN="127" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">48</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E0C080000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:16.620" CFN="128" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">26</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E0C080000526A8612A2C654AA13E88814B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E0C080000526A8612A2C654AA13E88814B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:16.800" CFN="146" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:16.820" CFN="148" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">28</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00000C080000526A8612A2C654AA13E88814B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00000C080000526A8612A2C654AA13E88814B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:17.000" CFN="166" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">16</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">0000
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:17.020" CFN="168" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">30</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">00000C080000526A8612A2C654AA13E88814B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">00000C080000526A8612A2C654AA13E88814B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:17.210" CFN="187" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">72</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E27100280E81600
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:17.220" CFN="188" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">64</parameter>
+<parameter name="SIB position">36</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E27100280E8160012A2C654AA13E88814B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E27100280E8160012A2C654AA13E88814B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:17.410" CFN="207" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">136</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E1B6710A88330494E29D005A2372892
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:17.420" CFN="208" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">16</parameter>
+<parameter name="SIB position">2</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E1B6710A88330494E29D005A237289214B08A1578C95405414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E1B6710A88330494E29D005A237289214B08A1578C95405414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='MAC_DATA_REQ' time="00:00:17.610" CFN="227" sap='NW_RLC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCCH' channel_number='0'>
+<parameter name="RLC PDU size (bits)">192</parameter>
+<hexdump format="octetstring" name="RLC PDU (raw)">000E009F00004025AA1100088B0A22C488A1A2688E493110
+</hexdump>
+</primitive><primitive name='PHY_DATA_REQ' time="00:00:17.620" CFN="228" sap='NW_MAC_SAP' direction='downlink' bts_unit='1:1' channel_name='BCH' channel_number='0'>
+<parameter name="SIB repetition period">8</parameter>
+<parameter name="SIB position">0</parameter>
+<parameter name="SIB size">246</parameter>
+<hexdump format="octetstring" name="SIB (raw)">000E009F00004025AA1100088B0A22C488A1A2688E49311005414A8612885000
+</hexdump>
+<element name="SIB (decoded)">
+<element name="TB 0">
+<hexdump format="octetstring" name="MAC SDU (246 bits)">000E009F00004025AA1100088B0A22C488A1A2688E49311005414A86128850
+</hexdump>
+</element>
+</element>
+</primitive><primitive name='CGEN Stop REQ' time="00:05:06.790" sap='NW_CPHY_SAP' direction='downlink'>
+</primitive><primitive name='CGEN Stop CNF' time="00:05:06.790" sap='NW_CPHY_SAP' direction='uplink'>
+</primitive>
+</seqexml>

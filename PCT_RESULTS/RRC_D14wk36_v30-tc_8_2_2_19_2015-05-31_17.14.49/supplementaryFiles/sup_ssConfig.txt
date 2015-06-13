@@ -1,0 +1,6295 @@
+# 1 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[default]
+cellMap = cellABC
+ssConfig = cellABCSho2RF
+dummyChConfig = noPrachSccpch
+TxAttCellOff = 30
+
+
+[tc_multiMd8480]
+cellMap =     cellABCDEFGHI
+
+[tc_6_3_1_2]
+dummyChConfig = noPrachSccpchB
+
+[tc_6_3_2_1]
+cellMap = cellABC
+dummyChConfig = noPrachSccpchB
+
+[tc_6_3_2_2]
+cellMap = cellA1B1D2E2
+dummyChConfig = noPrachSccpchB
+RLCSeqNumCiph = true
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_3_3_1]
+dummyChConfig = noPrachSccpchB
+
+[tc_6_3_3_2]
+cellMap = cellAD
+
+[tc_9_4_2_6]
+cellMap = cellA1B1C1G2
+dummyChConfig = noPrachSccpchB
+
+[tc_12_4_1_4e]
+cellMap = cellA1B1C1D2
+dummyChConfig = noPrachSccpchB
+
+[tc_12_4_2_5e]
+dummyChConfig = noPrachSccpchB
+
+#DCHSDPA
+[tc_8_3_4_15]
+cellMap = cellABC_DC
+dcHsdpaCellConfig = 2
+trDataRestrictR6=true
+hsDpcchChCode=1
+
+#DCHSDPA
+[tc_8_3_4_15a]
+cellMap = cellABC_DC
+dcHsdpaCellConfig = 2
+trDataRestrictR6=true
+hsDpcchChCode=1
+
+#DCHSDPA
+[tc_8_3_4_16]
+cellMap = cellABC_DC
+dcHsdpaCellConfig = 2
+trDataRestrictR6=true
+hsDpcchChCode=1
+dummyChConfig = noPrachSccpch_HSDPA
+
+#DCHSDPA
+[tc_8_3_4_16a]
+cellMap = cellABC_DC
+dcHsdpaCellConfig = 2
+trDataRestrictR6=true
+hsDpcchChCode=1
+dummyChConfig = noPrachSccpch_HSDPA
+
+
+[tc_14_6_1d]
+#MIMO_BASIC=0, MIMO-rel99/64QAM=1, MIMO_MIMO=2
+cellMap = cellAB
+mimoCellConfig = 0
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+hsScchPdschPowerUp = 2
+#cloneChConfig = clone_for_mimo -> This test case does not test diversity
+
+
+[tc_14_6_6c]
+#MIMO_BASIC=0, MIMO-rel99/64QAM=1, MIMO_MIMO=2
+cellMap = cellAB
+mimoCellConfig = 0
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+hsScchPdschPowerUp = 2
+#cloneChConfig = clone_for_mimo
+
+#DCHSDPA
+[tc_14_6_1f]
+cellMap = cellAB_DC
+dcHsdpaCellConfig = 0
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+hsScchPdschPowerUp = 2
+
+
+#DCHSDPA
+[tc_14_6_1g]
+cellMap = cellAB_DC
+dcHsdpaCellConfig = 0
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+hsScchPdschPowerUp = 2
+
+
+[tc_8_1_2_21]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+
+
+[tc_8_1_2_21a]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+
+
+[tc_8_1_2_22]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+
+
+[tc_8_1_2_22a]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+
+
+[tc_14_7_7]
+MacTrchRelBlindCnf = true
+subTestUlDataSize = 80,96,128,144,160,176,192,208,272,280,296,320
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = -25
+deltaRxLevel = -25
+
+
+[tc_7_2_2_14]
+isUmdPdu = 1
+deltaTxLevel = 10
+
+[tc_8_2_6_55]
+rlcCipheringSpeedup = 1
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+reconfigOnMacHs=1
+
+[tc_8_2_1_40]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_3_37]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+trDataRestrictR6=true
+
+[tc_8_2_2_52]
+MacTrchRelBlindCnf = false
+trDataRestrictR6=true
+FdpchRelBlindCnf =false
+
+[tc_8_2_2_53]
+trDataRestrictR6=true
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+MacTrchRelBlindCnf = true
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+
+[tc_8_2_2_54]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+MacTrchRelBlindCnf = false
+FdpchRelBlindCnf = false
+trDataRestrictR6=true
+
+[tc_8_2_2_55]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_2_56]
+rlcCipheringSpeedup = 1
+trDataRestrictR6=true
+
+[tc_8_2_2_57]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+hsDpcchChCode=1
+IsContinueTsnAfterReconfiguration = 1
+IsCMacMaceConfigReleaseBlindCnf = 1
+
+[tc_8_2_2_58]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_2_62]
+#MIMO_BASIC=0, MIMO-rel99/64QAM=1, MIMO_MIMO=2
+cellMap = cellAB
+mimoCellConfig = 0
+hsScchPdschPowerUp = 2
+
+
+
+[tc_8_2_2_63]
+trDataRestrictR6=true
+
+[tc_8_2_6_62]
+trDataRestrictR6=true
+
+[tc_8_2_1_41]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_1_2_19]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_1_38]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+[tc_7_1_2_4a]
+rlcDataRoutingForPhyRepInd = 1
+
+[tc_7_1_5_3]
+isUmdPdu = 1
+
+[tc_7_1_5a_1]
+isUmdPdu = 1
+
+[tc_7_1_5a_2]
+isUmdPdu = 1
+
+[tc_7_1_5a_3]
+isUmdPdu = 1
+
+[tc_7_1_5a_4]
+isUmdPdu = 1
+
+[tc_7_1_5a_5_2]
+asymRbList =25
+AM_PU_LengthUL_RB_25 = 320
+
+[tc_7_1_5a_5_3]
+asymRbList =25
+AM_PU_LengthUL_RB_25 = 320
+
+[tc_7_1_6_1_1]
+trDataRestrictR6=true
+
+[tc_7_1_6_1_2]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_1_3]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_2_1]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_2_2]
+ackNackSpeedup = 1
+removeRlcDataReqSemaphore = true
+trDataRestrictR6=true
+ignoreSuspendResumeForOneMacHsPdu=1
+
+[tc_7_1_6_2_3]
+trDataRestrictR6=true
+
+[tc_7_1_6_2_4]
+trDataRestrictR6=true
+
+[tc_7_1_6_2_5]
+trDataRestrictR6=true
+
+[tc_7_1_6_2_6]
+rgAgSpeedUp=1
+deltaRxLevel = 20
+
+[tc_7_1_6_2_7]
+trDataRestrictR6=true
+
+[tc_7_1_6_2_8]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_2_9]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_2_10]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+initialActualUplinkLevel = -150
+
+[tc_7_1_6_2_11]
+rgAgSpeedUp=1
+trDataRestrictR6=true
+deltaRxLevel = 20
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_7_1_6_3_1]
+ignoreSuspendResumeForOneMacHsPdu=1
+trDataRestrictR6=true
+
+[tc_7_1_6_3_3]
+MacTrchRelBlindCnf = true
+
+[tc_7_1_6_3_4]
+MacTrchRelBlindCnf = true
+
+[tc_7_1_6_4_1]
+trDataRestrictR6=true
+
+[tc_7_1_6_4_2]
+trDataRestrictR6=true
+
+[tc_7_1_6_4_3]
+trDataRestrictR6=true
+
+[tc_7_2_2_3]
+trTestDataDelay = 40
+
+[tc_7_2_3_2]
+trTestDataDelay = 40
+
+[tc_7_2_3_12]
+trTestDataDelay = 40
+
+[tc_7_2_3_13]
+trTestDataDelay = 40
+
+[tc_7_2_3_14]
+trTestDataDelay = 40
+
+[tc_7_2_3_15]
+trTestDataDelay = 40
+
+[tc_7_2_3_16]
+trTestDataDelay = 40
+
+[tc_7_2_3_17]
+trTestDataDelay = 40
+
+[tc_7_2_3_18]
+trTestDataDelay = 40
+
+[tc_7_2_3_19]
+trTestDataDelay = 40
+
+[tc_7_2_3_21]
+trTestDataDelay = 40
+
+[tc_7_2_3_22]
+trTestDataDelay = 40
+
+[tc_7_2_3_23]
+trTestDataDelay = 40
+
+[tc_7_2_3_24]
+trTestDataDelay = 40
+
+[tc_7_2_3_25]
+trTestDataDelay = 40
+
+[tc_7_2_3_26]
+trTestDataDelay = 40
+
+[tc_7_2_3_27]
+trTestDataDelay = 40
+
+[tc_7_2_3_28]
+trTestDataDelay = 40
+
+[tc_7_2_3_32]
+trTestDataDelay = 40
+
+[tc_7_2_3_33]
+trTestDataDelay = 40
+
+[tc_7_2_3_34]
+trTestDataDelay = 40
+
+[tc_7_2_3_35]
+trTestDataDelay = 40
+
+[tc_14_2_4]
+trSegmentConfig = rb10_11_12
+
+[tc_14_2_4a]
+trSegmentConfig = rb10_11_12
+
+[tc_14_2_5a]
+trSegmentConfig = rb10_11_12
+
+[tc_14_2_7a]
+trSegmentConfig = rb10_11_12
+
+[tc_14_2_9]
+trSegmentConfig = rb10_11_12
+
+[tc_14_4_2a_1]
+multiSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_2a_2]
+multiSccpchConfig = true
+configMacOnUplink = true
+oldStyleSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_2a_3]
+multiSccpchConfig = true
+configMacOnUplink = true
+oldStyleSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_2_1]
+multiSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_2_2]
+multiSccpchConfig = true
+configMacOnUplink = true
+oldStyleSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_2_3]
+multiSccpchConfig = true
+configMacOnUplink = true
+oldStyleSccpchConfig = true
+multipleSccpchModeReleaseBypassReqd = 1
+
+[tc_14_4_4]
+multiSccpchConfig = true
+configMacOnUplink = true
+oldStyleSccpchConfig = true
+
+[tc_14_7_1]
+maceReleaseFrameAdvance = 1
+trDataRestrictR6=true
+
+[tc_14_7_2]
+maceReleaseFrameAdvance = 1
+trDataRestrictR6=true
+
+[tc_14_7_3]
+deltaTxLevel = 20
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_14_7_4]
+trDataRestrictR6=true
+
+[tc_14_7_5]
+maceReleaseFrameAdvance = 1
+trDataRestrictR6=true
+
+[tc_14_7_6]
+MacTrchRelBlindCnf = true
+subTestUlDataSize = 80,96,128,144,160,176,192,208,272,280,296,328
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = -25
+deltaRxLevel = -25
+
+[tc_14_7_6b]
+MacTrchRelBlindCnf = true
+subTestUlDataSize = 80,96,128,144,160,176,192,208,272,280,296,328
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = -25
+deltaRxLevel = -25
+
+[tc_14_7_8]
+trDataRestrictR6=true
+
+[tc_14_7_9]
+trDataRestrictR6=true
+MacTrchRelBlindCnf = true
+subTestUlDataSize = 40,96,120,160,248
+deltaTxLevel = -25
+deltaRxLevel = -25
+FdpchRelBlindCnf =true
+
+
+tc_14_7_10]
+trDataRestrictR6=true
+subTestUlDataSize = 40,136,184,256
+FdpchRelBlindCnf =true
+
+[tc_16_2_1]
+rlcCipheringSpeedup = 1
+deltaTxLevel = 30
+deltaRxLevel = -30
+
+[tc_16_2_2]
+rlcCipheringSpeedup = 1
+deltaTxLevel = 30
+deltaRxLevel = -30
+
+[tc_8_4_1_37]
+initialActualUplinkLevel = -150
+
+[tc_8_2_1_29]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+hhoReqd = 1
+cfnOffset2 = 160
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+
+[tc_8_2_1_30]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_1_31]
+rlcCipheringSpeedup = 1
+hhoReqd = 1
+cfnOffset2 = 0
+
+[tc_8_2_1_32]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+hhoReqd = 1
+cfnOffset2 = 160
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+
+[tc_8_2_1_9]
+ssReleaseConfig = MAC RB0
+
+[tc_8_2_2_9]
+ssReleaseConfig = MAC RB0
+
+[tc_8_2_3_8]
+ssReleaseConfig = MAC RB0
+
+
+
+
+[tc_8_2_2_36]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_2_38]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_2_39]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+hhoReqd = 1
+cfnOffset2 = 165
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+
+[tc_8_2_2_40]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+
+[tc_8_2_2_41]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_2_42]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+hhoReqd = 1
+cfnOffset2 = 165
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+
+[tc_8_2_2_44]
+trDataRestrictR6=true
+
+[tc_8_2_2_44a]
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_2_45]
+trDataRestrictR6=true
+
+[tc_8_2_2_46]
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+hhoReqd = 1
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+trDataRestrictR6=true
+
+[tc_8_2_2_47]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+trDataRestrictR6=true
+
+[tc_8_2_2_47a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+MacTrchRelBlindCnf = false
+FdpchRelBlindCnf = false
+trDataRestrictR6=true
+
+[tc_8_2_2_48]
+trDataRestrictR6=true
+
+[tc_8_2_2_49]
+trDataRestrictR6=true
+
+[tc_8_2_3_30]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_3_31]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_3_32]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+hhoReqd = 1
+cfnOffset2 = 165
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+
+[tc_8_2_3_33]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_3_34]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_3_35]
+rlcCipheringSpeedup = 1
+timerPoll_rb2 = 400
+ 
+[tc_8_2_2_43]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+
+[tc_8_2_2_43a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+
+[tc_8_2_2_43b]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+securityAlgorithm = 1
+
+[tc_8_3_1_30]
+rlCpichRelease = 1
+
+[tc_8_3_1_33]
+rlcCipheringSpeedup = 1
+cellMap =    cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+timerPoll_rb2 = 400
+
+[tc_8_3_1_34]
+rlcCipheringSpeedup = 1
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch3
+ssReleaseConfig = MAC RB0
+
+[tc_8_3_1_35]
+rlcCipheringSpeedup = 1
+hhoReqd = 1
+cfnOffset2 = 0
+
+[tc_8_3_1_36]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+ssReleaseConfig = MAC RB0
+rlCpichRelease = 1
+
+[tc_8_3_1_37]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+rlCpichRelease = 1
+hhoReqd = 1
+cfnOffset2 = 0
+
+[tc_8_3_1_38]
+rlcCipheringSpeedup = 1
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchE
+
+[tc_8_3_1_41]
+timerPoll_rb2 = 400
+trDataRestrictR6=true
+
+[tc_8_3_1_42]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+trDataRestrictR6=true
+
+[tc_8_3_1_42a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+MacTrchRelBlindCnf = true
+FdpchRelBlindCnf =true
+trDataRestrictR6=true
+
+[tc_8_3_1_43]
+rlCpichRelease = 1
+MacTrchRelBlindCnf = true
+FdpchRelBlindCnf =true
+trDataRestrictR6=true
+
+[tc_8_3_4_10]
+trDataRestrictR6=true
+
+[tc_8_3_4_11]
+trDataRestrictR6=true
+hsDpcchChCode=1
+hsScchPdschPowerUp=2
+IsContinueTsnAfterReconfiguration = 1
+
+[tc_8_3_4_13]
+trDataRestrictR6=true
+
+hsScchPdschPowerUp=2
+hsDpcchChCode=1
+
+
+[tc_8_3_11_4]
+ssReleaseConfig = MAC RB0
+
+[tc_8_3_11_14]
+trDataRestrictR6=true
+
+[tc_8_2_4_1]
+rlcCipheringSpeedup = 1
+hhoReqd = 1
+cfnOffset2 = 255
+sfnOffsetsPresent = 1
+sfnOffset2 = 0
+
+[tc_8_2_3_18]
+timerPoll_rb2 = 400
+
+[tc_8_2_3_19]
+timerPoll_rb2 = 400
+
+[tc_8_2_3_36]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+trDataRestrictR6=true
+
+[tc_8_2_4_36]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_6_19]
+timerPoll_rb2 = 400
+
+[tc_8_2_6_20]
+timerPoll_rb2 = 400
+
+[tc_8_2_6_37]
+cellMap =     cellD1A1B1E2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchG
+timerPoll_rb2 = 400
+hhoReqd = 1
+sfnOffsetsPresent = 1
+sfnOffset2 = 0
+sfnOffset3 = 1
+
+[tc_8_2_6_37b]
+cellMap =     cellD1A1B1E2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchG
+timerPoll_rb2 = 400
+hhoReqd = 1
+sfnOffsetsPresent = 1
+sfnOffset2 = 0
+sfnOffset3 = 1
+
+[tc_8_2_6_38]
+cellMap =     cellA1B1D2E2
+dummyChConfig = noPrachSccpchG
+rlcCipheringSpeedup = 1
+
+[tc_8_2_6_39]
+rlcCipheringSpeedup = 1
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+
+[tc_8_2_6_39a]
+ssConfig = cellABCSho2RF
+rlcCipheringSpeedup = 1
+ssReleaseConfig = MAC RB0
+
+[tc_8_2_6_39b]
+ssConfig = cellABCSho2RF
+rlcCipheringSpeedup = 1
+
+[tc_8_2_6_40]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_6_41]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_6_42]
+rlcCipheringSpeedup = 1
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchD
+
+[tc_8_2_6_44]
+rlcCipheringSpeedup = 1
+hhoReqd = 1
+cfnOffset2 = 0
+sfnOffsetsPresent = 1
+sfnOffset2 = 1
+
+[tc_8_2_6_46]
+rlcCipheringSpeedup = 1
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchD
+
+[tc_8_2_6_48]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_6_49]
+rlcCipheringSpeedup = 1
+timerPoll_rb2 = 400
+
+[tc_8_2_6_50]
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+timerPoll_rb2 = 400
+trDataRestrictR6=true
+
+[tc_8_2_6_51]
+trDataRestrictR6=true
+
+[tc_8_2_6_52]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+hhoReqd = 1
+cfnOffset2 = 165
+sfnOffsetsPresent = 1
+sfnOffset2 = 678
+maceReleaseFrameAdvance = 1
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+
+[tc_8_2_6_53]
+cellMap =     cellAF
+
+[tc_8_2_6_54]
+cellMap = cellAF
+trDataRestrictR6=true
+
+[tc_8_2_6_57]
+trDataRestrictR6=true
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+MacTrchRelBlindCnf = true
+
+[tc_8_2_6_58]
+trDataRestrictR6=true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+sfnOffset2 = 2050
+
+[tc_8_2_6_59]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+hhoReqd = 1
+MacTrchRelBlindCnf = true
+trDataRestrictR6=true
+deltaTxLevel = 10
+
+[tc_8_2_6_60]
+trDataRestrictR6=true
+cellMap =     cellAF
+dummyChConfig = noPrachSccpch_HSDPA
+
+[tc_8_2_6_61]
+trDataRestrictR6=true
+MacTrchRelBlindCnf = true
+hsDpcchChCode=1
+[tc_8_3_1_32]
+rlcCipheringSpeedup = 1
+timerPoll_rb2 = 400
+
+[tc_8_3_1_33]
+rlcCipheringSpeedup = 1
+
+[tc_8_3_1_39]
+rlcCipheringSpeedup = 1
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchD
+
+[tc_8_3_1_44]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noScpichPichPcch
+sccpchModeBypass = true
+trDataRestrictR6=true
+
+[tc_8_3_1_46]
+timerPoll_rb2 = 400
+trDataRestrictR6=true
+MacTrchRelBlindCnf = true
+
+[tc_8_3_11_15]
+trDataRestrictR6=true
+
+           
+[tc_8_4_1_41]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+useActualUplinkLevel = 1
+
+[tc_8_4_1_42]
+cellMap =     cellA1E1D2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+rlcCipheringSpeedup = 1
+
+[tc_8_4_1_43]
+cellMap =     cellA1E1D2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+useTrchConfigToFollow=1
+
+[tc_8_4_1_47]
+ssConfig = cellABCSho2RF
+
+[tc_8_4_1_48]
+cellMap =     cellA1D2
+ssConfig =    btsHho3Bts2InterFreq
+cloneChConfig = clone_for_12_2_1_5b
+ssReleaseConfig = MAC RB0
+
+[tc_8_4_1_49]
+trDataRestrictR6=true
+
+[tc_6_1_1_4]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+ssReleaseConfig = MAC RB0
+cellMap =  cellA1B1D2E2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchG
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_1_5]
+RLCSeqNumCiph = true
+ssReleaseConfig = MAC RB0
+cellMap =  cellA1B2C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_2_6
+
+[tc_6_1_1_7]
+cellMap =     cellA1G1D2
+dummyChConfig = noPrachSccpch3
+ssConfig = cellABCSho2RF
+
+[tc_6_1_1_8]
+RLCSeqNumCiph = true
+cellMap =  cellA1C1E2F2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchG
+cloneChConfig = clone_for_6_1_1_8
+multiMacPrachConfig = 1
+ssReleaseConfig = MAC RB0
+trDataRestrictR6=true
+
+[tc_6_1_1_9]
+RLCSeqNumCiph = true
+cellMap =  cellA1B1C2D2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_1_7
+multiMacPrachConfig = 1
+ssReleaseConfig = MAC RB0
+trDataRestrictR6=true
+rlCpichRelease = 1
+
+[tc_6_1_1_14]
+cellMap =  cellDE
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchF
+trDataRestrictR6=true
+rlCpichRelease = 1
+
+[tc_6_1_2_1]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_2_1a]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_2_2]
+multiMacPrachConfig = 1
+dummyChConfig = noPrachSccpchC
+ssConfig = cellABCSho2RF
+
+[tc_6_1_2_3]
+RLCSeqNumCiph = true
+cellMap =  cellA1C2B2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_1_5
+rlCpichRelease = 1
+multiSccpchConfig = true
+
+[tc_6_1_2_4]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1C2
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_5
+deltaTxLevel = 14
+
+[tc_6_1_2_5]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1C2
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_5
+deltaTxLevel = 14
+
+[tc_6_1_2_6]
+RLCSeqNumCiph = true
+cellMap =     cellC1A2B2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_12_4_1_4b
+
+[tc_6_1_2_8]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchA1B1D2
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_2_9a]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_2_9b]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_6_1_2_10]
+RLCSeqNumCiph = true
+cellMap =  cellA1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_1_5
+
+[tc_6_1_2_10a]
+RLCSeqNumCiph = true
+cellMap =  cellA1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_1_5
+
+[tc_6_1_2_11]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =  cellA1B1G2D2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+deltaTxLevel = 20
+trDataRestrictR6=true
+
+[tc_6_2_1_1]
+RLCSeqNumCiph = true
+rlCpichRelease = 1
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_2_6
+multiSccpchConfig = true
+
+[tc_6_2_1_6]
+rlCpichRelease = 1
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_2_6
+multiSccpchConfig = true
+
+[tc_6_2_1_7]
+cellMap = DummyConfig_A1B2C3
+ssConfig = cell9Hho
+dummyChConfig = noPrachSccpch_6217
+cloneChConfig = clone_for_6_1_1_7
+rlCpichRelease = 1
+
+[tc_6_2_1_8]
+cellMap = DummyConfig_A1B2C3
+ssConfig = cell9Hho
+dummyChConfig = noPrachSccpch_6217
+cloneChConfig = clone_for_6_1_1_7
+rlCpichRelease = 1
+
+[tc_6_2_1_9]
+cellMap = DummyConfig_A1C2B
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_5
+rlCpichRelease = 1
+
+[tc_6_2_1_10]
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+cloneChConfig = clone_for_6_1_2_6
+deltaTxLevel = 10
+trDataRestrictR6=true
+
+[tc_6_2_1_11]
+cellMap = DummyConfig_A1D2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_12_2_1_5b
+deltaTxLevel = 20
+trDataRestrictR6=true
+
+[tc_6_2_2_1]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+
+[tc_6_2_2_2]
+rlCpichRelease = 1
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+deltaTxLevel = 40
+deltaRxLevel = 400
+
+[tc_6_2_2_4]
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+cloneChConfig = clone_for_6_1_2_6
+deltaTxLevel = 20
+trDataRestrictR6=true
+
+[tc_6_2_2_5]
+cellMap = DummyConfig_A1B2C
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+cloneChConfig = clone_for_6_1_2_6
+deltaTxLevel = 10
+trDataRestrictR6=true
+
+[tc_6_2_1_2a]
+cellMap = cellA1B2C1D1E2F2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch_6212a
+cloneChConfig = clone_for_6_1_2_6
+rlCpichRelease = 1
+multiSccpchConfig = true
+
+[tc_6_2_1_8a_1]
+cellMap = DummyConfig_A1B2C3
+ssConfig = cell9Hho
+dummyChConfig = noPrachSccpch_6217
+cloneChConfig = clone_for_6_1_1_7
+rlCpichRelease = 1
+
+[tc_6_2_1_8a_2]
+cellMap = DummyConfig_A1B2C3
+ssConfig = cell9Hho
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpch_6212a
+cloneChConfig = clone_for_6_1_1_5
+rlCpichRelease = 1
+
+[tc_6_2_1_8a_3]
+cellMap = DummyConfig_A1B2C3
+ssConfig = cell9Hho
+dummyChConfig = noPrachSccpch_6217
+cloneChConfig = clone_for_6_1_1_7
+rlCpichRelease = 1
+
+
+
+[tc_8_3_4_2]
+rlCpichRelease = 1
+
+[tc_8_3_4_8]
+cellMap = cellA1B1C1G1
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+logCellGAsCell4 = true
+sfnOffsetsPresent = 1
+sfnOffset2 = 1030
+sfnOffset3 = 2054
+sfnOffset4 = 3078
+FourCellRfCombiner = 1
+
+[tc_8_3_4_9]
+rlcCipheringSpeedup = 1
+
+[tc_8_3_7_1]
+packetCtrlAck = true
+multiSccpchConfig = true
+
+[tc_8_3_7_1b]
+packetCtrlAck = true
+multiSccpchConfig = true
+
+[tc_8_3_7_1a]
+packetCtrlAck = true
+multiSccpchConfig = true
+
+[tc_8_3_7_2]
+packetCtrlAck = true
+multiSccpchConfig = true
+
+[tc_8_3_7_3]
+packetCtrlAck = true
+tlliInitialize = true
+multiSccpchConfig = true
+
+[tc_8_3_7_4]
+packetCtrlAck = true
+sdcchRelReqd = true
+
+[tc_8_3_7_5]
+cellMap = cellABC
+ssConfig = cellABCSho2RF
+dummyChConfig = noPrachSccpch
+useTrchConfigToFollow=0
+
+[tc_8_3_7_12]
+ssReleaseConfig = MAC RB0
+
+[tc_8_3_7_13]
+packetCtrlAck = true
+sdcchRelReqd = true
+
+[tc_8_3_7_14]
+multiSccpchConfig = true
+
+[tc_8_3_7_16]
+packetCtrlAck = true
+
+[tc_8_1_2_2]
+ssConfig= cellABCSho_8122
+MultiPrachConfig=1
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+TwoPRACHCell = true
+
+[tc_8_1_1_11]
+trDataRestrictR6=true
+
+[tc_8_1_1_13]
+sccpchModeBypass = true
+
+[tc_8_1_2_4]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchD
+deltaTxLevel = 40
+deltaRxLevel = 40
+
+[tc_8_1_2_10]
+RLCSeqNumCiph = true
+cellMap =     cellA1D2
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+cloneChConfig = clone_for_12_2_1_5b
+
+[tc_8_1_2_10a]
+RLCSeqNumCiph = true
+cellMap =     cellA1D2
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+cloneChConfig = clone_for_12_2_1_5b
+
+[tc_8_1_2_17]
+trDataRestrictR6=true
+
+[tc_8_1_2_18]
+trDataRestrictR6=true
+
+[tc_9_4_2_2_1]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellTest1
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_2_2_2]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellA1D1E1
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_2_4_4]
+multiMacPrachConfig = 1
+RLCSeqNumCiph = true
+cellMap =     cellA1D1C2B2
+ssConfig =    sixCellSHO4RF
+dummyChConfig = noPrachSccpchC
+
+[tc_9_4_2_5]
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpchE
+cellMap =     cell_ABDG_9_4_2_5
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_2_3]
+dummyChConfig = noPrachSccpchE
+cellMap =     cell_ABDG_9_4_2_5
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_5_4_1]
+RLCSeqNumCiph = true
+cellMap = cellA1D1B2G2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_6_1_2_6
+
+[tc_9_4_5_4_6]
+RLCSeqNumCiph = true
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cellMap =     cellD1G1A2
+cloneChConfig = clone_for_12_4_1_4b
+
+[tc_9_4_7]
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpch5
+cellMap =     cell_ADG_9_4_8
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_8]
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpch5
+cellMap =     cell_ADG_9_4_8b
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_9_4_9]
+dummyChConfig = noPrachSccpch5
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+deltaTxLevel = 60
+deltaRxLevel = 40
+
+[tc_8_2_2_18]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch4
+
+[tc_8_3_1_23]
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpch_83123
+
+[tc_8_3_1_24]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1C2
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_5
+deltaTxLevel = 14
+
+[tc_8_3_1_25]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch3
+
+[tc_8_2_1_24]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+ssConfig = cellABCSho2RF
+
+[tc_8_2_1_24a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+ssConfig = btsHho3Bts2InterFreq
+
+[tc_8_2_1_27]
+rlcCipheringSpeedup = 1
+deltaTxLevel = 30
+deltaRxLevel = -30
+
+[tc_8_2_1_28]
+rlcCipheringSpeedup = 1
+
+[tc_8_2_1_34]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+ssConfig = cellABCSho2RF
+
+[tc_8_2_1_35]
+trDataRestrictR6=true
+
+[tc_8_2_1_36]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+trDataRestrictR6=true
+
+[tc_8_2_1_36a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+deltaTxLevel = 50
+trDataRestrictR6=true
+
+[tc_8_2_1_34a]
+rlcCipheringSpeedup = 1
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+ssConfig = btsHho3Bts2InterFreq
+                                     
+[tc_8_2_2_31]
+cellMap =     cellAF
+dummyChConfig = noPrachSccpchF
+
+[tc_8_2_6_8]
+ssReleaseConfig = MAC RB0
+
+
+[tc_8_2_6_12]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch3
+ssReleaseConfig = MAC RB0
+
+[tc_8_3_1_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch3
+
+[tc_8_3_1_1a]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_3_1_2]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_8_3_1_3]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch3
+
+[tc_8_3_1_4]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+idleGciValueFlush = 1
+
+[tc_8_3_1_18]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_8_3_1_21]
+ssReleaseConfig = MAC RB0
+RLCSeqNumCiph = true
+dummyChConfig = noPrachSccpchE
+cellMap =     cellA1D1G2
+cloneChConfig = clone_for_8_3_1_21
+deltaTxLevel = 54
+
+[tc_8_3_1_22]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchE
+
+[tc_8_3_1_45]
+rlCpichRelease = 1
+
+[tc_8_3_2_9]
+idleGciValueFlush = 1
+
+[tc_8_3_2_11]
+RLCSeqNumCiph = true
+cellMap =     cell_ADG_9_4_8
+dummyChConfig = noPrachSccpch5
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_8_3_2_1a]
+cellMap =     cellA1D2
+ssConfig =    btsHho3Bts2InterFreq
+cloneChConfig = clone_for_12_2_1_5b
+ssReleaseConfig = MAC RB0
+
+[tc_8_3_2_12]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpchE
+TxAttCellOff = 60
+
+[tc_8_3_2_13]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1C2
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_7
+deltaTxLevel = 14
+
+[tc_8_3_3_4]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+trDataRestrictR6=true
+
+[tc_8_3_9_1]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+ccDelayReqd = true
+
+[tc_8_4_1_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_2]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_2B]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_23]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_24]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_24A]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_25]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+basebandPowerReduce = 1
+
+[tc_8_4_1_25A]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+basebandPowerReduce = 1
+
+[tc_8_4_1_26]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_27]
+deltaTxLevel = 10
+deltaRxLevel = -10
+
+[tc_8_4_1_28]
+cellMap = cellA1B1C1D1
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig=clone_for_8_4_1_28
+logCellGAsCell4 = true
+FourCellRfCombiner = 1
+
+[tc_8_4_1_31]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_33]
+cellMap = DummyConfig_A1B1C2D3
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+deltaTxLevel = 24
+
+[tc_8_4_1_34]
+cellMap = DummyConfig_A1B1C2D3
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+deltaTxLevel = 24
+
+[tc_8_4_1_35]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+deltaTxLevel = 24
+
+[tc_8_4_1_36]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_38]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_40]
+cellMap = DummyConfig_A1B1C2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_3]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_5]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_6]
+ssReleaseConfig = MAC
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_8_4_1_7]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch4
+
+[tc_8_4_1_8]
+rlcCipheringSpeedup = 1
+cellMap =     cellAE
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch5
+
+[tc_8_4_1_14]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_9_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_9_2_2]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_9_4_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_9_4_2_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_9_4_2_4_2]
+RLCSeqNumCiph = true
+cellMap =     cellD1A2
+ssConfig =    sixCellSHO4RF
+dummyChConfig = noPrachSccpchA1B1D2C2
+cloneChConfig = clone_for_12_4_1_4b
+
+[tc_9_4_4]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_12_2_1_2]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1B2
+dummyChConfig = noPrachSccpchA1B1D2
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_12_2_1_3]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_12_2_1_5a_1]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1C2
+dummyChConfig = noPrachSccpchB
+cloneChConfig = clone_for_6_1_1_7
+
+[tc_12_2_1_4_1]
+cellMap =     cellA1D1B2C2
+ssConfig =    sixCellSHO4RF
+dummyChConfig = noPrachSccpchA1B1D2C2
+TxAttCellOff = 60
+
+[tc_12_2_1_5b]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1B2
+dummyChConfig = noPrachSccpchA1B1D2
+
+[tc_12_2_1_5d]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1B2
+dummyChConfig = noPrachSccpchA1B1D2
+
+[tc_12_3_2_7]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_12_3_2_8_1]
+cellMap =     cellAD_12_3_2_8_1
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_12_4_1_1a]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchA1B1D2
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_12_4_1_2]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchA1B1D2
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_12_4_1_4c1]
+cellMap =     cellA1B1D2
+dummyChConfig = noPrachSccpchA1B1D2
+cloneChConfig = clone_for_9_4_2_2_1 
+
+[tc_12_4_1_4d1]
+cellMap =     cellAD
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch4_1
+
+[tc_12_4_2_5a_1]
+cellMap =     cellAD
+dummyChConfig = noPrachSccpch
+
+[tc_12_4_2_6_2]
+cellMap =     cellACB
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_12_9_6]
+cellMap =     cellAD
+ssConfig =    btsHho3Bts2InterFreq
+dummyChConfig = noPrachSccpch
+
+[tc_12_9_7b]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1G2
+dummyChConfig = noPrachSccpchA1G1D2
+ssConfig = cellABCSho2RF
+
+[tc_12_9_7c]
+RLCSeqNumCiph = true
+cellMap =     cellA1D1B2
+dummyChConfig = noPrachSccpchA1B1D2
+
+[tc_12_9_12]
+rlCpichRelease = 1
+
+[tc_12_4_1_4c1]
+cellMap =     cellA1B1D2
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpchB
+cloneChConfig = clone_for_9_4_2_2_1
+
+[tc_12_4_1_4b]
+multiMacPrachConfig = 1
+cellMap =     cellA1D1G2
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_8_3_1_21
+
+[tc_12_4_1_4a]
+ssReleaseConfig = MAC RB0 D_DPCH
+cellMap =     cellC1D1A2B2
+ssConfig =    sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_12_4_1_4b
+
+[tc_12_4_2_4]
+ssReleaseConfig = MAC RB0 D_DPCH
+cellMap = cellA1B1G2D2
+ssConfig = sixCellSHO4RF
+dummyChConfig = noPrachSccpchE
+cloneChConfig = clone_for_9_4_2_2_1
+multiSccpchConfig = true
+
+[tc_12_6_1_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch2
+
+[tc_14_2_13_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_14_2_27]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_14_2_31_1]
+cellMap =     cellABC
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+
+[tc_14_2_38a]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_38b]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_38c]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 40
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_38e]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_38f]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_40]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_41]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+enlargedTxWindowSize = 1024
+rlcCipheringSpeedup = 1
+
+[tc_14_2_43_1]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+rlcCipheringSpeedup = 1
+
+[tc_14_2_43_2]
+trSegmentConfig = rb10_11_12
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+enlargedTxWindowSize = 1024
+rlcCipheringSpeedup = 1
+
+[tc_14_2_49_1]
+trSegmentConfig = rb10_11_12
+rlcCipheringSpeedup = 1
+
+[tc_14_2_51_1] 
+rlcCipheringSpeedup = 1
+
+[tc_14_2_51a_1]
+rlcCipheringSpeedup = 1
+
+[tc_14_2_51b_1]
+rlcCipheringSpeedup = 1
+
+[tc_14_2_57]
+activationFrameNumberShift = 60
+frameIndicationShift = 10
+
+[tc_14_2_58]
+asymRbList = 20
+AM_PU_LengthUL_RB_20 = 320
+activationFrameNumberShift = 40
+frameIndicationShift = 10
+enlargedTxWindowSize = 1024
+
+[tc_14_2_58a]
+asymRbList = 20
+AM_PU_LengthUL_RB_20 = 320
+activationFrameNumberShift = 40
+frameIndicationShift = 10
+enlargedTxWindowSize = 1024
+
+[tc_14_6_1]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 50
+
+[tc_14_6_1a]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 50
+
+[tc_14_6_1b]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+
+[tc_14_6_1c]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+
+[tc_14_6_2]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 80
+
+[tc_14_6_3]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+trSegmentConfig = rb10_11_12
+deltaTxLevel = 50
+
+[tc_14_6_3a]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+trSegmentConfig = rb10_11_12
+deltaTxLevel = 50
+
+[tc_14_6_4]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 50
+
+[tc_14_6_4a]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 50
+
+[tc_14_6_5]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 320
+AM_PU_LengthUL_RB_17 = 320
+deltaTxLevel = 80
+
+[tc_14_6_5a]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 320
+AM_PU_LengthUL_RB_17 = 320
+deltaTxLevel = 80
+
+[tc_14_6_6]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+deltaTxLevel = 100
+
+[tc_14_6_6a]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+
+[tc_14_6_6b]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+
+[tc_14_6_6e]
+cellMap = cellAB_DC
+dcHsdpaCellConfig = 0
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+hsScchPdschPowerUp = 2
+
+[tc_14_6_6f]
+cellMap = cellAB_DC
+dcHsdpaCellConfig = 0
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+hsScchPdschPowerUp = 2
+
+[tc_14_6_7]
+asymRbList = 17 25
+AM_PU_LengthUL_RB_25 = 640
+AM_PU_LengthUL_RB_17 = 320
+trSegmentConfig = rb10_11_12
+delaySendContinuousDataCnf = 0
+deltaTxLevel = 140
+activationFrameNumberShift = 25
+
+[tc_14_6_8]
+asymRbList = 25
+AM_PU_LengthUL_RB_25 = 320
+deltaTxLevel = 140
+
+[tc_8_1_2_11]
+ssReleaseConfig = MAC
+cellMap =     cellAF
+ssConfig =    cellABCSho2RF
+dummyChConfig = noPrachSccpch
+configMacOnUplink = true
+deltaTxLevel = 40
+deltaRxLevel = 10
+
+[tc_8_1_2_12]
+ccDelayReqd = true
+remCc13BeforeCc1 = true
+
+[tc_8_1_3_9]
+RLCSeqNumCiph = true
+cellMap =     cellA1B1C2
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_1_7
+deltaTxLevel = -28
+
+[tc_8_1_6_3]
+redirectRb3MsgToTtcn = 1
+
+[tc_8_1_7_1c]
+startMissingInRlcSecurity = 1
+
+[tc_8_1_7_3c]
+startMissingInRlcSecurity = 1
+
+[tc_8_1_7_3d]
+TxAttCellOff=60
+NotAckNxtRxSDU = true
+
+[tc_8_1_7_1d]
+TxAttCellOff=60
+NotAckNxtRxSDU = true
+
+[tc_60_1]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+
+[tc_60_1a]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+
+[tc_60_2a]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+utranIniFromGeran = true
+
+[tc_60_3a]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+
+[tc_60_4]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+rlCpichRelease = 1
+utranIniFromGeran = true
+
+[tc_60_5]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+utranIniFromGeran = true
+
+[tc_60_6]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+packetCtrlAck = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+utranIniFromGeran = true
+
+[tc_60_10]
+ssCfgActCiphFlag = false
+ccDelayReqd = true
+disableCiph = true
+sfnOffsetsPresent = 1
+sfnOffset1 = 0
+utranIniFromGeran = true
+
+[tc_20_22_29]
+ssCfgConfigTE = true
+TxAttCellOff = 60
+[tc_20_22_29a]
+ssCfgConfigTE = true
+TxAttCellOff = 60
+
+[tc_20_22_29b]
+ssCfgConfigTE = true
+TxAttCellOff = 60
+
+[tc_20_25_2]
+rlCpichRelease = 1
+cellMap = DummyConfig_A1B2C
+ssConfig = sicCellSHO4RF
+dummyChConfig = noPrachSccpchD
+cloneChConfig = clone_for_6_1_2_6
+multiSccpchConfig = true
+
+[tc_20_25_3]
+TxAttCellOff = 60
+utranIniFromGeran = true
+
+[tc_20_25_4]
+utranIniFromGeran = true
+
+[tc_8_1_1_5a]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_8_1_1_12]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_8_1_2_20]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_8_1_10_2]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_8_2_2_59]
+enhancedCellFach = 1
+dummyChConfig=noPrachSccpchB
+sccpchModeBypass = false
+
+[tc_8_2_2_60]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_8_3_1_47]
+enhancedCellFach = 1
+sccpchModeBypass = true
+cellMap = cellAF_EFDL
+
+[tc_8_4_1_50]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_7_1_5a_6]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_7_1_5a_7]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+[tc_14_5_3]
+enhancedCellFach = 1
+sccpchModeBypass = true
+
+
+ 
+ 
+ 
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellABCDEFGHI.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellABCDEFGHI  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellABCDEFGHI  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellABCDEFGHI  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellABCDEFGHI  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellABCDEFGHI  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellABCDEFGHI  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellABCDEFGHI  cellG]
+TgppIdentity=6
+Md8480Identity=33
+[cellABCDEFGHI  cellH]
+TgppIdentity=7
+Md8480Identity=34
+[cellABCDEFGHI  cellI]
+TgppIdentity=7
+Md8480Identity=36
+[cellABCDEFGHI  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+# 2264 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellABC.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellABC  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellABC  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellABC  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellABC  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellABC  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellABC  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellABC  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellABC  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellABC  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2268 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellABC_DC.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellABC_DC  cellA]
+TgppIdentity=0
+Md8480Identity=2
+[cellABC_DC  cellB]
+TgppIdentity=1
+Md8480Identity=1
+[cellABC_DC  cellC]
+TgppIdentity=2
+Md8480Identity=9
+[cellABC_DC  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellABC_DC  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellABC_DC  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellABC_DC  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellABC_DC  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellABC_DC  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2272 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAB_DC.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellAB_DC  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAB_DC  cellB]
+TgppIdentity=1
+Md8480Identity=9
+[cellAB_DC  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAB_DC  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellAB_DC  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAB_DC  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellAB_DC  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAB_DC  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAB_DC  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2276 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellACB.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellACB  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellACB  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cellACB  cellC]
+TgppIdentity=2
+Md8480Identity=2
+[cellACB  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellACB  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellACB  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellACB  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellACB  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellACB  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2280 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAD.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellAD  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAD  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellAD  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAD  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellAD  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAD  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellAD  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAD  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAD  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2284 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAD_12_3_2_8_1.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellAD_12_3_2_8_1  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAD_12_3_2_8_1  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cellD]
+TgppIdentity=3
+Md8480Identity=4
+[cellAD_12_3_2_8_1  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAD_12_3_2_8_1  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2288 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellTest1.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellTest1  cellA]
+TgppIdentity=0
+Md8480Identity=2
+[cellTest1  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellTest1  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellTest1  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellTest1  cellE]
+TgppIdentity=4
+Md8480Identity=1
+[cellTest1  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellTest1  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellTest1  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2292 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cell_ABDG_9_4_2_5.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cell_ABDG_9_4_2_5  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cell_ABDG_9_4_2_5  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cell_ABDG_9_4_2_5  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cell_ABDG_9_4_2_5  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cell_ABDG_9_4_2_5  cellG]
+TgppIdentity=6
+Md8480Identity=18
+[cell_ABDG_9_4_2_5  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cell_ABDG_9_4_2_5  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cell_ABDG_9_4_2_5  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2296 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cell_ADG_9_4_8.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cell_ADG_9_4_8  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cell_ADG_9_4_8  cellG]
+TgppIdentity=6
+Md8480Identity=2
+[cell_ADG_9_4_8  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cell_ADG_9_4_8  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cell_ADG_9_4_8  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cell_ADG_9_4_8  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cell_ADG_9_4_8  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cell_ADG_9_4_8  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2300 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cell_ADG_9_4_8b.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cell_ADG_9_4_8b  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cell_ADG_9_4_8b  cellG]
+TgppIdentity=6
+Md8480Identity=17
+[cell_ADG_9_4_8b  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cell_ADG_9_4_8b  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cell_ADG_9_4_8b  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cell_ADG_9_4_8b  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cell_ADG_9_4_8b  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cell_ADG_9_4_8b  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2304 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellD1G1A2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellD1G1A2  cellA]
+TgppIdentity=0
+Md8480Identity=17
+[cellD1G1A2  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cellD1G1A2  cellD]
+TgppIdentity=3
+Md8480Identity=1
+[cellD1G1A2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellD1G1A2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellD1G1A2  cellG]
+TgppIdentity=6
+Md8480Identity=2
+[cellD1G1A2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellD1G1A2  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2308 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1B1G2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1B1G2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1B1G2  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cellA1D1B1G2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1B1G2  cellG]
+TgppIdentity=6
+Md8480Identity=17
+[cellA1D1B1G2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1D1B1G2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+
+# 2312 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1C2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C2  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[cellA1B1C2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[cellA1B1C2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1B1C2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B1C2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1C2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+# 2316 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1D2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1D2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1B1D2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1B1D2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B1D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1D2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+# 2320 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C2D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1C2D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C2D2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C2D2  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cellA1B1C2D2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[cellA1B1C2D2  cellD]
+TgppIdentity=3
+Md8480Identity=18
+[cellA1B1C2D2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B1C2D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1C2D2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+# 2324 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1B2C2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1B2C2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1B2C2  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1D1B2C2  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[cellA1D1B2C2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1B2C2  cellC]
+TgppIdentity=2
+Md8480Identity=18
+[cellA1D1B2C2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1D1B2C2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+
+
+# 2328 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1G2D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1G2D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1G2D2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1G2D2  cellG]
+TgppIdentity=6
+Md8480Identity=18
+[cellA1B1G2D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1B1G2D2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1G2D2  cellE]
+TgppIdentity=4
+Md8480Identity=20
+[cellA1B1G2D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1G2D2  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2332 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1G1D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1G1D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1G1D2  cellG]
+TgppIdentity=6
+Md8480Identity=2
+[cellA1G1D2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1G1D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1G1D2  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellA1G1D2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1G1D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+ 
+ 
+
+
+# 2336 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAF.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellAF  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAF  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellAF  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAF  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellAF  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAF  cellF]
+TgppIdentity=5
+Md8480Identity=2
+[cellAF  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAF  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAF  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2340 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAF_EFDL.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellAF_EFDL  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAF_EFDL  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellAF_EFDL  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAF_EFDL  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellAF_EFDL  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAF_EFDL  cellF]
+TgppIdentity=5
+Md8480Identity=2
+[cellAF_EFDL  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAF_EFDL  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAF_EFDL  cell-]
+TgppIdentity=-1
+Md8480Identity=2
+
+# 2344 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1B2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1B2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1B2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1B2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1D1B2  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1D1B2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1D1B2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1D1B2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2348 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellC1D1A2B2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellC1D1A2B2  cellC]
+TgppIdentity=2
+Md8480Identity=1
+[cellC1D1A2B2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellC1D1A2B2  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cellC1D1A2B2  cellA]
+TgppIdentity=0
+Md8480Identity=17
+[cellC1D1A2B2  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellC1D1A2B2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellC1D1A2B2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellC1D1A2B2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+
+# 2352 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1D2E2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellA1B1D2E2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1D2E2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1D2E2  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[cellA1B1D2E2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1B1D2E2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1B1D2E2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B1D2E2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1D2E2  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2356 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1D2  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellA1D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1D2  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1D2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellA1D2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellA1D2  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellA1D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1D2  dedicated]
+dedicatedMd8480List = 1 17
+# 2360 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1B1C2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1B1C2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1B1C2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[DummyConfig_A1B1C2  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1B1C2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[DummyConfig_A1B1C2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1B1C2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1B1C2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2364 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1B1C2D3.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1B1C2D3  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1B1C2D3  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[DummyConfig_A1B1C2D3  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1B1C2D3  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[DummyConfig_A1B1C2D3  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1B1C2D3  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1B1C2D3  cellD]
+TgppIdentity=3
+Md8480Identity=33
+[DummyConfig_A1B1C2D3  cellH]
+TgppIdentity=7
+Md8480Identity=34
+[DummyConfig_A1B1C2D3  cellI]
+TgppIdentity=8
+Md8480Identity=36
+[DummyConfig_A1B1C2D3  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2368 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1B2C.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1B2C  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1B2C  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[DummyConfig_A1B2C  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1B2C  cellC]
+TgppIdentity=2
+Md8480Identity=2
+[DummyConfig_A1B2C  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1B2C  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1B2C  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[DummyConfig_A1B2C  dedicated]
+dedicatedMd8480List = 1 17
+
+
+# 2372 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1C2B.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1C2B  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1C2B  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[DummyConfig_A1C2B  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1C2B  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[DummyConfig_A1C2B  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1C2B  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1C2B  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[DummyConfig_A1C2B  dedicated]
+dedicatedMd8480List = 1 17
+
+
+# 2376 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B2C2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B2C2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B2C2  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1B2C2  cellC]
+TgppIdentity=2
+Md8480Identity=18
+[cellA1B2C2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1B2C2  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cellA1B2C2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B2C2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B2C2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+# 2380 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1G2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1G2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1G2  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellA1D1G2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1G2  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1D1G2  cellG]
+TgppIdentity=6
+Md8480Identity=17
+[cellA1D1G2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellA1D1G2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1D1G2  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2384 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1B2C3.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1B2C3  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1B2C3  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[DummyConfig_A1B2C3  cellC]
+TgppIdentity=2
+Md8480Identity=33
+[DummyConfig_A1B2C3  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[DummyConfig_A1B2C3  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1B2C3  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1B2C3  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1B2C3  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[DummyConfig_A1B2C3  dedicated]
+dedicatedMd8480List = 1 17 33
+
+
+# 2388 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B2D3.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellA1B2D3  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B2D3  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1B2D3  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B2D3  cellD]
+TgppIdentity=3
+Md8480Identity=33
+[cellA1B2D3  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1B2D3  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B2D3  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B2D3  dedicated]
+dedicatedMd8480List = 1 17 33
+
+# 2392 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellB1A2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellB1A2  cellA]
+TgppIdentity=0
+Md8480Identity=17
+[cellB1A2  cellB]
+TgppIdentity=1
+Md8480Identity=1
+[cellB1A2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellB1A2  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellB1A2  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellB1A2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellB1A2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellB1A2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+
+
+
+
+
+
+# 2396 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellD1A2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellD1A2  cellA]
+TgppIdentity=0
+Md8480Identity=17
+[cellD1A2  cellD]
+TgppIdentity=3
+Md8480Identity=1
+[cellD1A2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellD1A2  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellD1A2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellD1A2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellD1A2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+
+
+
+
+
+
+# 2400 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1C2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1C2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1C2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[cellA1D1C2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1C2  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1D1C2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellA1D1C2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellA1D1C2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+
+
+# 2404 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1C2B2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1C2B2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1C2B2  cellB]
+TgppIdentity=1
+Md8480Identity=20
+[cellA1D1C2B2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[cellA1D1C2B2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1C2B2  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1D1C2B2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellA1D1C2B2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellA1D1C2B2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+
+
+# 2408 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1E1.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1E1  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1E1  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1D1E1  cellC]
+TgppIdentity=2
+Md8480Identity=18
+[cellA1D1E1  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1E1  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cellA1D1E1  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1D1E1  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1D1E1  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2412 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellC1A2B2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellC1A2B2  cellA]
+TgppIdentity=0
+Md8480Identity=17
+[cellC1A2B2  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellC1A2B2  cellC]
+TgppIdentity=2
+Md8480Identity=1
+[cellC1A2B2  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellC1A2B2  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellC1A2B2  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellC1A2B2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellC1A2B2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+# 2416 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C1G1.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellA1B1C1G1  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C1G1  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C1G1  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1C1G1  cellG]
+TgppIdentity=6
+Md8480Identity=5
+[cellA1B1C1G1  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1B1C1G1  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2420 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1C2B2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1C2B2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1C2B2  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellA1C2B2  cellC]
+TgppIdentity=2
+Md8480Identity=17
+[cellA1C2B2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1C2B2  cellE]
+TgppIdentity=4
+Md8480Identity=4
+[cellA1C2B2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1C2B2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1C2B2  dedicated]
+dedicatedMd8480List = 1 17 
+
+
+# 2424 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1E1D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1E1D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1E1D2  cellE]
+TgppIdentity=4
+Md8480Identity=2
+[cellA1E1D2  cellF]
+TgppIdentity=5
+Md8480Identity=4
+[cellA1E1D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1E1D2  cellB]
+TgppIdentity=1
+Md8480Identity=18
+[cellA1E1D2  cellC]
+TgppIdentity=2
+Md8480Identity=20
+[cellA1E1D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1E1D2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+# 2428 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1D1B2G2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1D1B2G2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1D1B2G2  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1D1B2G2  cellD]
+TgppIdentity=3
+Md8480Identity=2
+[cellA1D1B2G2  cellG]
+TgppIdentity=6
+Md8480Identity=18
+[cellA1D1B2G2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1D1B2G2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+
+# 2432 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAE.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellAE  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAE  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellAE  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellAE  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellAE  cellE]
+TgppIdentity=4
+Md8480Identity=2
+[cellAE  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellAE  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAE  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAE  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2436 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellDE.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellDE  cellA]
+TgppIdentity=0
+Md8480Identity=-1
+[cellDE  cellB]
+TgppIdentity=1
+Md8480Identity=-1
+[cellDE  cellC]
+TgppIdentity=2
+Md8480Identity=-1
+[cellDE  cellD]
+TgppIdentity=3
+Md8480Identity=1
+[cellDE  cellE]
+TgppIdentity=4
+Md8480Identity=2
+[cellDE  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellDE  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellDE  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellDE  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+# 2440 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C1D1.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellA1B1C1D1  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C1D1  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C1D1  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1C1D1  cellD]
+TgppIdentity=3
+Md8480Identity=5
+[cellA1B1C1D1  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellA1B1C1D1  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2444 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C1D2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1C1D2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C1D2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C1D2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1C1D2  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[cellA1B1C1D2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1C1D2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+
+# 2448 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B1C1G2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cellA1B1C1G2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1B1C1G2  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellA1B1C1G2  cellC]
+TgppIdentity=2
+Md8480Identity=4
+[cellA1B1C1G2  cellG]
+TgppIdentity=6
+Md8480Identity=17
+[cellA1B1C1G2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B1C1G2  dedicated]
+dedicatedMd8480List = 1 17
+
+
+
+# 2452 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellD1A1B1E2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellD1A1B1E2  cellA]
+TgppIdentity=0
+Md8480Identity=2
+[cellD1A1B1E2  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cellD1A1B1E2  cellD]
+TgppIdentity=3
+Md8480Identity=1
+[cellD1A1B1E2  cellE]
+TgppIdentity=4
+Md8480Identity=17
+[cellD1A1B1E2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2456 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1C1E2F2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellA1C1E2F2  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellA1C1E2F2  cellB]
+TgppIdentity=1
+Md8480Identity=4
+[cellA1C1E2F2  cellC]
+TgppIdentity=2
+Md8480Identity=2
+[cellA1C1E2F2  cellE]
+TgppIdentity=4
+Md8480Identity=17
+[cellA1C1E2F2  cellF]
+TgppIdentity=5
+Md8480Identity=18
+[cellA1C1E2F2  cellG]
+TgppIdentity=6
+Md8480Identity=20
+[cellA1C1E2F2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1C1E2F2  dedicated]
+dedicatedMd8480List = 1 17
+
+# 2460 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/DummyConfig_A1D2C.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[DummyConfig_A1D2C  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[DummyConfig_A1D2C  cellC]
+TgppIdentity=2
+Md8480Identity=2
+[DummyConfig_A1D2C  cellD]
+TgppIdentity=3
+Md8480Identity=17
+[DummyConfig_A1D2C  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[DummyConfig_A1D2C  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[DummyConfig_A1D2C  cellG]
+TgppIdentity=6
+Md8480Identity=4
+[DummyConfig_A1D2C  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[DummyConfig_A1D2C  dedicated]
+dedicatedMd8480List = 1 17
+
+
+# 2464 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellAB.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+[cellAB  cellA]
+TgppIdentity=0
+Md8480Identity=1
+[cellAB  cellB]
+TgppIdentity=1
+Md8480Identity=2
+[cellAB  cellC]
+TgppIdentity=2
+Md8480Identity-1
+[cellAB  cellD]
+TgppIdentity=3
+Md8480Identity=-1
+[cellAB  cellE]
+TgppIdentity=4
+Md8480Identity=-1
+[cellAB  cellF]
+TgppIdentity=5
+Md8480Identity=-1
+[cellAB  cellG]
+TgppIdentity=6
+Md8480Identity=-1
+[cellAB  cellH]
+TgppIdentity=7
+Md8480Identity=-1
+[cellAB  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+
+
+# 2468 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/cellA1B2C1D1E2F2.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+[cellA1B2C1D1E2F2  cellA]
+TgppIdentity=0
+Md8480Identity=2
+[cellA1B2C1D1E2F2  cellB]
+TgppIdentity=1
+Md8480Identity=17
+[cellA1B2C1D1E2F2  cellC]
+TgppIdentity=2
+Md8480Identity=1
+[cellA1B2C1D1E2F2  cellD]
+TgppIdentity=3
+Md8480Identity=4
+[cellA1B2C1D1E2F2  cellE]
+TgppIdentity=4
+Md8480Identity=18
+[cellA1B2C1D1E2F2  cellF]
+TgppIdentity=5
+Md8480Identity=20
+[cellA1B2C1D1E2F2  cell-]
+TgppIdentity=-1
+Md8480Identity=1
+[cellA1B2C1D1E2F2  dedicated]
+dedicatedMd8480List = 1 17
+# 2472 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+ 
+ 
+ 
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/threeCellSHO2RF.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+[cellABCSho2RF  BTS1]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[cellABCSho2RF  BTS2]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[cellABCSho2RF  BTS3]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+
+# 2480 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/btsHho3Bts2_inter_freq.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+[btsHho3Bts2InterFreq  BTS1]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[btsHho3Bts2InterFreq  BTS2]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2176400000
+
+ 
+UpFreq=1977400000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[btsHho3Bts2InterFreq  BTS3]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2176400000
+
+ 
+UpFreq=1977400000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+
+# 2484 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/nineCellSHO6RF.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[cell9Hho  BTS1]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[cell9Hho  BTS2]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[cell9Hho  BTS3]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+[cell9Hho  BTS4]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[cell9Hho  BTS5]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[cell9Hho  BTS6]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+
+
+[cell9Hho  BTS7]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[cell9Hho  BTS8]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[cell9Hho  BTS9]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+
+# 2488 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/sixCellSHO4RF.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[sixCellSHO4RF  BTS1]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2140000000
+
+ 
+UpFreq=1950000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[sixCellSHO4RF  BTS2]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2167400000
+
+ 
+UpFreq=1977400000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[sixCellSHO4RF  BTS3]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2167400000
+
+ 
+UpFreq=1977400000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+[sixCellSHO4RF  BTS4]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq= 2167400000
+
+ 
+UpFreq= 1977400000 
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[sixCellSHO4RF  BTS5]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq= 2112600000
+
+ 
+UpFreq= 1922600000 
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[sixCellSHO4RF  BTS6]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq= 2112600000
+
+ 
+UpFreq= 1922600000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_2 
+
+ 
+CchTxBB   =TXBASEBAND3
+
+ 
+CchTxRF   =TXRFUNIT2 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND3
+
+ 
+DchTxRF   =TXRFUNIT2
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_OFF
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+# 2492 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+
+
+# 1 "C:/Program Files (x86)/Protocol Test System/Development_iWD_D14wk36v30/Executable_test_suites/Rel10_Mar2012/3GPP-TS-34.123-3/ssConfig/threeCellSHO_8122.cfg" 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+[cellABCSho_8122  BTS1]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2110000000
+
+ 
+UpFreq=1920000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER1_1 
+
+ 
+CchTxBB   =TXBASEBAND1
+
+ 
+CchTxRF   =TXRFUNIT1
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND1 
+
+ 
+CchRxRF   =RXRFUNIT1  
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND1
+
+ 
+DchTxRF   =TXRFUNIT1
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND1 
+
+ 
+DchRxRF   =RXRFUNIT1 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_ANALOG
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+[cellABCSho_8122  BTS2]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2110000000
+
+ 
+UpFreq=1920000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=TXCODER2_1 
+
+ 
+CchTxBB   =TXBASEBAND2
+
+ 
+CchTxRF   =NOT_USED 
+
+ 
+CchRxCoder=RXDECODER1_1   
+
+ 
+CchRxBB   =RXBASEBAND2 
+
+ 
+CchRxRF   =RXRFUNIT2 
+
+ 
+DchTxCoder=TXCODER1_2   
+
+ 
+DchTxBB   =TXBASEBAND2
+
+ 
+DchTxRF   =NOT_USED
+
+ 
+DchRxCoder=RXDECODER1_2 
+
+ 
+DchRxBB   =RXBASEBAND2 
+
+ 
+DchRxRF   =RXRFUNIT2 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_RF
+
+
+
+
+[cellABCSho_8122  BTS3]
+
+ 
+PowerMode=NORMAL_POWER_MODE
+
+ 
+DownFreq=2110000000
+
+ 
+UpFreq=1920000000
+  
+ 
+DeltaFreq=0 
+
+ 
+DeltaPhase=0
+
+ 
+CchTxCoder=NOT_USED 
+
+ 
+CchTxBB   =NOT_USED
+
+ 
+CchTxRF   =NOT_USED 
+
+ 
+CchRxCoder=NOT_USED   
+
+ 
+CchRxBB   =NOT_USED 
+
+ 
+CchRxRF   =NOT_USED 
+
+ 
+DchTxCoder=NOT_USED   
+
+ 
+DchTxBB   =NOT_USED
+
+ 
+DchTxRF   =NOT_USED
+
+ 
+DchRxCoder=NOT_USED 
+
+ 
+DchRxBB   =NOT_USED 
+
+ 
+DchRxRF   =NOT_USED 
+
+ 
+RFConnector   = RF_MAIN
+
+ 
+TxBBConnector =	BB_NOCONN
+
+ 
+BBAdder       =	BB_ADDER_ON
+
+ 
+LVDS          =	BB_LVDS_OFF
+
+ 
+RxBBConnector =	BB_NOCONN
+
+
+# 2496 "C:\\Program Files (x86)\\Protocol Test System\\Development_iWD_D14wk36v30\\Executable_test_suites\\Rel10_Mar2012\\3GPP-TS-34.123-3\\ssConfig\\ssConfiguration.SScfg" 2
+
+
+ 
+ 
+ 
+
+
+[noPrachSccpch ]
+channelList = secondaryCpich/B: mac/secondaryCcpch/B: mac/pich/B: mac/pcch/B: mac/prach/B: secondaryCpich/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C: mac/prach/C:
+
+
+
+[noPrachSccpchD ]
+channelList =secondaryCpich/D: mac/secondaryCcpch/D: mac/pich/D: mac/pcch/D: mac/prach/D:
+
+
+
+[noPrachSccpchE ]
+channelList =secondaryCpich/E: mac/secondaryCcpch/E: mac/pich/E: mac/pcch/E: mac/prach/E:
+
+
+
+[noPrachSccpchF ]
+channelList =secondaryCpich/F: mac/secondaryCcpch/F: mac/pich/F: mac/pcch/F: mac/prach/F:
+
+
+
+[noPrachSccpch_HSDPA ]
+channelList =secondaryCpich/F: mac/secondaryCcpch/F: mac/pich/F: mac/pcch/F:
+
+
+
+[noPrachSccpchG ]
+channelList =secondaryCpich/G: mac/secondaryCcpch/G: mac/pich/G: mac/pcch/G: mac/prach/G:
+
+
+
+[noPrachSccpch2 ]
+channelList = secondaryCpich/B: mac/pich/B: mac/pcch/B: mac/prach/B: secondaryCpich/C: mac/prach/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C:
+
+
+
+[noPrachSccpch3 ]
+channelList = secondaryCpich/B: mac/pich/B: mac/pcch/B: secondaryCpich/C: mac/prach/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C:
+
+
+
+[noPrachSccpchB ]
+channelList = secondaryCpich/B: mac/secondaryCcpch/B: mac/pich/B: mac/pcch/B: 
+
+
+
+
+[noPrachSccpch5 ]
+channelList = secondaryCpich/D: mac/pich/D: mac/pcch/D: secondaryCpich/C: mac/prach/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C:
+
+
+
+[noPrachSccpchA1B1D2 ]
+channelList = secondaryCpich/B: mac/pich/B: mac/pcch/B: secondaryCpich/D: mac/pich/D: mac/pcch/D:
+
+
+
+
+[noPrachSccpchA1G1D2 ]
+channelList = secondaryCpich/G: mac/pich/G: mac/pcch/G: secondaryCpich/D: mac/pich/D: mac/pcch/D:
+
+
+
+[noPrachSccpchA1B1D2C2 ]
+channelList = secondaryCpich/B: mac/pich/B: mac/pcch/B: secondaryCpich/D: mac/pich/D: mac/pcch/D:
+
+
+
+ 
+
+[noPrachSccpch4 ]
+channelList = secondaryCpich/B: mac/pich/B: mac/pcch/B: secondaryCpich/C: /prach/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C:
+
+
+
+[noPrachSccpch4_1 ]
+channelList = secondaryCpich/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C:
+
+
+
+[clone_for_8_3_1_21 ]
+cloneList =  mac/downlinkDpch/-:,G: mac/uplinkDpch/-:,G: rlc/dcch/-:(0),G: rlc/dcch/-:(1),G: rlc/dcch/-:(2),G: rlc/dcch/-:(3),G:
+ 
+
+
+
+[noPrachSccpch_83123 ]
+channelList = secondaryCpich/G: mac/secondaryCcpch/G: mac/pich/G: mac/pcch/G: secondaryCpich/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C: 
+
+
+
+[noScpichPichPcch ]
+channelList =secondaryCpich/F: mac/pich/F: mac/pcch/F:
+
+
+
+[clone_for_9_4_2_2_1 ]
+cloneList =  mac/downlinkDpch/-:,D: mac/uplinkDpch/-:,D: rlc/dcch/-:(0),D: rlc/dcch/-:(1),D: rlc/dcch/-:(2),D: rlc/dcch/-:(3),D:
+ 
+
+
+
+[clone_for_6_1_1_5 ]
+cloneList =  mac/downlinkDpch/-:,C: mac/uplinkDpch/-:,C: rlc/dcch/-:(0),C: rlc/dcch/-:(1),C: rlc/dcch/-:(2),C: rlc/dcch/-:(3),C:
+ 
+
+
+
+[clone_for_6_1_1_7 ]
+cloneList =  mac/downlinkDpch/-:,C: mac/uplinkDpch/-:,C: rlc/dcch/-:(0),C: rlc/dcch/-:(1),C: rlc/dcch/-:(2),C: rlc/dcch/-:(3),C:
+ 
+
+
+
+[clone_for_6_1_1_8 ]
+cloneList =  mac/downlinkDpch/-:,E: mac/uplinkDpch/-:,E: rlc/dcch/-:(0),E: rlc/dcch/-:(1),E: rlc/dcch/-:(2),E: rlc/dcch/-:(3),E:
+
+
+
+[clone_for_12_2_1_5b ]
+cloneList =  mac/downlinkDpch/-:,D: mac/uplinkDpch/-:,D: rlc/dcch/-:(0),D: rlc/dcch/-:(1),D: rlc/dcch/-:(2),D: rlc/dcch/-:(3),D:
+ 
+
+
+
+[clone_for_6_1_2_6 ]
+cloneList =  mac/downlinkDpch/-:,B: mac/uplinkDpch/-:,B: rlc/dcch/-:(0),B: rlc/dcch/-:(1),B: rlc/dcch/-:(2),B: rlc/dcch/-:(3),B:
+ 
+
+
+
+[clone_for_12_4_1_4b ]
+cloneList =  mac/downlinkDpch/-:,A: mac/uplinkDpch/-:,A: rlc/dcch/-:(0),A: rlc/dcch/-:(1),A: rlc/dcch/-:(2),A: rlc/dcch/-:(3),A:
+ 
+
+
+
+[clone_for_8_4_1_28 ]
+cloneList =  rl/primarySch/B:,C:,D: rl/secondarySch/B:,C:,D: trch/primaryCcpch/B:,C:,D: rl/secondaryCcpch/B:,C:,D: trch/secondaryCcpch/B:,C:,D: rl/pich/B:,C:,D: rl/aich/B:,C:,D: rl/prach/B:,C:,D: rl/downlinkDpch/B:,C:,D: trch/downlinkDpch/B:,C:,D: rlc/bcch/B:Bch,C:,D: rlc/pcch/B:(1),C:,D: rlc/ccch/B:Fach,C:,D: rlc/ccch/B:Rach(1),C:,D: rlc/dcch/B:(0),C:,D: rlc/dcch/B:(1),C:,D: rlc/dcch/B:(2),C:,D: rlc/dcch/B:(3),C:,D:
+ 
+
+
+
+[clone_for_mimo ]
+cloneList = rl/primaryCpich/A:,B:
+
+
+
+[noPrachSccpch_6217 ]
+channelList = secondaryCpich/B: mac/secondaryCcpch/B: mac/pich/B: mac/pcch/B: mac/prach/B: secondaryCpich/C: mac/secondaryCcpch/C: mac/pich/C: mac/pcch/C: 
+
+
+
+[noPrachSccpch_6212a ]
+channelList = secondaryCpich/B: mac/secondaryCcpch/B: mac/pich/B: mac/pcch/B: mac/prach/B:
+
+
+
+
+[rb10_11_12 ]
+trSegmentList = 10 11 12

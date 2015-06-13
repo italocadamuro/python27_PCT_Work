@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<campaign>
+  <fileDetails>
+    <version>1.0</version>
+    <dateCreated>05-Jun-2015 18:40:02</dateCreated>
+    <author>eu-tau1verification</author>
+    <comment />
+    <schemaVersion>1</schemaVersion>
+  </fileDetails>
+  <name>Eng Serv W1 ePTC New</name>
+  <testSequence id="0" type="LTE">
+    <name>LTE_singleBox_700_new</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Running</status>
+      <startTime>2015-06-05_18.41.18</startTime>
+      <executionDuration>17.24.37</executionDuration>
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="2" type="3G">
+    <name>3G_S4_SignleBox_Overnight_New</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>NotStarted</status>
+      <startTime />
+      <executionDuration />
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="3" type="3G">
+    <name>3G_S4_SignleBox_Overnight_New</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-06-05_18.41.28</startTime>
+      <executionDuration>10.25.32</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\PCT_Results\2015-06-05_18.41.26\Eng Serv W1 ePTC New\3G_S4_SignleBox_Overnight_New\default_ThreeGFdd_3G_S4_SignleBox_Overnight_New_2015-06-05_18.41.26.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>258</totalNumOfTests>
+        <numOfTestsRun>258</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>210</totalNumOfPasses>
+        <totalNumOfFailures>44</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="4" type="3G">
+    <name>3G_S4_SignleBox_Overnight_New</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-06-05_18.41.31</startTime>
+      <executionDuration>07.44.24</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\PCT_Results\2015-06-05_18.41.07\Eng Serv W1 ePTC New\3G_S4_SignleBox_Overnight_New\default_ThreeGFdd_3G_S4_SignleBox_Overnight_New_2015-06-05_18.41.07.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>258</totalNumOfTests>
+        <numOfTestsRun>258</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>214</totalNumOfPasses>
+        <totalNumOfFailures>41</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="1" type="LTE">
+    <name>S4_LTE_IRAT_1_BOX</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>NotStarted</status>
+      <startTime />
+      <executionDuration />
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="5" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Done</status>
+      <startTime>2015-06-06_02.25.57</startTime>
+      <executionDuration>03.33.23</executionDuration>
+      <resultLocation>\\LUT-NEPT-134\PCT_Results\2015-06-06_02.25.32\Eng Serv W1 ePTC New\S4_3G_SingleBox_100\default_ThreeGFdd_S4_3G_SingleBox_100_2015-06-06_02.25.32.ptmres</resultLocation>
+      <summary>
+        <totalNumOfTests>100</totalNumOfTests>
+        <numOfTestsRun>100</numOfTestsRun>
+        <estimatedTotalRunTime />
+        <totalNumOfPasses>91</totalNumOfPasses>
+        <totalNumOfFailures>9</totalNumOfFailures>
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="6" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>Running</status>
+      <startTime>2015-06-06_05.07.01</startTime>
+      <executionDuration>06.58.54</executionDuration>
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="7" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>NotStarted</status>
+      <startTime />
+      <executionDuration />
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <testSequence id="8" type="3G">
+    <name>S4_3G_SingleBox_100</name>
+    <uutProfile>Current UUT Profile</uutProfile>
+    <runMode>Normal</runMode>
+    <comment />
+    <result>
+      <status>NotStarted</status>
+      <startTime />
+      <executionDuration />
+      <resultLocation />
+      <summary>
+        <totalNumOfTests />
+        <numOfTestsRun />
+        <estimatedTotalRunTime />
+        <totalNumOfPasses />
+        <totalNumOfFailures />
+      </summary>
+    </result>
+  </testSequence>
+  <resultSummary>
+    <currentTestSequence />
+    <totalNumOfTestSequences />
+    <numOfTestSequencesRun />
+    <estimatedTotalRunTime />
+    <catalogVersion>MX785220A_CAG43A_PVG70_A_CIPHER</catalogVersion>
+    <operatorName />
+  </resultSummary>
+</campaign>
+

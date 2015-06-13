@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Report>
+
+  <uut>
+    <label>None</label>
+    <profileName>CAG#42C_3G_S4</profileName>
+  </uut>
+
+  <result>
+    <status>
+      <status>Failed</status>
+    </status>
+    <startTime>2015-05-31_17.14.49</startTime>
+    <executionDuration>342</executionDuration>
+    <ptsIpAddress>1.1.0.141</ptsIpAddress>
+  </result>
+
+</Report>

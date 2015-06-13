@@ -1,0 +1,600 @@
+#######################################################################
+# Anritsu Generated PICS/PIXIT file
+#
+# Changes Applied: 3GPP_TS_34.123-3_AND_BandI_AND_CS_AND_TestSequence-2051665681_AND_ThreeGFddUUT-660783206
+#######################################################################
+pc_3G324M,                                   BOOLEAN,       FALSE   #-- Multimedia services:  3G-324M supported
+pc_64QAM_MIMO,                               BOOLEAN,       FALSE   #-- Support 64QAM + MIMO
+pc_8PSKPowerProfile1,                        BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_8PSKPowerProfile2,                        BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_8PSKPowerProfile3,                        BOOLEAN,       TRUE    #-- Used in Classmark 3
+pc_8PSK_PowerCap1,                           BOOLEAN,       FALSE   #-- 8-PSKRF Power Capability 1
+pc_8PSK_PowerCap2,                           BOOLEAN,       FALSE   #-- 8-PSKRF Power Capability 2
+pc_8PSK_Struct,                              BOOLEAN,       TRUE    #-- 8-PSK struct is present or not
+pc_A5_4_CS,                                  BOOLEAN,       FALSE   #-- GSM Algorithm A5/4 supported.NOTE: Support of this algorithm is mandatory in Rel-11 and later releases, but it is optional for previous Rel of UEs.Default value:  FALSE (encryption algorithm A5/4 not available)
+pc_AT_SupportToInit_PS_Call,                 BOOLEAN,       TRUE    #-- This PIXIT when set to TRUE, AT command set ( CGACT, CGEQREQ , CGDCONT, CGEQMIN)will be used to initiate PS call and strict  check of desired QoS parameters is done. IF it is set to FALSE, only CGACT command to act PDP context will be used  to initiate the call, and checking of QoS Parameters sent by UE in PDP Context Req will not be performed.Default value: TRUE
+pc_AccessTechPriSuppInHPLMNwACT,             BOOLEAN,       TRUE    #-- Access technology priority supported in HPLMNwACT field@sic T1-040705 sic@
+pc_Acquiring_InterF_SI,                      BOOLEAN,       FALSE   #-- Capability to Support of inter-frequency SI acquisition for HO
+pc_Acquiring_IntraF_SI,                      BOOLEAN,       FALSE   #-- Capability to Support of intra-frequency SI acquisition for HO
+pc_ActivateSimultaneousPDP,                  BOOLEAN,       FALSE   #-- Activation of one or more PDP contexts simultaneously
+pc_AddInfo_BC,                               BOOLEAN,       FALSE   #-- At least one bearer capability
+pc_AddPositionCap,                           BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic R5s080067 Baselinemoving to Rel-7 March08, GP-100497  sic@
+pc_AltSpeechFax_TS61,                        BOOLEAN,       FALSE   #-- Teleservice 61: alternate speech/fax supported
+pc_Async31kHz_14400,                         BOOLEAN,       TRUE    #-- Asynchronous 3.1 kHz audio with FNUR 14400bit/s general bearer service supported
+pc_Async31kHz_19200,                         BOOLEAN,       FALSE   #-- Asynchronous 3.1 kHz audio with FNUR 19200 bit/s general bearer service supported
+pc_Async31kHz_28800,                         BOOLEAN,       FALSE   #-- Asynchronous 3.1 kHz audio with FNUR 28800 bit/s general bearer service supported
+pc_Async31kHz_9600,                          BOOLEAN,       FALSE   #-- Asynchronous 3.1 kHz audio with FNUR 9600 bit/s general bearer service supported
+pc_Async31kHz_AutoBauding1,                  BOOLEAN,       FALSE   #-- Asynchronous 3.1 kHz audio with modem AutoBauding 1 general bearer service supported
+pc_AsyncFTM_56000,                           BOOLEAN,       FALSE   #-- Asynchronous Frame Tunneling Mode (FTM) 56000bit/s general bearer service supported
+pc_AsyncFTM_64000,                           BOOLEAN,       FALSE   #-- Asynchronous Frame Tunneling Mode (FTM) 64000bit/s general bearer service supported
+pc_AsyncPIAFS_32000,                         BOOLEAN,       FALSE   #-- Asynchronous PIAFS 32000bit/s general bearer service supported
+pc_AsyncPIAFS_64000,                         BOOLEAN,       TRUE    #-- Asynchronous PIAFS 64000bit/s general bearer service supported
+pc_AsyncV110_14400,                          BOOLEAN,       TRUE    #-- Asynchronous V110 UDI 14400bit/s general bearer service supported
+pc_AsyncV110_19200,                          BOOLEAN,       FALSE   #-- Asynchronous V110 UDI 19200bit/s general bearer service supported
+pc_AsyncV110_28800,                          BOOLEAN,       FALSE   #-- Asynchronous V110 UDI 28800bit/s general bearer service supported
+pc_AsyncV110_38400,                          BOOLEAN,       FALSE   #-- Asynchronous V110 UDI 38400bit/s general bearer service supported
+pc_AsyncV110_9600,                           BOOLEAN,       FALSE   #-- Asynchronous V110 UDI  9600bit/s  general bearer service supported
+pc_AsyncV120_14400,                          BOOLEAN,       TRUE    #-- Asynchronous V120 14400bit/s general bearer service supported
+pc_AsyncV120_19200,                          BOOLEAN,       FALSE   #-- Asynchronous V120 19200bit/s general bearer service supported
+pc_AsyncV120_28800,                          BOOLEAN,       FALSE   #-- Asynchronous V120 28800bit/s general bearer service supported
+pc_AsyncV120_38400,                          BOOLEAN,       FALSE   #-- Asynchronous V120 38400bit/s general bearer service supported
+pc_AsyncV120_48000,                          BOOLEAN,       FALSE   #-- Asynchronous V120 48000bit/s general bearer service supported
+pc_AsyncV120_56000,                          BOOLEAN,       FALSE   #-- Asynchronous V120 56000bit/s general bearer service supported
+pc_AsyncV120_9600,                           BOOLEAN,       TRUE    #-- Asynchronous V120 9600bit/s general bearer service supported
+pc_AutomaticAttachSwitchON,                  BOOLEAN,       TRUE    #-- Paramter is TRUE if UE supports automatic triggering of GMM Attach procedure when switched on
+pc_AutomaticAttachUEIDnotDerived,            BOOLEAN,       FALSE   #-- Automatic attach procedure when UE identity cannot be derived by the network
+pc_Background,                               BOOLEAN,       TRUE    #-- Background QoS/traffic class supported
+pc_Band10_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 10@sic R5-070160 sic@
+pc_Band11_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 11@sic R5-0702465 sic@
+pc_Band12_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 12
+pc_Band13_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 13
+pc_Band14_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 14
+pc_Band19_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 19
+pc_Band1_Supp,                               BOOLEAN,       TRUE    #-- TRUE if UE supports Frequency Band 1
+pc_Band20_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 20
+pc_Band21_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 21
+pc_Band22_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 22
+pc_Band25_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 25
+pc_Band26_Supp,                              BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 26
+pc_Band2_Supp,                               BOOLEAN,       TRUE    #-- TRUE if UE supports Frequency Band 2
+pc_Band3_Supp,                               BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 3
+pc_Band4_Supp,                               BOOLEAN,       TRUE    #-- TRUE if UE supports Frequency Band 4
+pc_Band5_Supp,                               BOOLEAN,       TRUE    #-- TRUE if UE supports Frequency Band 5
+pc_Band6_Supp,                               BOOLEAN,       TRUE    #-- TRUE if UE supports Frequency Band 6
+pc_Band7_Supp,                               BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 7@sic R5-062520 sic@
+pc_Band8_Supp,                               BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 8@sic R5s070008 sic@
+pc_Band9_Supp,                               BOOLEAN,       FALSE   #-- TRUE if UE supports Frequency Band 9@sic R5s070008 sic@
+pc_CDMA2000,                                 BOOLEAN,       FALSE   #-- Used in Classmark 3@sic GP-100497 sic@UE support of CDMA2000, Default value = "0"B
+pc_CHUP_AT_CommandSupp,                      BOOLEAN,       TRUE    #-- TRUE if the AT command +CHUP ( to hangup an alternating mode call is supported. Otherwise AT+ CVHU=0 command used.Default value: FALSE
+pc_CS,                                       BOOLEAN,       TRUE    #-- Circuit Switched
+pc_CSG,                                      BOOLEAN,       FALSE   #-- CSG Support
+pc_CSVoHS,                                   BOOLEAN,       FALSE   #-- Support for CS Voice over HSPANOTE: CS Voice over HSPA is an optional Rel-8 feature that may be implemented in Rel-7 UEs.
+pc_CS_CallEst,                               BOOLEAN,       TRUE    #-- Support of CS call establishment.NOTEThis ICS is set to true if UE supports CS call establishment. i.e atleast one of the ics items:-  A.2/1: Narrow band speech (AMR),-  A.20/1: At least one CS bearer service,-  A.20/2: At least one call related  supplementary service,- A.2/2: Emergency call is set to true.
+pc_CS_T_data,                                BOOLEAN,       FALSE   #-- Circuit Switched Transparant Data
+pc_CallWaitingSupp,                          BOOLEAN,       TRUE    #-- TRUE if UE supports the call waiting supplementary service.Default value: FALSE@sic VB T1s-040298 sic@@sic VB ER1902 sic@
+pc_CapabilityWithSimultaneousHS_DSCHConfig,  ENUM-DL_CapabilityWithSimultaneousHS_DSCHConfig,kbps64  #-- Capability with simultaneous HS-DSCH configuration
+pc_CipherModeSetCap,                         BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic R5s080067 Baselinemoving to Rel-7 March08, GP-100497  sic@
+pc_Conv_GPS,                                 BOOLEAN,       TRUE    #-- Support of conventional GPS
+pc_Conversational,                           BOOLEAN,       TRUE    #-- Converational supported
+pc_DARP_Phase1,                              BOOLEAN,       TRUE    #-- IF DARP phase 1 is supported
+pc_DARP_Phase2,                              BOOLEAN,       FALSE   #-- IF DARP phase 2 is supported
+pc_DB_DC_HSDPA,                              BOOLEAN,       FALSE   #-- Support of dual band operation
+pc_DB_DC_HSDPA_Band1_5,                      BOOLEAN,       FALSE   #-- Support dual band DC-HSDPA configuration I and V
+pc_DB_DC_HSDPA_Band1_8,                      BOOLEAN,       FALSE   #-- Support dual band DC-HSDPA configuration I and VIII
+pc_DB_DC_HSDPA_Band2_4,                      BOOLEAN,       FALSE   #-- Support dual band DC-HSDPA configuration II and IV
+pc_DCS_1800_BAND,                            BOOLEAN,       TRUE    #-- IF GSM band of 1800 is supported
+pc_DD_ETWS_RRC,                              BOOLEAN,       FALSE   #-- Support of duplicate detection for ETWS in RRC@sic Thomas R5-120538 sic@
+pc_DL_DRX,                                   BOOLEAN,       FALSE   #-- Support of HS-DSCH Discontinuous Reception
+pc_DL_TC,                                    BOOLEAN,       TRUE    #-- Support for turbo decoding for downlink.Default value: TRUE
+pc_DSAC_Rel,                                 BOOLEAN,       TRUE    #-- Rel-4 UE and earlier: FALSE - Not applicableRel5 UE: set to TRUE if DSAC is supportedRel-6 and later:TRUE - Always applicable
+pc_DTM,                                      BOOLEAN,       FALSE   #-- If DTM is supported
+pc_DTMEnhancedCap,                           BOOLEAN,       TRUE    #-- UE supports DTM Enhancements, used in Classmark3
+pc_DTM_EGPRS_8PSK_uplink,                    BOOLEAN,       FALSE   #-- UE DTM EGPRS capable of 8PSK in UL in all multislot classes
+pc_DTM_EGPRS_Multislotclass11,               BOOLEAN,       TRUE    #-- Used in Classmark 3
+pc_DTM_EGPRS_Multislotclass31,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass32,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass33,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass36,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass37,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass38,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic G3t110001 sic@
+pc_DTM_EGPRS_Multislotclass41,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-110055 sic@
+pc_DTM_EGPRS_Multislotclass42,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-110055 sic@
+pc_DTM_EGPRS_Multislotclass43,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-110055 sic@
+pc_DTM_EGPRS_Multislotclass44,               BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-110055 sic@
+pc_DTM_EGPRS_Multislotclass5,                BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_EGPRS_Multislotclass9,                BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass10,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass11,                     BOOLEAN,       TRUE    #-- Used in Classmark 3
+pc_DTM_Multislotclass31,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass32,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass33,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass36,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass37,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass38,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass40,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass41,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass42,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass43,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass44,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass5,                      BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass6,                      BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_Multislotclass9,                      BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DTM_SingleSlotAllocation,                 BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_DetachOnUSIM_Rmv,                         BOOLEAN,       FALSE   #-- detach on USIM remove supported
+pc_DualCell,                                 BOOLEAN,       TRUE    #-- Dual Cell is supported
+pc_DualCellMIMO,                             BOOLEAN,       FALSE   #-- Support of Dual cell MIMO
+pc_ECSD_8PSK_uplink,                         BOOLEAN,       FALSE   #-- UE ECSD capable of 8PSK in UL in all multislot classes
+pc_ECSD_MultislotClass,                      BITSTRING,     00000   #-- UE ESCD Multislot Class.  If this is not supported, field coded as all 0"s @sic GP-100534 sic@
+pc_EDCH_UE_Category,                         INTEGER,       6       #-- E-DCH physical layer categories
+pc_EDCH_UE_CategoryExtension,                INTEGER,       7       #-- E-DCH physical layer category extension
+pc_EDCH_UE_Category_Extension2,              INTEGER,       10      #-- FDD E-DCH physical layer category Dual-Cell extensions
+pc_EGPRS_8PSK_uplink,                        BOOLEAN,       TRUE    #-- UE EGPRS capable of 8PSK in UL in all multislot classes
+pc_EOTD_Assist,                              BOOLEAN,       FALSE   #-- Support of MS assisted EOTD
+pc_EOTD_MS_Based,                            BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-100497 sic@Support of MS based EOTD, Default value = FALSE
+pc_ETWS,                                     BOOLEAN,       FALSE   #-- ETWS
+pc_EUTRA_MeasReporting,                      BOOLEAN,       FALSE   #-- Used in Classmark 3Support of EUTRA Measurement and Reporting
+pc_E_GSM_900_BAND,                           BOOLEAN,       TRUE    #-- IF GSM band of E-900 is supported
+pc_EmergSpeech,                              BOOLEAN,       TRUE    #-- Emergency speech call teleservice supported
+pc_EnhancedF_DPCH,                           BOOLEAN,       TRUE    #-- Support enhanced F-DPCH
+pc_Exception_ManSelectionMode,               BOOLEAN,       FALSE   #-- Exception to manual network selection mode at switch-on
+pc_ExtMeasCap,                               BITSTRING,     0       #-- Used in Classmark 3 @sic GP-100534 sic@UE support of Extended Measurements, Default value = "0"B
+pc_FDD,                                      BOOLEAN,       TRUE    #-- FDD(DS)
+pc_FLO_Iu_Capability,                        BOOLEAN,       FALSE   #-- Used in Classmark3 @sic R5s140524 sic@
+pc_Feat_A54,                                 BOOLEAN,       FALSE   #-- UE supports Encryption Algorithm A5/4
+pc_Full_FDPCH,                               BOOLEAN,       TRUE    #-- Rel-5 UE and earlier: FALSE - Not applicableRel6 and later UE: set to TRUE if usage of FDPCH is supported@sic R5s090143 sic@
+pc_GEA4,                                     BOOLEAN,       FALSE   #-- GPRS Algorithm GEA/4 supported.Default value:  FALSE (encryption algorithm GEA4 not available)
+pc_GERANFeaturePackage1,                     BOOLEAN,       TRUE    #-- Used in Classmark 3
+pc_GERANFeaturePackage2,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_GERAN_IuMode_Capability,                  BOOLEAN,       FALSE   #-- Used in Classmark3 @sic R5s140523, 140524 sic@
+pc_GMSKPowerProfile1,                        BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_GMSKPowerProfile2,                        BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_GMSKPowerProfile3,                        BOOLEAN,       TRUE    #-- Used in Classmark 3
+pc_GPRS,                                     BOOLEAN,       TRUE    #-- If GPRS is supported
+pc_GSM_14_4,                                 BOOLEAN,       TRUE    #-- UE supports GSM 14.4 kbps data (HSCSD or full rate traffic channel for 14.4 kbit/s user data (TCH/F14.4))
+pc_GSM_450_BAND,                             BOOLEAN,       FALSE   #-- IF GSM band of 450 is supported
+pc_GSM_480_BAND,                             BOOLEAN,       FALSE   #-- IF GSM band of 480 is supported
+pc_GSM_700_BAND,                             BOOLEAN,       FALSE   #-- IF GSM band of 700 is supported
+pc_GSM_710_BAND,                             BOOLEAN,       FALSE   #-- IF GSM band of 710 is supported
+pc_GSM_750_BAND,                             BOOLEAN,       FALSE   #-- IF GSM band of 750 is supported
+pc_GSM_850_BAND,                             BOOLEAN,       TRUE    #-- IF GSM band of 850 is supported
+pc_GSM_AMR,                                  BOOLEAN,       TRUE    #-- IF GSM AMR is Supported by the Mobile
+pc_GSM_Data,                                 BOOLEAN,       TRUE    #-- At least one data service
+pc_GSM_EFR,                                  BOOLEAN,       TRUE    #-- IF GSM EFR is Supported by the Mobile
+pc_GSM_FR,                                   BOOLEAN,       TRUE    #-- IF GSM FR is Supported by the Mobile
+pc_GSM_FRData,                               BOOLEAN,       TRUE    #-- Full rate data service
+pc_GSM_HR,                                   BOOLEAN,       TRUE    #-- IF GSM HR is Supported by the Mobile
+pc_G_HSCSD_MultislotClass,                   BITSTRING,     00000   #-- IF GSM High speed Circuit switched data is supported. @sic GP-100534, G3t100001 sic@
+pc_G_operation_mode_A,                       BOOLEAN,       FALSE   #-- GERAN UE Operation Mode A
+pc_G_operation_mode_B,                       BOOLEAN,       TRUE    #-- GERAN UE Operation Mode B
+pc_G_operation_mode_C,                       BOOLEAN,       FALSE   #-- GERAN UE Operation Mode C
+pc_HSDPA,                                    BOOLEAN,       TRUE    #-- Support of HS-PDSCH
+pc_HSDSCH_UE_Category,                       INTEGER,       10      #-- Default value: 5
+pc_HSDSCH_UE_Category_Extension,             INTEGER,       20      #-- FDD HS-DSCH physical layer category extension
+pc_HSDSCH_UE_Category_Extension2,            INTEGER,       24      #-- FDD HS-DSCH physical layer category Dual Cell extensions
+pc_HSDSCH_UE_Category_Extension3,            INTEGER,       25      #-- FDD HS-DSCH physical layer category Dual Cell with MIMO extensions
+pc_HSUPA,                                    BOOLEAN,       TRUE    #-- Support of E-DPDCH
+pc_HS_FACH,                                  BOOLEAN,       FALSE   #-- Support of HS-PDSCH in CELL_FACH
+pc_HS_FACH_DRX,                              BOOLEAN,       FALSE   #-- Support of HS-DSCH DRX operation
+pc_HS_PCH,                                   BOOLEAN,       FALSE   #-- Support of HS-PDSCH in CELL_PCH and URA_PCH
+pc_HS_PDSCH_AutonomousReceptionMIB_ValueTag, BOOLEAN,       FALSE   #-- Support of HS-PDSCH and autonomous receiving of MIB Value Tag before or parallel to receiving SIB INFORMATION CHANGE INDICATION in SIB 5 or SIB 5bis in CELL_FACH state.
+pc_HS_RACH_EDCH,                             BOOLEAN,       FALSE   #-- Support of common E-DCH
+pc_HS_SCCH_less,                             BOOLEAN,       FALSE   #-- Support of HS-SCCHless HS-DSCH
+pc_ImmConnect,                               BOOLEAN,       FALSE   #-- Immediate connect supported for all circuit switched basic services.
+pc_Indicating_CSG_Proximity_InterF,          BOOLEAN,       FALSE   #-- Capability to Support of inter-frequency CSG Proximity Indication
+pc_Indicating_CSG_Proximity_IntraF,          BOOLEAN,       FALSE   #-- Capability to Support of intra-frequency CSG Proximity Indication
+pc_Indicating_PLMN_list,                     BOOLEAN,       FALSE   #-- Indicating whether a PLMN is present on a PLMN list stored on the USIM
+pc_InterFreq_DL_CompressedModeRequired,      BOOLEAN,       TRUE    #-- Need of inter-frequency downlink compressed modeDefault value: TRUE@sic VB R5-060177 sic@
+pc_InterFreq_UL_CompressedModeRequired,      BOOLEAN,       TRUE    #-- Need of inter-frequency uplink compressed modeDefault value: TRUE@sic VB R5-060177 sic@
+pc_InterRAT_DL_CompressedModeRequired,       BOOLEAN,       TRUE    #-- UE supports DL DPCH compressed modeDefault value: TRUE
+pc_InterRAT_UL_CompressedModeRequired,       BOOLEAN,       TRUE    #-- UE supports UL DPCH compressed modeDefault value: TRUE
+pc_Interactive,                              BOOLEAN,       TRUE    #-- Interactive QoS/traffic class supported
+pc_Last_RPLMN,                               BOOLEAN,       FALSE   #-- "Last RPLMN" feature supported
+pc_LosslessSRNS_Reloc,                       BOOLEAN,       FALSE   #-- Lossless SRNS Relocation is supported
+pc_MAC_ehs,                                  BOOLEAN,       TRUE    #-- Support for MAC-ehs
+pc_MAC_iis,                                  BOOLEAN,       FALSE   #-- Support for MAC-i/is
+pc_MO_Serv,                                  BOOLEAN,       TRUE    #-- At least one Mobile Originated (MO) circuit switched basic servicesupported
+pc_MS_ClsmkA5_3_CS,                          BOOLEAN,       TRUE    #-- Default Algorithm A5/3 supported.NOTE: Support of this algorithm is mandatory in Rel-6 and later releases, but it is optional for previous Rel of UEs.Default value:  FALSE (encryption algorithm A5/3 not available)
+pc_MS_ClsmkCM3,                              BITSTRING,     1       #-- default Classmark 3 Indicator.Default value:  "0"B(The MS does not support any options that are indicated in CM3)
+pc_MS_ClsmkCMSP,                             BITSTRING,     1       #-- default CM Service Prompt Support.Default value:  "0"B ("Network initiated MO CM connection request" not supported.)
+pc_MS_ClsmkLCSVA_Cap,                        BITSTRING,     1       #-- default LCSVA Capabilities  Support.Default value:  "0"B(LCS value added location request notification capability  not supported)
+pc_MS_ClsmkPS_Cap,                           BITSTRING,     1       #-- default Pseudo Synchronisation Capability.Default value:  "0"B(PS capability not present)
+pc_MS_ClsmkSM_Cap,                           BITSTRING,     1       #-- default Short Message Capability.Default value: "1"B(Mobile station supports mobile terminated point to point SMS)
+pc_MS_ClsmkSoLSA,                            BITSTRING,     0       #-- default SoLSA  Support.Default value:  "0"B (The ME does not support SoLSA.)
+pc_MS_ClsmkUCS2,                             BITSTRING,     0       #-- Default UCS2 Encoding  Support.Default value:  "0"B (the ME has a preference for the default alphabet (defined in 3GPP TS 23.038 [8b]) over UCS2)
+pc_MS_ClsmkVBS,                              BITSTRING,     0       #-- default VBS Capability.Default value:  "0"B (no VBS capability or no notifications wanted)
+pc_MS_ClsmkVGCS,                             BITSTRING,     0       #-- default VGCS Capability.Default value:  "0"B (no VGCS capability or no notifications wanted)
+pc_MT_Serv,                                  BOOLEAN,       TRUE    #-- At least one Mobile Terminated (MT) circuit switched basic servicesupported
+pc_MUX_Support,                              BOOLEAN,       FALSE   #-- Multiplexer protocol supported
+pc_MaxHcContextSpace_r5_ext,                 ENUM-MaxHcContextSpace_r5_ext,by16384 #-- Maximum header compression context space
+pc_MultiBand_Supp,                           BOOLEAN,       TRUE    #-- Multiple FDD bands simultaneously
+pc_NWSelectionMode_SwitchOn,                 BOOLEAN,       FALSE   #-- NW selection mode at switch-on
+pc_NonCallRelSS,                             BOOLEAN,       TRUE    #-- non call related supplementary service supported
+pc_NwSecPDP_Support,                         BOOLEAN,       FALSE   #-- Secondary PDP context activation by the network
+pc_OnlyEmergency,                            BOOLEAN,       FALSE   #-- Only circuit switched basic service supported by the mobile isemergency call
+pc_PCS_1900_BAND,                            BOOLEAN,       FALSE   #-- IF GSM band of 1900 is supported
+pc_PS,                                       BOOLEAN,       TRUE    #-- Packet Switched
+pc_PS_AttachByRequest,                       BOOLEAN,       TRUE    #-- PS attach attempted automatically by outstanding request
+pc_P_GSM_900_BAND,                           BOOLEAN,       TRUE    #-- IF GSM band of 900 is supported
+pc_Priority_Based_Cell_Reselection,          BITSTRING,     0       #-- Priority Based Cell Reselection
+pc_RAB_A_18c_12,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_12
+pc_RAB_A_18c_13_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_13_1
+pc_RAB_A_18c_13_2,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_13_2
+pc_RAB_A_18c_14_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_14_1
+pc_RAB_A_18c_14_2,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_14_2
+pc_RAB_A_18c_15,                             BOOLEAN,       TRUE    #-- UE supports UTRAN Streaming/unknown/uplink:14.4 DL:14.4 kbps/CS RAB + uplink:3.4 DL:3.4 kbps SRBs
+pc_RAB_A_18c_16,                             BOOLEAN,       TRUE    #-- UE supports UTRAN Streaming/unknown/uplink:28.8 DL:28.8 kbps/CS RAB + uplink:3.4 DL:3.4 kbps SRBs
+pc_RAB_A_18c_17,                             BOOLEAN,       TRUE    #-- UE supports UTRAN Streaming/unknown/uplink:57.6 DL:57.6 kbps/CS RAB + uplink:3.4 DL:3.4 kbps SRBs
+pc_RAB_A_18c_23a_1,                          BOOLEAN,       TRUE    #-- RAB for TC_14_2_23a_1
+pc_RAB_A_18c_23a_2,                          BOOLEAN,       TRUE    #-- RAB for TC_14_2_23a_2
+pc_RAB_A_18c_23b,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_23b
+pc_RAB_A_18c_23c,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_23c
+pc_RAB_A_18c_26,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_26
+pc_RAB_A_18c_27,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_27
+pc_RAB_A_18c_28,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_28
+pc_RAB_A_18c_29,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_29
+pc_RAB_A_18c_31_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_31_1
+pc_RAB_A_18c_32_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_32_1
+pc_RAB_A_18c_32_2,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_32_2
+pc_RAB_A_18c_34_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_34_1
+pc_RAB_A_18c_38a,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_38a
+pc_RAB_A_18c_38b,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_38b
+pc_RAB_A_18c_38c,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_38c
+pc_RAB_A_18c_38e,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_38e
+pc_RAB_A_18c_38f,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_38f
+pc_RAB_A_18c_4,                              BOOLEAN,       TRUE    #-- RAB for TC_14_2_4
+pc_RAB_A_18c_40,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_40
+pc_RAB_A_18c_41,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_41
+pc_RAB_A_18c_43_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_43_1
+pc_RAB_A_18c_43_2,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_43_2
+pc_RAB_A_18c_49_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_49_1
+pc_RAB_A_18c_4a,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_4a
+pc_RAB_A_18c_4b,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_4b
+pc_RAB_A_18c_51_1,                           BOOLEAN,       TRUE    #-- RAB for TC_14_2_51_1
+pc_RAB_A_18c_51a,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_51a
+pc_RAB_A_18c_51b,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_51b
+pc_RAB_A_18c_57,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_57
+pc_RAB_A_18c_58,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_58
+pc_RAB_A_18c_58a,                            BOOLEAN,       TRUE    #-- RAB for TC_14_2_58a
+pc_RAB_A_18c_5a,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_5a
+pc_RAB_A_18c_62,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_62
+pc_RAB_A_18c_7a,                             BOOLEAN,       TRUE    #-- RAB for TC_14_2_7
+pc_RAB_A_18c_9,                              BOOLEAN,       TRUE    #-- RAB for TC_14_2_9
+pc_RAB_A_18e_2,                              BOOLEAN,       TRUE    #-- RAB for TC_14_4_2
+pc_RAB_A_18e_3,                              BOOLEAN,       TRUE    #-- RAB for TC_14_4_3
+pc_RAB_A_18e_4,                              BOOLEAN,       TRUE    #-- RB for CTCH + SRB for CCCH +SRB for BCCH; For TC 14_4_4
+pc_RAB_A_18e_5,                              BOOLEAN,       TRUE    #-- RAB for TC_14_4_2a
+pc_RAB_A_18f2_1,                             BOOLEAN,       TRUE    #-- FDD(DS)
+pc_RAB_A_18f3_1,                             BOOLEAN,       TRUE    #-- Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL: 3.4 DL:3.4 kbps SRBs for DCCH on DCH
+pc_RAB_A_18f3_10,                            BOOLEAN,       FALSE   #-- RAB for TC_14_7_10
+pc_RAB_A_18f3_2,                             BOOLEAN,       TRUE    #-- Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:[max bit rate depending on UE category and TTI] DL:3.4 kbps SRBs for DCCH on E-DCH and DL DCH
+pc_RAB_A_18f3_3,                             BOOLEAN,       TRUE    #-- Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] SRBs for DCCH on E-DCH and HS-DSCH
+pc_RAB_A_18f3_4,                             BOOLEAN,       TRUE    #-- Conversational / speech / UL:12.2 DL:12.2 kbps / CS RAB + Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:3.4 DL:3.4 kbps SRBs for DCCH
+pc_RAB_A_18f3_5,                             BOOLEAN,       TRUE    #-- Streaming / unknown / UL:[max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] kbps / PS RAB + Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:[max bit rate depending on UE category and TTI] DL:3.4 kbps SRBs for DCCH on E-DCH and DL DCH
+pc_RAB_A_18f3_6,                             BOOLEAN,       TRUE    #-- Conversational / unknown or speech / UL:[max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] kbps / PS RAB + Streaming or Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:[max bit rate depending on UE category and TTI] DL: :[max bit rate depending on UE category] SRBs for DCCH on E-DCH and HS-DSCH
+pc_RAB_A_18f3_7,                             BOOLEAN,       TRUE    #-- Conversational / unknown or speech / UL:[max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] kbps / PS RAB + Streaming or Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + Streaming or Interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:[max bit rate depending on UE category and TTI] DL: :[max 	bit rate depending on UE category] SRBs for DCCH on E-DCH and HS-DSCH
+pc_RAB_A_18f3_8,                             BOOLEAN,       TRUE    #-- Conversational / speech / UL:(12.65 8.85 6.6) DL:(12.65 8.85 6.6) kbps / CS RAB + Streaming or interactive or background / UL: [max bit rate depending on UE category and TTI] DL: [max bit rate depending on UE category] / PS RAB + UL:3.4 DL:3.4 kbps SRBs for DCCH + DL:0.15 kbps SRB#5 for DCCH
+pc_RAB_A_18f3_9,                             BOOLEAN,       FALSE   #-- RAB for TC_14_7_9
+pc_RAB_A_18f_1_1,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_1
+pc_RAB_A_18f_1_1a,                           BOOLEAN,       TRUE    #-- RAB for TC_14_6_1a@sic R5s070258 sic@
+pc_RAB_A_18f_1_2,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_2
+pc_RAB_A_18f_1_3,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_3
+pc_RAB_A_18f_1_3a,                           BOOLEAN,       TRUE    #-- RAB for TC_14_6_3a
+pc_RAB_A_18f_1_4,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_4
+pc_RAB_A_18f_1_4a,                           BOOLEAN,       TRUE    #-- RAB for TC_14_6_4a
+pc_RAB_A_18f_1_5,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_5
+pc_RAB_A_18f_1_5a,                           BOOLEAN,       TRUE    #-- RAB for TC_14_6_5a
+pc_RAB_A_18f_1_6,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_6
+pc_RAB_A_18f_1_7,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_7
+pc_RAB_A_18f_1_8,                            BOOLEAN,       TRUE    #-- RAB for TC_14_6_8
+pc_RAB_A_18f_3,                              BOOLEAN,       TRUE    #-- Interactive/Background / UL:32 DL: [max bit rate depending on UE category] with fixed RLC and MAC-ehs / PS RAB + SRBs for DCCH on RACH and SRB with fixed RLC and MAC-ehs on HS-DSCH / DL:QPSK
+pc_RFC2507,                                  BOOLEAN,       FALSE   #-- IP header compression protocol RFC 2507 is supported
+pc_RLPSupported,                             BOOLEAN,       FALSE   #-- If RLP is supported@sic R5-080364 RLP sic@
+pc_R_GSM_900_BAND,                           BOOLEAN,       TRUE    #-- IF GSM band of 900 is supported
+pc_RepeatedFACCH,                            BOOLEAN,       TRUE    #-- used in Classmark3
+pc_RepeatedSACCH,                            BOOLEAN,       TRUE    #-- used in Classmark3
+pc_SMS_CS_MO,                                BOOLEAN,       TRUE    #-- SMS CS mode Mobile Originated supported
+pc_SMS_CS_MT,                                BOOLEAN,       TRUE    #-- SMS CS mode Mobile Terminated supported
+pc_SMS_CellBroadcast,                        BOOLEAN,       TRUE    #-- SMS Cell Broadcast supported, i.e. the UE is capable of receiving and displaying broadcast messages.This item is implied by tc_16_3
+pc_SMS_CellBroadcast_DRX,                    BOOLEAN,       FALSE   #-- Support of Cell Broadcast Service Discontinuous Reception (DRX)
+pc_SMS_Descr,                                BOOLEAN,       FALSE   #-- SMS description
+pc_SMS_MultiCallEx,                          BOOLEAN,       TRUE    #-- SMS Sending of concatenated multiple short messages when there is a call in progress supported
+pc_SMS_MultiNoCall,                          BOOLEAN,       TRUE    #-- SMS Sending of multiple short messages on the same RR connection when there is no call in progress supported
+pc_SMS_PS_MO,                                BOOLEAN,       TRUE    #-- SMS PS mode Mobile Originated supported
+pc_SMS_PS_MT,                                BOOLEAN,       TRUE    #-- SMS PS mode Mobile Terminated supported
+pc_SMS_Value,                                BITSTRING,     0000    #-- Used in Classmark 3 @sic GP-100534 sic@Indicates the time needed for the UE to switch from one radio channel to another, perform a neighbour cell power measurement and then switch from that radio channel to another radio channel
+pc_SM_Value,                                 BITSTRING,     0000    #-- Used in Classmark 3 @sic GP-100534 sic@Indicates the time needed for the UE to switch from one radio channel to another and perform a neighbour cell power measurement
+pc_SS_Phase2Supp,                            BITSTRING,     1       #-- Set to "1"B if Supplementary Service  Phase 2 is supported, set to "0"B if not supported.Default value:  "1"B (The MS supports SS phase 2)
+pc_SecPDP_Support,                           BOOLEAN,       TRUE    #-- This indicates if the UE supports Secondary PDP Context or not.@sic EW TTCN Review sic@
+pc_Selective_Ciphering_DL_SACCH,             BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_Serv_TS11,                                BOOLEAN,       FALSE   #-- Telephony
+pc_Serv_TS12,                                BOOLEAN,       FALSE   #-- Emergency Call
+pc_Serv_TS21,                                BOOLEAN,       FALSE   #-- Short Message MT
+pc_Serv_TS22,                                BOOLEAN,       FALSE   #-- Short Message MO
+pc_Serv_TS61,                                BOOLEAN,       FALSE   #-- Alt Speech and G3 fax
+pc_Serv_TS62,                                BOOLEAN,       FALSE   #-- Automatic fax
+pc_Serv_TS91,                                BOOLEAN,       FALSE   #-- VGCS
+pc_Serv_TS92,                                BOOLEAN,       FALSE   #-- VBS
+pc_SimultaneousSCCPCH_DPCH_DPDCH_Reception,  BOOLEAN,       FALSE   #-- Part of SimultaneousSCCPCH_DPCH_Reception.
+pc_SimultaneousSCCPCH_DPCH_Reception,        BOOLEAN,       FALSE   #-- Downlink support. Part of DL_PhysChCapabilityFDD.
+pc_Speech,                                   BOOLEAN,       TRUE    #-- Speech (narrow band speech AMR) teleservice supported
+pc_Streaming,                                BOOLEAN,       TRUE    #-- Streaming supported
+pc_SupportFollowOnRequest,                   BOOLEAN,       TRUE    #-- Paramter is TRUE if UE which supports follow-on request procedure (PS)
+pc_SupportForRfc3095ContextRelocation,       BOOLEAN,       FALSE   #-- Support for RFC 3095 context relocation
+pc_SupportForSF_512,                         BOOLEAN,       FALSE   #-- Downlink support. Part of DL_PhysChCapabilityFDD.
+pc_SupportOfEUTRA_FDD,                       BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-090579, GP-100497 sic@
+pc_SupportOfEUTRA_TDD,                       BOOLEAN,       FALSE   #-- Used in Classmark 3 @sic GP-090579, GP-100497 sic@
+pc_SupportOfMultiCarrier,                    BOOLEAN,       FALSE   #-- Multi carrier supported
+pc_SupportOfUTRAN_ToGERAN_NACC,              BOOLEAN,       TRUE    #-- UE which supports Inter-RAT network assisted cell change from UTRAN
+pc_SupportOf_Priority_Reselection,           BOOLEAN,       FALSE   #-- Priority based reselection
+pc_SupportOpModeA,                           BOOLEAN,       TRUE    #-- Paramter is TRUE if UE supports operation mode A.Operation mode A means UE offers simulataneaous CS and PS services (see 3GPP 23.060 clause 4.1 and 3GPP 24.008)
+pc_SwitchOnOff,                              BOOLEAN,       TRUE    #-- switch on/off supported
+pc_Sync31kHz_14400,                          BOOLEAN,       FALSE   #-- Synchronous 3.1kHz Audio 14400bit/s general bearer service supported
+pc_Sync31kHz_19200,                          BOOLEAN,       FALSE   #-- Synchronous 3.1kHz Audio 19200bit/s general bearer service supported
+pc_Sync31kHz_28800,                          BOOLEAN,       FALSE   #-- Synchronous 3.1kHz Audio 28800bit/s general bearer service supported
+pc_Sync31kHz_9600,                           BOOLEAN,       FALSE   #-- Synchronous  3.1kHz Audio 9600bit/s general bearer service supported
+pc_SyncBTM_56000,                            BOOLEAN,       FALSE   #-- Synchronous Bit TransparentMode (BTM) 56000bit/s general bearer service supported
+pc_SyncBTM_64000,                            BOOLEAN,       FALSE   #-- Synchronous Bit TransparentMode (BTM) 64000bit/s general bearer service supported
+pc_SyncMmediaCall_28800,                     BOOLEAN,       FALSE   #-- Synchronous Multimedia Call 28800bit/s general bearer service supported
+pc_SyncMmediaCall_32000,                     BOOLEAN,       FALSE   #-- Synchronous  Multimedia Call 32000bit/s general bearer service supported
+pc_SyncMmediaCall_33600,                     BOOLEAN,       FALSE   #-- Synchronous  Multimedia Call 33600bit/s general bearer service supported
+pc_SyncMmediaCall_56000,                     BOOLEAN,       FALSE   #-- Synchronous  Multimedia Call 56000bit/s general bearer service supported
+pc_SyncMmediaCall_64000,                     BOOLEAN,       FALSE   #-- Synchronous  Multimedia Call 64000bit/s general bearer service supported
+pc_SyncV110_28800,                           BOOLEAN,       FALSE   #-- Synchronous V110 28800bit/s general bearer service supported
+pc_SyncV110_48000,                           BOOLEAN,       FALSE   #-- Synchronous V110 48000bit/s general bearer service supported
+pc_SyncV110_56000,                           BOOLEAN,       FALSE   #-- Synchronous V110 56000bit/s general bearer service supported
+pc_SyncV120_14400,                           BOOLEAN,       FALSE   #-- Synchronous V120 14400bit/s general bearer service supported
+pc_SyncV120_19200,                           BOOLEAN,       FALSE   #-- Synchronous V120 19200bit/s general bearer service supported
+pc_SyncV120_28800,                           BOOLEAN,       FALSE   #-- Synchronous V120 28800bit/s general bearer service supported
+pc_SyncV120_38400,                           BOOLEAN,       FALSE   #-- Synchronous V120 38400bit/s general bearer service supported
+pc_SyncV120_48000,                           BOOLEAN,       FALSE   #-- Synchronous V120 48000bit/s general bearer service supported
+pc_SyncV120_56000,                           BOOLEAN,       FALSE   #-- Synchronous V120 56000bit/s general bearer service supported
+pc_SyncV120_9600,                            BOOLEAN,       FALSE   #-- Synchronous V120 9600bit/s general bearer service supported
+pc_SyncX31_14400,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 14400bit/s general bearer service supported
+pc_SyncX31_19200,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 19200bit/s general bearer service supported
+pc_SyncX31_28800,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 28800bit/s general bearer service supported
+pc_SyncX31_38400,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 38400bit/s general bearer service supported
+pc_SyncX31_48000,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 48000bit/s general bearer service supported
+pc_SyncX31_56000,                            BOOLEAN,       FALSE   #-- Synchronous  X.31 flag stuffing UDI 56000bit/s general bearer service supported
+pc_SyncX31_9600,                             BOOLEAN,       FALSE   #-- Synchronous X.31 flag stuffing UDI 9600bit/s general bearer service supported
+pc_TAOffset,                                 BOOLEAN,       FALSE   #-- Timing Advance Offset required, used in Classmark3
+pc_TDD,                                      BOOLEAN,       FALSE   #-- Dual  Mode FDD(DS)/TDD
+pc_TIGHTER_EGPRS2,                           BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_TIGHTER_GPRS_EGPRS,                       BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_TIGHTER_SpeechSignalling,                 BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_T_GSM_380_BAND,                           BOOLEAN,       FALSE   #-- IF T-GSM band of 380 is supported
+pc_T_GSM_410_BAND,                           BOOLEAN,       FALSE   #-- IF T-GSM band of 410 is supported
+pc_T_GSM_810_BAND,                           BOOLEAN,       FALSE   #-- IF T-GSM band of 810 is supported
+pc_TargetCell_PreConf_HSDSCH,                BOOLEAN,       FALSE   #-- Support of PreConfigured Cell for Enhanced Serving Cell Change
+pc_TestLoopMode4,                            BOOLEAN,       FALSE   #-- Support of UE test loop mode 4.NOTE:Rel-7: UE test loop mode 4 is optional for Rel-7 UE.Rel-8: UE test loop mode 4 is optional for Rel-8 UE supporting E-UTRA. For Rel-8 UE not supporting E-UTRA then UE test loop mode 4 is mandatory for UE supporting network initiated secondary PDP context.Rel-9 or later releases: UE test loop mode 4 is mandatory for UEs supporting network initiated secondary PDP context.
+pc_TestModeforCSGproximity,                  BOOLEAN,       FALSE   #-- Support of UE radio bearer test mode for CSG proximity testing
+pc_TotalRLC_AM_BufferSize_r5_ext,            ENUM-TotalRLC_AM_BufferSize_r5_ext,kb300   #-- Total RLC AM and MAC-hs buffer size
+pc_TotalRLC_AM_BufferSize_r9_ext,            ENUM-TotalRLC_AM_BufferSize_v920ext,kb1150  #-- Total RLC AM and MAC-hs buffer size (Rel-9 extension)
+pc_TypeDCSClass1,                            BOOLEAN,       TRUE    #-- UE supports DCS power class 1
+pc_TypeDCSClass2,                            BOOLEAN,       FALSE   #-- UE supports DCS power class 2
+pc_TypeDCSClass3,                            BOOLEAN,       FALSE   #-- UE supports DCS power class 3
+pc_TypeDCSClassE1,                           BOOLEAN,       FALSE   #-- UE supports 8PSK DCS power class E1
+pc_TypeDCSClassE2,                           BOOLEAN,       TRUE    #-- UE supports 8PSK DCS power class E2
+pc_TypeDCSClassE3,                           BOOLEAN,       FALSE   #-- UE supports 8PSK DCS power class E3
+pc_TypeGSM400Class2,                         BOOLEAN,       FALSE   #-- UE supports GSM 400 power class 2
+pc_TypeGSM400Class3,                         BOOLEAN,       FALSE   #-- UE supports GSM 400 power class 3
+pc_TypeGSM400Class4,                         BOOLEAN,       FALSE   #-- UE supports GSM 400 power class 4
+pc_TypeGSM400Class5,                         BOOLEAN,       FALSE   #-- UE supports GSM 400 power class 5
+pc_TypeGSM710Class2,                         BOOLEAN,       FALSE   #-- UE supports GSM 710 power class 2
+pc_TypeGSM710Class3,                         BOOLEAN,       FALSE   #-- UE supports GSM 710 power class 3
+pc_TypeGSM710Class4,                         BOOLEAN,       FALSE   #-- UE supports GSM 710 power class 4
+pc_TypeGSM710Class5,                         BOOLEAN,       FALSE   #-- UE supports GSM 710 power class 5
+pc_TypeGSM750Class2,                         BOOLEAN,       FALSE   #-- UE supports GSM 750 power class 2
+pc_TypeGSM750Class3,                         BOOLEAN,       FALSE   #-- UE supports GSM 750 power class 3
+pc_TypeGSM750Class4,                         BOOLEAN,       FALSE   #-- UE supports GSM 750 power class 4
+pc_TypeGSM750Class5,                         BOOLEAN,       FALSE   #-- UE supports GSM 750 power class 5
+pc_TypeGSM850Class2,                         BOOLEAN,       FALSE   #-- UE supports GSM 850 power class 2
+pc_TypeGSM850Class3,                         BOOLEAN,       FALSE   #-- UE supports GSM 850 power class 3
+pc_TypeGSM850Class4,                         BOOLEAN,       TRUE    #-- UE supports GSM 850 power class 4
+pc_TypeGSM850Class5,                         BOOLEAN,       FALSE   #-- UE supports GSM 850 power class 5
+pc_TypeGSM850ClassE1,                        BOOLEAN,       FALSE   #-- UE supports 8PSK GSM 850 power class E1
+pc_TypeGSM850ClassE2,                        BOOLEAN,       TRUE    #-- UE supports 8PSK GSM 850 power class E2
+pc_TypeGSM850ClassE3,                        BOOLEAN,       FALSE   #-- UE supports 8PSK GSM 850 power class E3
+pc_TypeGSMClass2,                            BOOLEAN,       FALSE   #-- UE supports GSM power class 2
+pc_TypeGSMClass3,                            BOOLEAN,       FALSE   #-- UE supports GSM power class 3
+pc_TypeGSMClass4,                            BOOLEAN,       TRUE    #-- UE supports GSM power class 4
+pc_TypeGSMClass5,                            BOOLEAN,       FALSE   #-- UE supports GSM power class 5
+pc_TypeGSMClassE1,                           BOOLEAN,       FALSE   #-- UE supports 8PSK GSM power class E1
+pc_TypeGSMClassE2,                           BOOLEAN,       TRUE    #-- UE supports 8PSK GSM power class E2
+pc_TypeGSMClassE3,                           BOOLEAN,       FALSE   #-- UE supports 8PSK GSM power class E3
+pc_TypePCSClass1,                            BOOLEAN,       FALSE   #-- UE supports PCS power class 1
+pc_TypePCSClass2,                            BOOLEAN,       FALSE   #-- UE supports PCS power class 2
+pc_TypePCSClass3,                            BOOLEAN,       FALSE   #-- UE supports PCS power class 3
+pc_TypePCSClassE1,                           BOOLEAN,       FALSE   #-- UE supports 8PSK PCS power class E1
+pc_TypePCSClassE2,                           BOOLEAN,       TRUE    #-- UE supports 8PSK PCS power class E2
+pc_TypePCSClassE3,                           BOOLEAN,       FALSE   #-- UE supports 8PSK PCS power class E3
+pc_TypeTGSM400Class2,                        BOOLEAN,       FALSE   #-- UE supports T GSM 400 power class 2
+pc_TypeTGSM400Class3,                        BOOLEAN,       FALSE   #-- UE supports T GSM 400 power class 3
+pc_TypeTGSM400Class4,                        BOOLEAN,       FALSE   #-- UE supports T GSM 400 power class 4
+pc_TypeTGSM400Class5,                        BOOLEAN,       FALSE   #-- UE supports T GSM 400 power class 5
+pc_TypeTGSM810Class2,                        BOOLEAN,       FALSE   #-- UE supports T GSM 810 power class 2
+pc_TypeTGSM810Class3,                        BOOLEAN,       FALSE   #-- UE supports T GSM 810 power class 3
+pc_TypeTGSM810Class4,                        BOOLEAN,       FALSE   #-- UE supports T GSM 810 power class 4
+pc_TypeTGSM810Class5,                        BOOLEAN,       FALSE   #-- UE supports T GSM 810 power class 5
+pc_UEA2_UIA2,                                BOOLEAN,       FALSE   #-- Set UEA2/UIA2 to FALSE if not fully IOT tested
+pc_UE_PositioningBasedOTDOA_Sup,             BOOLEAN,       FALSE   #-- UE positioning capability: the Based OTDOA is supporting by UEDefault value TRUE
+pc_UE_PositioningGPS_TimingOfCellFramesSup,  BOOLEAN,       FALSE   #-- UE positioning capability: the UE supports the GPS timing of cell framesDefault value TRUE
+pc_UE_PositioningIPDL_Sup,                   BOOLEAN,       FALSE   #-- UE positioning capability: support for IPDLDefault value TRUE
+pc_UE_PositioningStandaloneLocMethodsSup,    BOOLEAN,       TRUE    #-- UE positioning capability: the standalone location method is supporting by UEDefault value TRUE
+pc_UE_Req_PSDataSessionEnd_cell_DCH,         BOOLEAN,       FALSE   #-- Support transmitting Signalling Connection Release Indication with IE "Signalling Connection Release Indication Cause" set to "UE Requested PS Data session end" in cell_DCH
+pc_UE_Req_PSDataSessionEnd_cell_FACH,        BOOLEAN,       FALSE   #-- Support transmitting Signalling Connection Release Indication with IE "Signalling Connection Release Indication Cause" set to "UE Requested PS Data session end" in cell_FACH
+pc_UE_Req_PSDataSessionEnd_cell_PCH,         BOOLEAN,       FALSE   #-- Support transmitting Signalling Connection Release Indication with IE "Signalling Connection Release Indication Cause" set to "UE Requested PS Data session end" in CELL_PCH when DRX cycle length in use is equal to or longer than the shorter CN domain specific DRX cycle length for the PS domain and CS domain
+pc_UL_16QAM,                                 BOOLEAN,       FALSE   #-- Support of 16QAM in Uplink
+pc_UL_DTX,                                   BOOLEAN,       TRUE    #-- Support of DPCCH Discontinuous Transmission
+pc_UL_TC,                                    BOOLEAN,       TRUE    #-- Support for turbo encoding for uplink.Default value: TRUE @sic ER1668 sic@
+pc_UMTS_AMR_WB_Speech,                       BOOLEAN,       TRUE    #-- Wide band speech
+pc_UMTS_GSM,                                 BOOLEAN,       TRUE    #-- To check if the UE supports both UMTS as well as GSM.If the variable is set as TRUE, means that both UMTS and GSM is supported.If the variable is set as FALSE, means that UE supports only UMTS@sic R5s050241 sic@
+pc_USIM_Rmv,                                 BOOLEAN,       FALSE   #-- USIM removable without power down supported
+pc_UTRAN384_TDD,                             BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_UTRA_CSG_CellsReport,                     BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_UeAssistedAgps,                           BOOLEAN,       TRUE    #-- UE assisted Network Assisted GPS supported
+pc_UeBasedAgps,                              BOOLEAN,       TRUE    #-- UE based Network Assisted GPS supported
+pc_UserRequestedPS_Detach,                   BOOLEAN,       TRUE    #-- Paramter is TRUE if requested PS detach without powering off is supported.
+pc_VAMOS_Type1,                              BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_VAMOS_Type2,                              BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_VAMOS_Type3,                              BOOLEAN,       FALSE   #-- Used in Classmark 3
+pc_eCallCapable,                             BOOLEAN,       FALSE   #-- UEs that contain USIM with subscription for eCall and other services are identified as eCall Capable UE.
+pc_eCallOnly,                                BOOLEAN,       FALSE   #-- UEs that contain USIM with subscription for eCall only service are identified as eCall Only capable UE.
+pc_eCall_Reconfiguration_Call,               BOOLEAN,       FALSE   #-- UE providing a means to trigger a reconfiguration eCall
+pc_eCall_Test_Call,                          BOOLEAN,       FALSE   #-- UE providing a mean to trigger a Test eCall.
+pc_eCall_automatic_Initiated,                BOOLEAN,       FALSE   #-- UE providing a means to trigger a automatic call.
+pc_eFDD,                                     BOOLEAN,       FALSE   #-- UE supports E-UTRA FDD
+pc_eTDD,                                     BOOLEAN,       FALSE   #-- UE supports E-UTRA TDD
+px_3G324M_MmediaEnable,                      BOOLEAN,       FALSE   #-- For a Multimedia UE:set to TRUE if a multimedia call is enabled;set to FALSE if a speech call is enabled.Default value: TRUE
+px_AuthAMF,                                  BITSTRING,     0000000000000000 #-- Authentication Management Field (16 bits). The value shall be different from "1111 1111 1111 111"B (AMFresynch).Default value: no default value can be proposed
+px_AuthK,                                    BITSTRING,     00000000000000010000001000000011000001000000010100000110000001110000100000001001000010100000101100001100000011010000111000001111 #-- Authentication Key (128 bits).Default value: "00000000000000010000001000000011000001000000010100000110000001110000100000001001000010100000101100001100000011010000111000001111"B
+px_AuthN,                                    INTEGER,       127     #-- value of n to initialize tcv_AuthN (length of extended response)min 31, max 127 (TS 34.108 cl. 8.1.2).Default value: 127
+px_AuthRAND,                                 BITSTRING,     01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101 #-- Random Challenge (128 bits).Default value: "010101..01"BThe value shall not be repeatable with 3 bits i.e. something like "001001001001...001"B not allowed.
+px_AuthRAND_2,                               BITSTRING,     10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010 #-- Random Challenge (128 bits)Default value= "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010"B
+px_BMC_CB_RepPeriod01,                       INTEGER,       0       #-- CB repetition period for CB message 1
+px_BMC_CB_RepPeriod02,                       INTEGER,       0       #-- CB repetition period for CB message 2
+px_BMC_NoOfBC_Req01,                         INTEGER,       0       #-- No of broadcasts requested for CB message 1
+px_BMC_NoOfBC_Req02,                         INTEGER,       0       #-- No of broadcasts requested for CB message 2
+px_BcapDataCompression,                      BITSTRING,     0       #-- Data compression supported( used in the Bearer Capability ).Default value: "0"B
+px_BcapFNUR,                                 BITSTRING,     00001   #-- Fixed Network User rate supported:"00000"B: Fixed network user rate not applicable"00001"B: FNUR 9.6 kbit/s"00010"B: FNUR 14.4 kbit/s"00011"B: FNUR 19.2 kbit/s"00100"B: FNUR 28.8 kbit/s"00101"B: FNUR 38.4 kbit/s"00110"B: FNUR 48.0 kbit/s"00111"B: FNUR 56.0 kbit/s"01000"B: FNUR 64.0 kbit/s"01001"B: FNUR 33.6 kbit/s"01010"B: FNUR 32.0 kbit/sDefault value: "00001"B
+px_BcapITC,                                  INTEGER,       2       #-- Information transfer capability supported ( used for the generation of the Bearer Capability )0 - UDI1 - RDI2 - 31 kHz Audio3 - Other.Default value: 2
+px_BcapModemType,                            BITSTRING,     00110   #-- Modem type supported( used in the Bearer Capability ).Default value: "00110"B
+px_BcapNumberDataBits,                       BITSTRING,     1       #-- Number of data bits supported( used in the Bearer Capability ).Default value: "1"B
+px_BcapNumberStopBits,                       BITSTRING,     1       #-- Number of Stops bits supported( used in the Bearer Capability ).Default value: "1"B
+px_BcapOtherModemType,                       BITSTRING,     10      #-- Other modem type supported ( used in the Bearer Capability ).Default value: "10"B
+px_BcapParity,                               BITSTRING,     011     #-- Parity  supported( used in the Bearer Capability ).Default value: "011"B
+px_BcapSACP,                                 BITSTRING,     001     #-- Signalling access protocol supported ( used in the Bearer Capability ).Default value: "001"B
+px_BcapSyncAsync,                            BITSTRING,     1       #-- Synchronous "0"B or Asynchronous "1"B mode supported by IUT.Default value: "1"B
+px_BcapUeFlowControl,                        INTEGER,       0       #-- UE flow control.0-outband,1-inband,2-no flow control.3- X.254- X.75default : 0, outband flow control.Default value: 0
+px_CB_Data1,                                 IA5String,     123456  #-- For CB-Data 1 IXIT, the operator shall define CBS data as IA5String together with the CB message ID used for transmitting this CB data, which is indicated by the UE after reception in a clear way according to the capabilities stored on the SIM. Furthermore, the operator shall describe the indication on the UE side (e.g. certain CBS traffic information), the CB data range is 1..1246 Octets which refers to a IA5String of  1..1246
+px_CC_CallDiallingDigits,                    IA5String,     123456902 #-- Dialling digits used to initiate a CC  MO call (used with the AT dial D command).Default value: "0123456902"
+px_CC_Serv,                                  IA5String,     Telephony #-- Service selected for Mobile Originated calls and Mobile Terminated calls. The possible values are("Telephony","EmergencyCall", "31kHz", "V110",  "V120",   "PIAFS",  "FTM", "X31",  "BTM", "3G324M_Call", "Alternate Speech/Facsimile","3G324M_SpeechPreferred"  ).Default value: "31kHz"
+px_CMAS_CB_Data01,                           IA5String,     First CMAS message: CMAS Presidential Alert. ABCDEFGHIJKLMNOPQRSTUVWXYZ123456890abcdefghijklmnopqrst #-- Contents of the first CMAS Cell Broadcast Message of 90 characters.Default value: "First CMAS message: CMAS Presidential Alert. ABCDEFGHIJKLMNOPQRSTUVWXYZ123456890abcdefghijklmnopqrst"
+px_CMAS_CB_Data02,                           IA5String,     Second CMAS message: CMAS Imminent Threat Alert - Severity: Extreme, Urgency: Immediate. ABCDEFGHIJ #-- Contents of the second CMAS Cell Broadcast Message of 90 characters.Default value: "Second CMAS message: CMAS Imminent Threat Alert - Severity: Extreme, Urgency: Immediate. ABCDEFGHIJ"
+px_CMAS_CB_Data03,                           IA5String,     Third CMAS message: CMAS Child Abduction Emergency. ABCDEFGHIJKLMNOPQRSTUVWXYZ123456890abcdefghijklm #-- Contents of the third CMAS Cell Broadcast Message of 90 characters.Default value: "Third CMAS message: CMAS Child Abduction Emergency. ABCDEFGHIJKLMNOPQRSTUVWXYZ123456890abcdefghijklm"
+px_CN_DomainTested,                          ENUM-CN_DomainIdentity,cs_domain #-- CN domain to be tested. This parameter is used in test cases that handle both PS and CS domains.Default value: ps_domain
+px_CipherKey,                                BITSTRING,     0101111001001010101100110101100010010001001101110101110100101010 #-- Cipher Key (64 bits).Default value: "0101111001001010101100110101100010010001001101110101110100101010"B
+px_CipherKey128,                             BITSTRING,     01011110010010101011001101011000100100010011011101011101001010100101111001001010101100110101100010010001001101110101110100101010 #-- Cipher key (128 bits) to be used e.g. for A5/4 and GEA/4Default value: "01011110010010101011001101011000100100010011011101011101001010100101111001001010101100110101100010010001001101110101110100101010"B
+px_CipheringOnOff,                           BOOLEAN,       TRUE    #-- Security mode - TRUE if ciphering is applicable.Default value: TRUE
+px_DL_MaxCCTrCH,                             INTEGER,       1       #-- Maximum number of Simultaneous CCTrCH for downlinkDefault value: 8
+px_DL_MaxCC_TB_Bits,                         ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all convolutionally coded transport blocks being received at an arbitrary time instant.Default value: b163840
+px_DL_MaxTB_Bits,                            ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all transport blocks being received at an arbitrary time instant.Default value: b163840
+px_DL_MaxTC_TB_Bits,                         ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all turbo coded transport blocks being received at an arbitrary time instant.Default value: b163840
+px_DL_MaxTF,                                 ENUM-MaxNumberOfTF,tf64    #-- Maximum number of TF for downlinkDefault value: tf1024
+px_DL_MaxTFS,                                ENUM-MaxNumberOfTFC_DL,tfc128  #-- Maximum number of TFC in the TFCS for downlinkDefault value: tfc1024
+px_DL_MaxTTI_TB,                             ENUM-MaxTransportBlocksDL,tb32    #-- Maximum total number of transport blocks received within TTIs that end within the same 10 ms interval.Default value: tb512
+px_DL_MaxTrCHs,                              ENUM-MaxSimultaneousTransChsDL,e8      #-- Maximum number of simultaneous transport channels for downlink.Default value: e32
+px_DeltaSS_DelayTime,                        INTEGER,       90      #-- t delta value (refer to 34.108 clause 4.2.3) in msDefault value: 55 ms
+px_ETWS_BMC_CB_RepPeriod,                    INTEGER,       0000    #-- CB repetition period for CB message 1
+px_ETWS_BMC_NoOfBC_Req,                      INTEGER,       0000    #-- No of broadcasts requested for CB message 1
+px_ETWS_SMS_CB_Data01,                       IA5String,     123456  #-- Contents of the first ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_ETWS_SMS_CB_Data02,                       IA5String,     123456  #-- Contents of the second ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_ETWS_SMS_CB_Data03,                       IA5String,     123456  #-- Contents of the second ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_ETWS_SMS_CB_Data04,                       IA5String,     123456  #-- Contents of the second ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_ETWS_SMS_CB_Data05,                       IA5String,     123456  #-- Contents of the second ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_ETWS_SMS_CB_Data06,                       IA5String,     123456  #-- Contents of the second ETWS Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_EmergencyCallNumber,                      IA5String,     112     #-- Emergency Number used by UE to initiate an emergency call.Default value: "112"
+px_ExecNon_FDPCH_When_FDPCHSupp,             BOOLEAN,       FALSE   #-- To execute Non-FDPCH testcase when fully FDPCH is supported
+px_ExecutePS_Class,                          INTEGER,       1       #-- Service to be executed in RAB test cases. The allowed values are:1: Interactive2: BackGround3: Streaming0: All supported classes.Any other value is not defined.The px_ExecutePS_Class allows the option 0 to be selected. This has been allowed in order to preserve the changes implemented in TTCN for handling all traffic classes in RAB testcase execution. System simulators are NOT required to support this execution and also TTCN maintenance of this path should be limited.Default value : 1
+px_ExtDTM_EGPRS_MultiSlotClass,              BITSTRING,     00      #-- Used in Classmark 3
+px_FDD_OperationBand,                        INTEGER,       1       #-- The operation band under test, as defined in 34.108 clause 5.1.1.Value 1 means Band 1, 2 means Band 2, 3 means Band 3, 6 means Band 6. Rest of the values are not defined. This pixit shall be set in synchronisation with the values that are being set to 6 other Pixits viz:px_UARFCN_D_High, px_UARFCN_D_Mid,px_UARFCN_L_Mid
+px_FRESH,                                    BITSTRING,     00001111000011110000111100001111 #-- FRESH.Default value: no default value can be proposed
+px_GERANIu_RadioAccessCapability,            BITSTRING,     0       #-- MS GERAN Iu mode Radio Access Capability@sic VB R5s060053 sic@
+px_GPRS_CipheringAlgorithm,                  ENUM-GPRS_CipheringAlgorithm_Type,gea0    #-- Cipher algorithm.Default value: (GEA/2) "010"B @sic R5-142234 sic@
+px_GSM_BandUnderTest,                        INTEGER,       6       #-- indicates which band is under test:1 -> GSM450;2 -> GSM480;3 -> GSM750;4 -> GSM850;5 -> GSM-P-900;6-> GSM-E-900;7-> DCS1800;8 -> PCS1900.9 -> 450 + 900 MultiBand test10 -> 450 + 1800 MultiBand test11 -> 480 + 900 MultiBand test12 -> 480 + 1800 MultiBand test13 -> 900 + 1800 MultiBand test14 -> GSM710;15 -> T-GSM810other values are not defined currently.
+px_GSM_CipherAlg,                            BITSTRING,     000     #-- GSM Cipher algorithm.  Allowed values are "000"B (A5/1) and "010"B (A5/3)Default value: (A5/1) "000"B @sic R5s070275 sic@
+px_GSM_CipheringOnOff,                       BITSTRING,     1       #-- GSM Ciphering to be started or notDefault value: "1"Bi.e Ciphering to be started
+px_GuardTimerExtension,                      INTEGER,       0       #-- Guard timer extension value (in seconds).default value: 0
+px_HighMultiSlotCap,                         BITSTRING,     00      #-- Used in Classmark 3
+px_IMEISV_Def,                               HEXSTRING,     0044001520200000 #-- default IMEISV.Default value: no default value can be proposed
+px_IMEI_Def,                                 HEXSTRING,     004400152020000 #-- default IMEI.Default value: no default value can be proposed
+px_IMSI_Def,                                 HEXSTRING,     001010000000333 #-- default IMSI.Default value: "001010123456063"H
+px_IMSI_Diff,                                HEXSTRING,     001010654321063 #-- different  IMSI from the IMSI stored in the USIM.Default value: "001010654321063"H
+px_ITURegion1_GSM_BandsUnderTest,            ENUM-ITURegion1_GSM_BandsUnderTest,band_850_1900_900_1800 #-- used in ITU tests
+px_ITURegion1_SecondaryFDD_Band,             ENUM-ITURegion1_FDD_Band,band_1  #-- Used in ITU test cases
+px_ITURegion2_GSM_BandsUnderTest,            ENUM-ITURegion2_GSM_BandsUnderTest,band_900_1800_850_1900 #-- used in ITU tests
+px_ITURegion2_SecondaryFDD_Band,             ENUM-ITURegion2_FDD_Band,band_2  #-- Used in ITU test cases
+px_JapanMCC,                                 HEXSTRING,     442     #-- Japan MCC code to be used for Band 6Default value: "442"H@sic VB R5s060324 sic@
+px_MS_ClsmkESIND,                            BITSTRING,     1       #-- default Early Sending Indication.Default value: "0"B("Controlled Early Classmark Sending" option is not implemented in the MS")
+px_MS_ClsmkRevLvl,                           BITSTRING,     10      #-- default Revision Level.Default value: "10"B
+px_MS_TXPWR_MAX_CCH,                         BITSTRING,     01010   #-- MS_TXPWR_MAX_CCH.Default value: "01010"B
+px_MaxAM_EntityNumberRLC_Cap,                ENUM-MaximumAM_EntityNumberRLC_Cap,am16    #-- Maximum AM Entity Number for RLC.Default value: am30
+px_MaxCP_DataRetx,                           INTEGER,       1       #-- max. number of CP data retransmissions for SMSvalid range:1 to 3@sic EW CR T1s040497 sic@
+px_MaxHcContextSpace,                        ENUM-MaxHcContextSpace,by8192  #-- MaxHcContextSpace if RFC 2507 is supported.Default value: by1024
+px_MaxNoDPCH_PDSCH_Codes,                    INTEGER,       1       #-- Part of DL_PhysChCapabilityFDD. INTEGER (1..8 ).Default value: 8
+px_MaxNoDPDCH_BitsTransmitted,               ENUM-MaxNoDPDCH_BitsTransmitted,b9600   #-- Part of UL_PhysChCapabilityFDD.Default value: b57600
+px_MaxNoPhysChBitsReceived,                  ENUM-MaxNoPhysChBitsReceived,b9600   #-- Part of DL_PhysChCapabilityFDD.Default value: b76800
+px_MaxNoSCCPCH_RL,                           ENUM-MaxNoSCCPCH_RL,rl1     #-- Part of SimultaneousSCCPCH_DPCH_Reception.Default value: rl1
+px_MaxRLC_WindowSize,                        ENUM-MaximumRLC_WindowSize,mws2047 #-- Maximum RLC window size.Default value:  mws4095
+px_MsgCode01,                                BITSTRING,     0000000000 #-- It is used in the Serial No. of the CB_Data01 given as PIXIT, which is theGeographical Scope indicates the area over which the msg code is unique.Default value:"0000000000"B
+px_NumOfSegInPagResOrServReq,                INTEGER,       2       #-- The Default value is 2.This Pixit is used in MAC test cases 7.1.1.2, 7.1.1.3, 7.1.1.4, 7.1.1.5 and 7.1.1.8This indicates the number of RLC segments the Paging Response (CS Domain) or Service Request (PS domain will be segmented in.
+px_NwOrgPDP_Support,                         BOOLEAN,       FALSE   #-- This indicates if the UE implementation supports network originated PDP Context.TRUE indicates, supportedFALSE indicate, not supportedDefault value : FALSE
+px_PDP_IP_AddrInfoDCH,                       IA5String,     200.1.1.80 #-- A string parameter that identifies the MT in the address space applicable to the IP PDP for DCH.Default value: "200.1.1.80"
+px_PDP_IP_AddrInfoFACH,                      IA5String,     200.1.1.80 #-- A string parameter that identifies the MT in the address space applicable to the IP PDP for FACH.Default value: "200.1.1.90"
+px_PTMSI_2,                                  OCTETSTRING,   09876543 #-- Second PTMSI used for testing.Default value:"C9876543"O
+px_PTMSI_Def,                                OCTETSTRING,   12345678 #-- default PTMSI .Default value: "C2345678"O
+px_PTMSI_Sig2,                               OCTETSTRING,   AB1237  #-- Second PTMSI signature used for testing.Default value: "AB1237"O
+px_PTMSI_Sig3,                               OCTETSTRING,   AB1239  #-- Second PTMSI signature used for testing.Default value: "AB1239"O
+px_PTMSI_SigDef,                             OCTETSTRING,   AB1234  #-- default PTMSI signature (3 octets, 3GPP 24.008 /  10.5.5.8).Default value: "AB1234"O
+px_PowerLevel,                               BITSTRING,     00000   #-- power level value for L1 header
+px_PriScrmCode,                              INTEGER,       100     #-- Primary scrambling code.Default value: 100
+px_PrimaryBand,                              INTEGER,       1       #-- The primary operation band under test, as defined in 34.108 clause 5.1.1.Value 1 means Band 1, 2 means Band 2, 3 means Band 3, 6 means Band 6.Default value: 1
+px_RAB_HS_Exec128_384Supp,                   BOOLEAN,       TRUE    #-- Execute UL 128 KBPS RAB HS test cases, when UE supports UL384@sic R5s070258 sic@
+px_RAB_HS_Exec64_128Supp,                    BOOLEAN,       TRUE    #-- Execute UL 64 KBPS RAB HS test cases, when UE supports UL128@sic R5s070258 sic@
+px_RAB_HS_Exec64_384Supp,                    BOOLEAN,       TRUE    #-- Execute UL 64 KBPS RAB HS test cases, when UE supports UL384
+px_RAT,                                      ENUM-RatType,  fdd     #-- This parameter is used to specify which radio access technology is being used  for the current test execution.  Valid values: fdd and tdd.Default value: fdd
+px_RLC_SDU_buffering,                        BOOLEAN,       TRUE    #-- TRUE=Support of RLC SDUBufferingFALSE=Support of RLC SDU Discardas defined in test case 7.2.3.13@sic EW T1-040262 re 7.2.3.13 + T1S0400020 sic@
+px_RRC_CS_ServTested,                        ENUM-RRC_ServTested,speech  #-- CS service to be tested for RRC test cases.Default value: Speech
+px_RRC_PS_ServTested,                        ENUM-RRC_ServTested,ps_Interactive #-- PS service to be tested for RRC test cases.Default value: ps_Interactive
+px_RXLEV_ACCESS_MIN,                         BITSTRING,     000000  #-- minimum received signal level at MS.Default value: "000000"B
+px_SMS_CB_Data01,                            IA5String,     44      #-- Contents of the first Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_SMS_CB_Data02,                            IA5String,     44      #-- Contents of the second Cell Broadcast Message sentwill be converted to an OCTETSTRING
+px_SMS_CB_MsgId01,                           HEXSTRING,     0000    #-- The operator shall define the CB Message ID for the CB data1 used for transmitting this CB data, different to CB-Data 2 IXIT.Default Value: "0001"H.
+px_SMS_CB_MsgId02,                           HEXSTRING,     0000    #-- Message Id to be used for the second Cell Broadcast Message sent
+px_SMS_CB_Store,                             BOOLEAN,       TRUE    #-- TRUE if Broadcast Messages are kept in BM storage@sic EW R5s070005 sic@
+px_SMS_IndexOffset,                          INTEGER,       1       #-- SMS index offset for the numbering of short messagesvalue range: (0,100)Default value: 0@sic EW R5s060010 sic@
+px_SMS_MsgFrmt,                              IA5String,     1       #-- SMS Message Format<mode> of TS 27.005 cl. 3.2.3    Default "Text mode"Default value: "1"
+px_SMS_PrefMem1,                             IA5String,     SM      #-- SMS Preferred Memory 1<mem1> of TS 27.005 cl. 3.1Default value: "SM"
+px_SMS_PrefMem2,                             IA5String,     SM      #-- SMS Preferred Memory 2<mem2> of TS 27.005 cl. 3.1Default value: "SM"
+px_SMS_PrefMem3,                             IA5String,     MT      #-- SMS Preferred Memory 3<mem3> of TS 27.005 cl. 3.1Default value: "MT"
+px_SMS_PrefMemCB1,                           IA5String,     BM      #-- SMS Preferred CB Memory 1<mem1> of TS 27.005 cl. 3.1Default value: "BM"
+px_SMS_PrefMemCB2,                           IA5String,     BM      #-- SMS Preferred CB Memory 2<mem2> of TS 27.005 cl. 3.1Default value: "BM"
+px_SMS_PrefMemCB3,                           IA5String,     BM      #-- SMS Preferred CB Memory 3<mem3> of TS 27.005 cl. 3.1Default value: "BM"
+px_SMS_Service,                              IA5String,     0       #-- SMS Service<service> of TS 27.005 cl. 3.2.1Default value: "0"
+px_SRNC_Id,                                  BITSTRING,     000000000001 #-- SRNC Id.Default value: "000000000001"B
+px_SRNTI,                                    BITSTRING,     00000000000000000001 #-- S RNTI.Default value: "00000000000000000001"B
+px_SecondaryBand,                            INTEGER,       5       #-- The secondary operation band under test, as defined in 34.108 clause 5.1.1.Value 1 means Band 1, 2 means Band 2, 3 means Band 3, 6 means Band 6.Default value: 8
+px_SplitOnCCCH,                              BITSTRING,     0       #-- Split pg cycle on CCCH supported indication (1 bit)Default value: "0"B not supported?? shall be a PICS question
+px_SupportOpModeC,                           BOOLEAN,       FALSE   #-- Paramter is TRUE if UE supports operation mode C.Operation mode C means UE offers PS services only (see 3GPP 23.060 clause 4.1 and 3GPP 24.008)Default value: TRUE
+px_TC1M,                                     INTEGER,       20      #-- timer value for timer TC1M (for SMS) in seconds@sic EW ER 1525 sic@
+px_TCellA,                                   INTEGER,       0       #-- TCell value for cell A or 1. Except for the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 256  Anritsu comment: Anritsu Maximum is 2559
+px_TCellB,                                   INTEGER,       512     #-- TCell value for cell B or 2. Except for the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 512  Anritsu comment: Anritsu Maximum is 2559
+px_TCellC,                                   INTEGER,       1536    #-- TCell value for cell C or 3. Except  the  first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 1536  Anritsu comment: Anritsu Maximum is 2559
+px_TCellD,                                   INTEGER,       321     #-- TCell value for cell D or 4. Except the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 321  Anritsu comment: Anritsu Maximum is 2559
+px_TCellE,                                   INTEGER,       833     #-- TCell value for cell E or 5. Except the  first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 833  Anritsu comment: Anritsu Maximum is 2559
+px_TCellF,                                   INTEGER,       1024    #-- TCell value for cell F or 6. Except the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 6577  Anritsu comment: Anritsu Maximum is 2559
+px_TCellG,                                   INTEGER,       2048    #-- TCell value for cell G or 7. Except the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 7253  Anritsu comment: Anritsu Maximum is 2559
+px_TCellH,                                   INTEGER,       2559    #-- TCell value for cell H or 8. Except the first created cell, the value 0 applied in ts_SS_CellCfg.Default value: 4351  Anritsu comment: Anritsu Maximum is 2559
+px_TMSI_2,                                   OCTETSTRING,   09876543 #-- TMSI 2.Default value: "09876543"O
+px_TMSI_Def,                                 OCTETSTRING,   11223344 #-- default TMSI.Default value: "12345678"O
+px_TSC,                                      BITSTRING,     011     #-- Training sequence code for traffic channels.Default value: "011"B
+px_TimerDequeuePCO,                          INTEGER,       5000    #-- Duration of the timer to empty the PCO queue at the beginning of each test case (in ms).Default value: 5000 ms
+px_TimingAdvance,                            BITSTRING,     0000000 #-- Timing advance value for L1 header.Default value: "0000000"B
+px_TotalRLC_AM_BufferSize,                   ENUM-TotalRLC_AM_BufferSize,kb1000  #-- Total RLC AM buffer size for R99. The values are according to TotalRLC-AM-BufferSize defined in 3GPP TS 25.331.Default value: kb1000
+px_UARFCN_D_High,                            INTEGER,       10837   #-- High Range downlink UARFCN value.Default value: 10837
+px_UARFCN_D_Low,                             INTEGER,       10563   #-- Low Range downlink UARFCN valueDefault value: 10563
+px_UARFCN_D_Mid,                             INTEGER,       10700   #-- Mid Range downlink UARFCN valueDefault value: 10700
+px_UE_OpModeDef,                             ENUM-UE_OperationMode,opModeA #-- Default UE operation mode (either opModeA or opModeC). (For most UEsthiscorresponds class-A or class-C, and can not be changed by the user).Default value: opModeA
+px_UE_PositioningNetworkAssistedGPS_Sup,     ENUM-NetworkAssistedGPS_Supported,bothNetworkAndUE_Based #-- UE positioning capability: supports the network assisted GPS.Default value: networkBased
+px_UE_PowerClass,                            INTEGER,       3       #-- UE_PowerClass value of the band under test (px_FDD_OperationBand or px_TDD_OperationBand).Default value: 1
+px_UL_MaxCC_TB_Bits,                         ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all convolutionally coded transport blocks being transmitted at an arbitrary time instant.Default value: b163840
+px_UL_MaxTB_Bits,                            ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all transport blocks being transmitted at an arbitrary time instant.Default value: b163840
+px_UL_MaxTC_TB_Bits,                         ENUM-MaxNoBits,b6400   #-- Maximum sum of number of bits of all turbo coded transport blocks being transmitted at an arbitrary time instant.Default value: b163840
+px_UL_MaxTF,                                 ENUM-MaxNumberOfTF,tf64    #-- Maximum number of TF for uplink.Default value: tf1024
+px_UL_MaxTFS,                                ENUM-MaxNumberOfTFC_UL,tfc64   #-- Maximum number of TFC in the TFCS for uplink.Default value: tfc1024
+px_UL_MaxTTI_TB,                             ENUM-MaxTransportBlocksUL,tb32    #-- Maximum total number of transport blocks transmitted within TTIs that start at the same time.Default value: tb512
+px_UL_MaxTrCHs,                              ENUM-MaxSimultaneousTransChsUL,e8      #-- Maximum number of simultaneous transport channels for uplink.Default value: e32
+px_UL_ScramblingCode,                        INTEGER,       0       #-- UL scrambling code value to be used by UE.Default value : 0
+px_UpdateNumber01,                           BITSTRING,     0000    #-- It is used in the Serial No. of the CB_Data01 given as PIXIT, which indicates a change of the message content of the same CBS messageDefault value:"0000"B
+px_eCall_ReconfNumber,                       IA5String,     345678  #-- Number digits of the reconfiguration number used in eCall Reconfiguration Call.Numbers are in the order: Digit 1, Digit 2, Digit 3, etc (see 24.008, 10.5.4.7)Default value: "345678"
+px_eCall_TestNumber,                         IA5String,     345678  #-- Number digits of the test number used in eCall Test Call.Numbers are in the order: Digit 1, Digit 2, Digit 3, etc (see 24.008, 10.5.4.7)Default value: "123456"
+px_gS01,                                     BITSTRING,     00      #-- It is used in the Serial No. of the CB_Data01 given as PIXIT, which differentiates between CBS messages from the same source and typeDefault value:"00"B
